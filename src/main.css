@@ -9,10 +9,15 @@
     }
 
     html {
-        overflow: hidden;
+        overflow-x: hidden;
         overflow-y: auto;
 
         color: #FAFAFA;
         font-family: 'Inter', sans-serif;
+    }
+
+    a::selection, h1::selection, p::selection {
+        color: #0D2734;
+        background: #FAFAFA;
     }
 }
