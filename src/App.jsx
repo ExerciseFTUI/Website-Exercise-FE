@@ -1,14 +1,14 @@
 import React from "react"
 import { Outlet, ScrollRestoration } from "react-router-dom"
 
-import Navigation from "./components/navigation/Navigation"
+import NavBar from "./components/NavBar"
 
 function App() {
   return (
     <>
       <ScrollRestoration />
 
-      <Navigation />
+      <NavBar />
 
       <Outlet />
     </>
