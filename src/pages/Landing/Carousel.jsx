@@ -13,14 +13,17 @@ function Carousel() {
 
   return (
     <section
-      id="landing-gtk"
+      id="landing-carousel"
       className="relative overflow-hidden flex items-center justify-center"
     >
       <AutoSlider imgs={imgs} />
 
       <div className="absolute px-7 w-full h-full flex flex-col items-center justify-center top-0 bg-dark bg-opacity-90 md:items-start md:pl-32">
         <h1 className="text-6xl font-extrabold text-center xl:text-8xl">
-          EXERCISE <span className="text-8xl">FTUI</span>
+          EXERCISE{" "}
+          <span className="text-8xl md:text-6xl sm:text-6xl xl:text-8xl">
+            FTUI
+          </span>
         </h1>
 
         <p className="w-[85%] max-w-md mt-12 font-light text-center md:text-justify xl:text-xl">

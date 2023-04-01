@@ -10,7 +10,7 @@ function AutoSlider({ imgs, ...props }) {
   return (
     <div
       id="autoslider"
-      className="flex flex-row ease-in-out duration-500 h-screen max-h-screen lg:h-auto"
+      className="flex flex-row ease-in-out duration-500 h-screen max-h-screen"
       style={{ transform: `translate3d(-${pos * 100}%, 0, 0)` }}
     >
       {imgs.map((img, index) => (
@@ -18,7 +18,7 @@ function AutoSlider({ imgs, ...props }) {
           key={index}
           alt={index + 1}
           src={img}
-          className="block w-screen object-cover object-center"
+          className="w-screen min-w-full object-cover object-center"
         />
       ))}
     </div>

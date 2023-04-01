@@ -17,11 +17,11 @@ function WhatsInOurHands() {
         What's in Our Hands?
       </p>
 
-      <div className="grid grid-cols-2 gap-8 md:grid-flow-row md:grid-cols-4">
+      <div className="grid grid-cols-2 gap-8 sm:grid-flow-row sm:grid-cols-4">
         {icons.map((icon, i) => (
           <div
             key={i}
-            className="bg-grey-2 p-4 flex justify-center items-center w-32 h-32 xl:w-32 xl:h-32"
+            className="bg-grey-2 p-4 flex justify-center items-center w-32 h-32 xl:w-48 xl:h-48"
           >
             <img alt="icon" src={icon} className="w-full h-full" />
           </div>

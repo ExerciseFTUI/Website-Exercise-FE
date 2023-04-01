@@ -22,11 +22,11 @@ function NavBar() {
 
       <ul
         id="navigation-lists"
-        className={`absolute w-screen bg-dark flex flex-col items-start justify-center duration-200 ease-in-out md:flex-row md:relative md:top-0 md:gap-3 md:ml-3 ${open ? "top-16" : "-top-64"}`}
+        className={`absolute w-screen bg-dark flex flex-col items-start justify-center duration-200 ease-in-out md:flex-row md:relative md:justify-start md:items-center md:top-0 md:gap-3 md:ml-3 ${open ? "top-16" : "-top-64"}`}
       >
         <Lists lists={lists} onClick={closeMenu}
           liststyle="before:hover:w-full before:h-full"
-          textstyle="pl-4 py-2 hover:text-dark md:p-0 md:px-2 md:font-bold"
+          textstyle="pl-4 py-2 hover:text-dark md:p-0 md:px-2 md:py-1 md:font-bold"
           path={path}
         />
       </ul>

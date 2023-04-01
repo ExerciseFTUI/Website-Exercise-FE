@@ -1,26 +1,23 @@
 import React from "react"
 
-import ProjectCards from "./ProjectCards"
-
 import Carousel from "./Carousel"
 import WhatsInOurHands from "./WhatsInOurHands"
+import ProjectCards from "./ProjectCards"
 
 function LandingPages() {
   return (
-    <div id="landing-pages" className="pt -16">
+    <div id="landing-pages" className="">
       <Carousel />
 
       <WhatsInOurHands />
 
-      <section id="landing-project-cards" className="w-screen py-16">
-        <p className="text-3xl text-dark-1 text-center mb-8">
-          Save your time, stay organized, get more done!
+      <section id="landing-collaborated-projects" className="w-screen py-16 bg-grey overflow-hidden">
+        <p className="text-3xl text-dark-2 font-light text-center mb-8 px-2">
+          Our Collaborated Projects
         </p>
-        <div
-          id="project-cards-landing-lists"
-          className=" flex items-center justify-evenly "
-        >
-          {/* <ProjectCards /> */}
+
+        <div className="flex flex-row relative">
+          <ProjectCards />
         </div>
       </section>
     </div>
