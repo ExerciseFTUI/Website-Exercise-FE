@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 
-import AutoSlider from "../../components/carousel/AutoSlider"
+import { AutoSlider } from "../../components/carousels"
 
 import car1 from "../../assets/images/landing/carousel/be-our-client.png"
 
