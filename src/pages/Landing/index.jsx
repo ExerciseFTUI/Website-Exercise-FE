@@ -1,13 +1,14 @@
 import React from "react"
 
-import Carousel from "./Carousel"
+import CarouselExercise from "./CarouselExercise"
+import CarouselProjects from "./CarouselProjects"
 import WhatsInOurHands from "./WhatsInOurHands"
 import ProjectCards from "./ProjectCards"
 
 function LandingPages() {
   return (
     <div id="landing-pages" className="">
-      <Carousel />
+      <CarouselExercise />
 
       <WhatsInOurHands />
 
@@ -17,8 +18,10 @@ function LandingPages() {
         </p>
 
         <div className="flex flex-row relative">
-          <ProjectCards />
+          {/* <ProjectCards /> */}
         </div>
+
+        <CarouselProjects />
       </section>
     </div>
   )

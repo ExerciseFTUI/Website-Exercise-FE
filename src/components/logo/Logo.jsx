@@ -9,7 +9,7 @@ function Logo({ ...props }) {
       <img
         alt="Exercise's Logo"
         src={logo}
-        className={props.size ? `w-${props.size}` : "w-24"}
+        className={`${props.size ? `w-${props.size}` : "w-24"} ${props.style}`}
       />
     </Link>
   )

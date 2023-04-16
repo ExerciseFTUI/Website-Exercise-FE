@@ -11,19 +11,20 @@ function WhatsInOurHands() {
   return (
     <section
       id="landing-wioh"
-      className="bg-light w-screen flex flex-col items-center text-center py-16 xl:p-24"
+      className="bg-light w-screen flex flex-col items-center text-center pt-32 pb-48 lg:px-12 xl:pt-48 xl:pb-64"
     >
       <p className="text-dark-2 font-light text-4xl mb-16 px-2 md:px-0">
         What's in Our Hands?
       </p>
 
-      <div className="grid grid-cols-2 gap-8 sm:grid-flow-row sm:grid-cols-4">
+      <div className="grid grid-cols-2 gap-16 md:gap-x-32 lg:grid-flow-row lg:grid-cols-4 xl:gap-24">
         {icons.map((icon, i) => (
           <div
             key={i}
-            className="bg-grey-2 p-4 flex justify-center items-center w-32 h-32 xl:w-48 xl:h-48"
+            className="group bg-grey-2 p-4 flex justify-center items-center w-32 h-32 sm:w-40 sm:h-40 xl:w-48 xl:h-48 hover:bg-opacity-0 duration-300 ease-out cursor-help"
           >
-            <img alt="icon" src={icon} className="w-full h-full" />
+            <img alt="icon" src={icon} className="w-full h-full group-hover:hidden duration-300 ease-out" />
+            <p className="text-grey-2 font-semibold text-lg  hidden group-hover:block duration-300 ease-out sm:text-xl lg:text-2xl xl:text-4xl">Untitled</p>
           </div>
         ))}
       </div>

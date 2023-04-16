@@ -3,14 +3,14 @@ import { Link } from "react-router-dom"
 
 function ProjectCards() {
   const projects = [
-    {
-      img: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      title: "Project Title",
-      description: "We started innovating since 1234 with a track record of qualified work and has become one of the growing technology organizations of the University of Indonesia. Dig further to find out the best of us! ",
-      corporation: "Corporation",
-      year: 2023,
-      link: "get-to-know",
-    },
+    // {
+    //   img: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    //   title: "Project Title",
+    //   description: "We started innovating since 1234 with a track record of qualified work and has become one of the growing technology organizations of the University of Indonesia. Dig further to find out the best of us! ",
+    //   corporation: "Corporation",
+    //   year: 2023,
+    //   link: "get-to-know",
+    // },
     {
       img: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       title: "Project Judul",
@@ -22,7 +22,7 @@ function ProjectCards() {
   ]
 
   return projects.map(({ img, title, description, corporation, year }, i) => (
-    <div key={i} id={"project-card " + (i + 1)} className="px-8 min-w-fit">
+    <div key={i} id={"project-card " + (i + 1)} className="w-96 max-h-[36rem]">
       <img
         alt={title}
         src={img}

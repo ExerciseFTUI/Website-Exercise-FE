@@ -11,7 +11,7 @@ function Lists({ lists = [""], ...props }) {
       <Link
         to={list.toLowerCase().replace(" ", "-")}
         className={
-          "block relative w-full h-full text-sm font-bold duration-100 ease-in-out " +
+          "block relative w-full h-full text-sm font-bold duration-300 ease-in-out " +
           props.textstyle +
           (props.path == list.toLowerCase().replace(" ", "") ? " text-dark" : " text-light")
         }
