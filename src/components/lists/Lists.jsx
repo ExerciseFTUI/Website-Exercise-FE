@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 function Lists({ lists = [""], ...props }) {
   return lists.map((list, i) => (
     <li key={i} className={
-        "relative w-full md:w-auto before:absolute before:bottom-0 before:bg-light before:ease-in-out before:duration-300 " +
+        "relative w-full lg:w-auto before:absolute before:bottom-0 before:bg-light before:ease-in-out before:duration-300 " +
         props.liststyle + 
         (props.path == list.toLowerCase().replace(" ", "") ? " before:w-full" : " before:w-0")
     }>
