@@ -51,21 +51,19 @@ function Footer() {
             <h1 className="font-extrabold text-xl">LINKS</h1>
 
             <div className="flex justify-between">
-              <ul>
+              <div>
                 <Lists
                   lists={["Home", "Projects", "Events"]}
-                  textstyle="font-normal text-lg"
-                  liststyle="mb-2"
+                  style="font-light mb-1.5"
                 />
-              </ul>
+              </div>
 
-              <ul>
+              <div>
                 <Lists
                   lists={["Features", "Exticle"]}
-                  textstyle="font-normal text-lg"
-                  liststyle="mb-2"
+                  style="font-light mb-1.5"
                 />
-              </ul>
+              </div>
             </div>
           </div>
 
@@ -93,8 +91,8 @@ function Footer() {
 
           <div className="flex flex-col gap-2 mb-2">
             <textarea
-              defaultValue="Enter your email address..."
-              className="resize-none h-10 text-grey text-sm leading-10 pl-2"
+              placeholder="Enter your email address..."
+              className="resize-none h-10 text-dark-2 text-sm leading-10 pl-2"
             />
             <Link
               to="/newsletter"

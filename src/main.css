@@ -22,13 +22,17 @@
         font-weight: bold;    
     }
 
+    p {
+        font-weight: theme('fontWeight.light');
+    }
+
     a::selection, h1::selection, p::selection, span::selection, img::selection, textarea::selection {
         color: #0D2734;
         background: #FAFAFA;
     }
 
     *::-webkit-scrollbar {
-        width: 0.25rem;
+        width: 0.5rem;
     }
     
     *::-webkit-scrollbar-track {
@@ -45,10 +49,17 @@
         color: #FAFAFA;
         background: theme('colors.dark-1');
         font-weight: bold;
-
+        
+        width: fit-content;
         padding-top: 0.25rem;
         padding-bottom: 0.25rem;
         padding-right: 1rem;
         padding-left: 1rem;
+    }
+}
+
+@layer utilities {
+    .h-screen {
+        height: calc(100vh - 4rem);
     }
 }

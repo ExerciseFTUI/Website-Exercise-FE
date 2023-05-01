@@ -21,35 +21,29 @@ function Features() {
   ]
 
   return (
-    <section
-      id="landing-features"
-      className="flex flex-col pt-8 lg:py-16 lg:gap-16"
-    >
-      <p className="font-semibold text-grey-2 text-xl md:text-3xl text-center">
+    <section id="landing-features" className="py-12 lg:py-16">
+      <p className="font-semibold text-grey-2 text-center text-xl px-8 mb-8 md:text-3xl lg:mb-12">
         Save your time, stay organized, get more done!
       </p>
 
-      <div className="h-[calc(100vh-4rem)] w-screen flex flex-col items-center justify-evenly lg:flex-row lg:h-[60vh] lg:max-h-[554px]">
+      <div className="w-screen px-8 flex flex-wrap items-center justify-center gap-8">
         {features.map((f, i) => (
-          <div
-            key={i}
-            className="flex h-[30%] max-h-48 w-[95%] sm:max-h-60 lg:flex-col lg:h-full lg:max-h-none lg:w-[31%]"
-          >
+          <div key={i} className="bg-grey-2 w-fit">
             <img
               alt={f.title + " Image"}
               src={f.img}
-              className="object-cover w-[40%] lg:w-full lg:h-[50%] lg:min-h-[50%]"
+              className="object-cover w-full h-56 lg:h-80 lg:w-96"
             />
 
-            <div className="bg-grey-2 w-[60%] px-3 flex flex-col justify-center gap-4 lg:w-full lg:h-full lg:justify-start lg:pt-6 lg:px-4">
+            <div className="w-full py-4 px-6 lg:max-w-sm lg:h-52">
               <Link
                 to={`/feature/${f.title.toLowerCase().replace(" ", "-")}`}
-                className="font-extrabold text-base underline max-[320px]:text-sm sm:text-2xl"
+                className="font-extrabold text-base underline lg:text-xl"
               >
                 {f.title}
               </Link>
 
-              <p className="font-light text-sm text-justify max-[320px]:text-xs sm:text-xl">
+              <p className="font-light text-justify text-sm my-4 lg:text-lg">
                 {f.desc}
               </p>
             </div>

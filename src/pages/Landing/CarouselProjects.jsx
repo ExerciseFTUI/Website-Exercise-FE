@@ -1,5 +1,14 @@
-import React, { useState } from "react"
+import React from "react"
 import { Link } from "react-router-dom"
+
+import { Swiper, SwiperSlide } from "swiper/react"
+
+import "swiper/css"
+import "swiper/css/autoplay"
+import "swiper/css/navigation"
+import "swiper/css/effect-coverflow"
+
+import { Autoplay, EffectCoverflow, Navigation } from "swiper"
 
 function CarouselProjects() {
   const projects = [
@@ -19,72 +28,85 @@ function CarouselProjects() {
     },
   ]
 
-  const [pos, setPos] = useState(0)
-
   return (
     <section
       id="landing-collaborated-projects"
-      className="relative py-8 bg-grey overflow-hidden sm:p-0"
+      className="bg-grey relative pt-14 pb-16 sm:px-12 lg:p-0 lg:px-24"
     >
-      <p className="text-center text-4xl text-dark-2 flex items-center justify-center px-4 md:hidden">
+      <p className="text-dark-2 text-center text-4xl mb-14 lg:hidden">
         Our Collaborated Projects
       </p>
 
-      <div
-        className="flex items-center mt-8 h-[calc(100vh-4rem)] max-h-[600px] w-screen ease-in-out duration-200 md:max-h-max md:m-0"
-        style={{ transform: `translate3d(-${pos * 100}%, 0, 0)` }}
+      <Swiper
+        modules={[Autoplay, EffectCoverflow, Navigation]}
+        effect="coverflow"
+        loop={true}
+        slidesPerView={1}
+        spaceBetween={30}
+        coverflowEffect={{
+          rotate: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: false,
+        }}
+        autoplay={{ delay: 5000 }}
+        navigation={{
+          nextEl: ".landing-next-project",
+          prevEl: ".landing-prev-project",
+        }}
+        breakpoints={{
+          1024: {
+            spaceBetween: 0,
+            coverflowEffect: {
+              modifier: 0,
+              depth: 0,
+            },
+          },
+        }}
+        className="m-2 lg:m-0 lg:text-dark-2 xl:h-screen"
       >
         {projects.map((p, i) => (
-          <div
+          <SwiperSlide
             key={i}
-            className="text-light flex flex-col h-full min-w-[95%] mx-[2.5%] shadow-md shadow-grey-2 md:text-dark-2 md:min-w-full md:h-[calc(100vh-4rem)] md:mx-0 md:shadow-none md:flex-row md:items-center md:justify-center md:gap-6 lg:gap-8 xl:gap-14"
+            className="lg:flex lg:items-center lg:justify-center lg:py-12 lg:gap-16 xl:py-0"
           >
             <img
               alt={"project" + (i + 1)}
               src={p.img}
-              className="w-full h-[40%] object-cover md:min-w-0 md:w-[40%] md:max-w-[374px] md:h-[85%]"
+              className="object-cover relative block h-72 w-full lg:w-[482px] lg:h-[624px] xl:w-[474px] xl:h-[85%]"
             />
 
-            <div className="bg-dark flex flex-col justify-evenly h-[60%] px-6 py-4 md:bg-grey md:w-[50%] md:h-full md:p-0 md:justify-center md:gap-4">
-              <p className="hidden text-dark-1 text-lg mb-4 md:block md:text-3xl md:mb-8">
+            <div className="bg-dark px-4 py-8 flex flex-col gap-4 sm:px-8 lg:bg-grey lg:pl-0 lg:gap-8">
+              <p className="hidden lg:block text-2xl xl:text-3xl">
                 Our Collaborated Projects
               </p>
 
-              <h1 className="font-bold text-3xl md:font-extrabold md:text-6xl md:mb-7">
+              <h1 className="-m-0.5 text-4xl lg:text-5xl xl:text-7xl">
                 {p.title}
               </h1>
 
-              <p className="font-light text-justify md:font-normal md:text-2xl">
-                {p.desc}
-              </p>
-              <p className="text-grey-1 font-light md:text-grey-2 md:text-2xl">
+              <p className="text-justify lg:text-lg xl:text-2xl">{p.desc}</p>
+              <p className="text-grey-2 lg:text-lg xl:text-2xl">
                 {p.corp}, {p.year}
               </p>
 
               <Link
                 to={`/project/${p.title.toLowerCase().replace(" ", "-")}`}
-                className="text-light bg-dark-2 font-semibold text-base w-fit px-3 py-1 mt-4 md:text-2xl"
+                className="btn mb-4 lg:mb-0 lg:text-lg xl:text-2xl xl:py-2"
               >
                 Get To Know
               </Link>
             </div>
-          </div>
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
 
-      <div className="absolute top-0 p-0.5 w-full h-full flex items-center justify-between pointer-events-none">
-        <div
-          onClick={() => setPos(pos == 0 ? projects.length - 1 : pos - 1)}
-          className="text-4xl text-grey font-bold px-1 pb-1 bg-dark-2 bg-opacity-90 rounded-md cursor-pointer pointer-events-auto md:text-5xl"
-        >
-          ‹
+      <div className="pointer-events-none text-dark-2 text-2xl hidden absolute top-0 left-0 z-[1] w-full h-full px-12 lg:flex items-center justify-between xl:text-4xl">
+        <div className="landing-prev-project cursor-pointer pointer-events-auto w-6 h-6 selection:bg-none">
+          ◀
         </div>
-
-        <div
-          onClick={() => setPos(pos != projects.length - 1 ? pos + 1 : 0)}
-          className="text-4xl text-grey font-bold px-1 pb-1 bg-dark-2 bg-opacity-90 rounded-md cursor-pointer pointer-events-auto md:text-5xl"
-        >
-          ›
+        <div className="landing-next-project cursor-pointer pointer-events-auto w-6 h-6 selection:bg-none">
+          ▶
         </div>
       </div>
     </section>

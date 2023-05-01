@@ -3,18 +3,18 @@ import { Link } from "react-router-dom"
 import { Swiper, SwiperSlide } from "swiper/react"
 
 import "swiper/css"
-import "swiper/css/navigation"
+import "swiper/css/autoplay"
 import "swiper/css/effect-coverflow"
 
-import { Navigation, EffectCoverflow } from "swiper"
+import { EffectCoverflow, Autoplay } from "swiper"
 
-function Testimoni() {
+function testimoni() {
   const alums = [
     {
       name: "Aldrian Raffi",
       position: "Head of Design Specialist",
       testimoni:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac arcu ornare, tincidunt neque non, ultrices magna. Quisque in purus eu ex vestibulum posuere. Mauris nisl ipsum, vehicula quis hendrerit ac, lobortis ac odio. Suspendisse suscipit ex sed finibus tincidunt. Phasellus magna urna, egestas eu sem eget, sollicitudin vulputate magna. Duis in lorem dapibus, auctor justo eget, cursus augue. Sed ut lacus in enim volutpat tristique.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac arcu ornare, tincidunt neque non, ultrices magna. Quisque in purus eu ex vestibulum positionuere. Mauris nisl ipsum, vehicula quis hendrerit ac, lobortis ac odio. Suspendisse suscipit ex sed finibus tincidunt. Phasellus magna urna, egestas eu sem eget, sollicitudin vulputate magna. Duis in lorem dapibus, auctor justo eget, cursus augue. Sed ut lacus in enim volutpat tristique.",
       img: "asd",
       ig: "instagram.com",
       line: "line.me",
@@ -23,8 +23,9 @@ function Testimoni() {
     },
     {
       name: "Moses Samuel",
-      pos: "Head of Technical Project",
-      test: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac arcu ornare, tincidunt neque non, ultrices magna. Quisque in purus eu ex vestibulum posuere. Mauris nisl ipsum, vehicula quis hendrerit ac, lobortis ac odio. Suspendisse suscipit ex sed finibus tincidunt. Phasellus magna urna, egestas eu sem eget, sollicitudin vulputate magna. Duis in lorem dapibus, auctor justo eget, cursus augue. Sed ut lacus in enim volutpat tristique.",
+      position: "Head of Technical Project",
+      testimoni:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac arcu ornare, tincidunt neque non, ultrices magna. Quisque in purus eu ex vestibulum positionuere. Mauris nisl ipsum, vehicula quis hendrerit ac, lobortis ac odio. Suspendisse suscipit ex sed finibus tincidunt. Phasellus magna urna, egestas eu sem eget, sollicitudin vulputate magna. Duis in lorem dapibus, auctor justo eget, cursus augue. Sed ut lacus in enim volutpat tristique.",
       img: "asd",
       ig: "instagram.com",
       line: "line.me",
@@ -33,8 +34,9 @@ function Testimoni() {
     },
     {
       name: "Giovan Sihombing",
-      pos: "Leader of a Cult",
-      test: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac arcu ornare, tincidunt neque non, ultrices magna. Quisque in purus eu ex vestibulum posuere. Mauris nisl ipsum, vehicula quis hendrerit ac, lobortis ac odio. Suspendisse suscipit ex sed finibus tincidunt. Phasellus magna urna, egestas eu sem eget, sollicitudin vulputate magna. Duis in lorem dapibus, auctor justo eget, cursus augue. Sed ut lacus in enim volutpat tristique.",
+      position: "Gagal nikah",
+      testimoni:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac arcu ornare, tincidunt neque non, ultrices magna. Quisque in purus eu ex vestibulum positionuere. Mauris nisl ipsum, vehicula quis hendrerit ac, lobortis ac odio. Suspendisse suscipit ex sed finibus tincidunt. Phasellus magna urna, egestas eu sem eget, sollicitudin vulputate magna. Duis in lorem dapibus, auctor justo eget, cursus augue. Sed ut lacus in enim volutpat tristique.",
       img: "asd",
       ig: "instagram.com",
       line: "line.me",
@@ -43,8 +45,9 @@ function Testimoni() {
     },
     {
       name: "Nicholas Samosir",
-      pos: "Defender of A Site",
-      test: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac arcu ornare, tincidunt neque non, ultrices magna. Quisque in purus eu ex vestibulum posuere. Mauris nisl ipsum, vehicula quis hendrerit ac, lobortis ac odio. Suspendisse suscipit ex sed finibus tincidunt. Phasellus magna urna, egestas eu sem eget, sollicitudin vulputate magna. Duis in lorem dapibus, auctor justo eget, cursus augue. Sed ut lacus in enim volutpat tristique.",
+      position: "Apa ya",
+      testimoni:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac arcu ornare, tincidunt neque non, ultrices magna. Quisque in purus eu ex vestibulum positionuere. Mauris nisl ipsum, vehicula quis hendrerit ac, lobortis ac odio. Suspendisse suscipit ex sed finibus tincidunt. Phasellus magna urna, egestas eu sem eget, sollicitudin vulputate magna. Duis in lorem dapibus, auctor justo eget, cursus augue. Sed ut lacus in enim volutpat tristique.",
       img: "asd",
       ig: "instagram.com",
       line: "line.me",
@@ -53,8 +56,9 @@ function Testimoni() {
     },
     {
       name: "Wendy Dharmawan",
-      pos: "Solo Queue Pudge Main",
-      test: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac arcu ornare, tincidunt neque non, ultrices magna. Quisque in purus eu ex vestibulum posuere. Mauris nisl ipsum, vehicula quis hendrerit ac, lobortis ac odio. Suspendisse suscipit ex sed finibus tincidunt. Phasellus magna urna, egestas eu sem eget, sollicitudin vulputate magna. Duis in lorem dapibus, auctor justo eget, cursus augue. Sed ut lacus in enim volutpat tristique.",
+      position: "Gatau deh",
+      testimoni:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac arcu ornare, tincidunt neque non, ultrices magna. Quisque in purus eu ex vestibulum positionuere. Mauris nisl ipsum, vehicula quis hendrerit ac, lobortis ac odio. Suspendisse suscipit ex sed finibus tincidunt. Phasellus magna urna, egestas eu sem eget, sollicitudin vulputate magna. Duis in lorem dapibus, auctor justo eget, cursus augue. Sed ut lacus in enim volutpat tristique.",
       img: "asd",
       ig: "instagram.com",
       line: "line.me",
@@ -63,8 +67,9 @@ function Testimoni() {
     },
     {
       name: "M Jibril Adr",
-      pos: "Where are My Lovers",
-      test: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac arcu ornare, tincidunt neque non, ultrices magna. Quisque in purus eu ex vestibulum posuere. Mauris nisl ipsum, vehicula quis hendrerit ac, lobortis ac odio. Suspendisse suscipit ex sed finibus tincidunt. Phasellus magna urna, egestas eu sem eget, sollicitudin vulputate magna. Duis in lorem dapibus, auctor justo eget, cursus augue. Sed ut lacus in enim volutpat tristique.",
+      position: "Apa hayo",
+      testimoni:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac arcu ornare, tincidunt neque non, ultrices magna. Quisque in purus eu ex vestibulum positionuere. Mauris nisl ipsum, vehicula quis hendrerit ac, lobortis ac odio. Suspendisse suscipit ex sed finibus tincidunt. Phasellus magna urna, egestas eu sem eget, sollicitudin vulputate magna. Duis in lorem dapibus, auctor justo eget, cursus augue. Sed ut lacus in enim volutpat tristique.",
       img: "asd",
       ig: "instagram.com",
       line: "line.me",
@@ -78,7 +83,7 @@ function Testimoni() {
       <h1 className="font-light text-dark-2 text-3xl">Testimoni Alumni</h1>
 
       <Swiper
-        modules={[Navigation, EffectCoverflow]}
+        modules={[EffectCoverflow, Autoplay]}
         effect="coverflow"
         loop={true}
         grabCursor={true}
@@ -89,6 +94,15 @@ function Testimoni() {
           depth: 100,
           modifier: 1,
           slideShadows: false,
+        }}
+        autoplay={{
+          delay: 3000,
+          pauseOnMouseEnter: true,
+        }}
+        breakpoints={{
+          1024: {
+            slidesPerView: 3,
+          },
         }}
         className="relative h-[calc(90vh-4rem)] py-16 px-8 max-h-[524px]"
       >
@@ -116,4 +130,4 @@ function Testimoni() {
   )
 }
 
-export default Testimoni
+export default testimoni
