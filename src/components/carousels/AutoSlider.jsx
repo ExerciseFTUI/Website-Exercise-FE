@@ -15,14 +15,14 @@ function AutoSlider({ imgs = [""], time = 3000 }) {
       loop={true}
       slidesPerView={1}
       autoplay={{ delay: time }}
-      className="h-[calc(100vh-4rem)] w-screen"
+      className="h-screen w-screen"
     >
       {imgs.map((img, i) => (
         <SwiperSlide key={i}>
           <img
             alt={i + 1}
             src={img}
-            className="object-cover object-center w-full h-full"
+            className="object-cover object-center w-screen h-screen"
           />
         </SwiperSlide>
       ))}

@@ -111,10 +111,10 @@ function Footer() {
               />
 
               <div>
-                <p className="font-bold text-sm mb-1">
+                <p className="font-bold xl:text-sm mb-1 lg:text-xs">
                   Faculty of Engineering, University of Indonesia
                 </p>
-                <p className="font-light text-xs">
+                <p className="font-light xl:text-xs lg:text-[10px]">
                   University of Indonesia, Jl. Prof. DR. Ir R Roosseno, Kukusan,
                   Beji, Depok City, West Java 16425
                 </p>
@@ -129,8 +129,10 @@ function Footer() {
               />
 
               <div>
-                <p className="font-bold text-sm mb-1">Contact Us</p>
-                <p className="font-light text-xs">
+                <p className="font-bold xl:text-sm mb-1 lg:text-xs">
+                  Contact Us
+                </p>
+                <p className="font-light xl:text-xs lg:text-[10px]">
                   Denise (081234567890 / handaneswari13)
                 </p>
               </div>

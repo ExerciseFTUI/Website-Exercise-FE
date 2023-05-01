@@ -12,28 +12,36 @@ function Carousel() {
   ]
 
   return (
-    <section id="landing-carousel" className="relative">
-      <AutoSlider imgs={imgs} />
+    <div id="landing-get-to-know-section">
+      <div className="relative">
+        <AutoSlider imgs={imgs} />
 
-      <div className="bg-dark bg-opacity-90 text-center text-light absolute top-0 left-0 z-[1] w-full h-full flex flex-col items-center justify-center gap-12 md:px-4 xl:items-start xl:pl-52">
-        <h1 className="font-extrabold text-6xl md:text-8xl xl:-ml-1 xl:text-9xl">
-          EXERCISE{" "}
-          <span className="text-8xl sm:text-6xl md:text-8xl xl:text-9xl">
-            FTUI
-          </span>
-        </h1>
+        <div className="bg-dark bg-opacity-90 text-center text-light absolute top-0 left-0 z-[1] w-full h-full flex-center">
+          <div className="site-wrapper w-container text-center flex flex-col items-center">
+            <h1 className="font-extrabold text-6xl mb-8 md:text-8xl lg:text-[9rem] lg:mb-16 xl:text-[7rem]">
+              EXERCISE <br className="lg:hidden" />
+              <span className="text-8xl sm:text-6xl md:text-[10rem] lg:text-[9rem] xl:text-[7rem]">
+                FTUI
+              </span>
+            </h1>
 
-        <p className="w-[85%] max-w-[714px] font-light text-lg md:text-2xl lg:text-justify">
-          We started innovating since 1234 with a track record of qualified work
-          and has become one of the growing technology organizations of the
-          University of Indonesia. Dig further to find out the best of us!
-        </p>
+            <p className="font-light text-lg leading-relaxed mb-8 md:text-2xl md:leading-relaxed md:max-w-2xl lg:text-4xl lg:leading-relaxed lg:max-w-3xl lg:mb-16 xl:text-2xl xl:leading-relaxed">
+              We started innovating since 1234 with a track record of qualified
+              work and has become one of the growing technology organizations of
+              the University of Indonesia. Dig further to find out the best of
+              us!
+            </p>
 
-        <Link to="/get-to-know" className="btn text-lg md:text-2xl">
-          Get to Know
-        </Link>
+            <Link
+              to="/get-to-know"
+              className="btn bg-light text-dark-2 text-xl md:text-2xl lg:text-4xl xl:text-2xl"
+            >
+              Get to Know
+            </Link>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
   )
 }
 

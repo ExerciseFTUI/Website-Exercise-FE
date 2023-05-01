@@ -31,7 +31,7 @@ function CarouselProjects() {
   return (
     <section
       id="landing-collaborated-projects"
-      className="bg-grey relative pt-14 pb-16 sm:px-12 lg:p-0 lg:px-24"
+      className="bg-grey relative pt-14 pb-16 sm:px-12 lg:p-0 lg:px-24 xl:px-40"
     >
       <p className="text-dark-2 text-center text-4xl mb-14 lg:hidden">
         Our Collaborated Projects
@@ -44,9 +44,6 @@ function CarouselProjects() {
         slidesPerView={1}
         spaceBetween={30}
         coverflowEffect={{
-          rotate: 0,
-          depth: 100,
-          modifier: 1,
           slideShadows: false,
         }}
         autoplay={{ delay: 5000 }}
@@ -57,10 +54,6 @@ function CarouselProjects() {
         breakpoints={{
           1024: {
             spaceBetween: 0,
-            coverflowEffect: {
-              modifier: 0,
-              depth: 0,
-            },
           },
         }}
         className="m-2 lg:m-0 lg:text-dark-2 xl:h-screen"

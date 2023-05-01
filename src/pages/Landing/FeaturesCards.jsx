@@ -18,6 +18,11 @@ function Features() {
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac arcu ornare, tincidunt neque non.",
       img: "https://s3-alpha-sig.figma.com/img/031f/5e79/af0dd3f53a910464bf1a16bb114cd497?Expires=1683504000&Signature=I-YsJf9gLbteMApn~ZSERKqtHqRA1Q2IiAKp-FeP5HeNtBRZl8137Syg5bOR-Mff84~yF90omnWNOTrs~2l9yv7LWzUngdN8Pr6IeP6A~-uL6spPTNZFztt~XIeSPYRGUk4Km09-pBUqzwon0~~n~RrbVWY4ttWWgP1G56xoW95xWApu1Oi9VtlvxzudMakfQfny4TqHxUMxaquuLXm-zHJk-fAQzIWUBtqTM41J7ILKhnVdTDWOY4yDBTOm03IVFrFK~uyQjpT~4grn6eRQ3mYlcv5F1BhDu9jicTqVbmWGaZXPygiOqnifTvFqCq3pWF02EGwVIuPy~S7o6A0mUQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
     },
+    {
+      title: "AI Video Maker App",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac arcu ornare, tincidunt neque non.",
+      img: "https://s3-alpha-sig.figma.com/img/cf86/1b41/af8dad206ab4217e286b1fb05712e850?Expires=1684108800&Signature=ZppNOn2tigsCzL7i0YBgaxjQMQ-o9HSTbZLeolLLqBpWrlV40J1vAWmusn3fj8hdpdcqYT3-djv~ae22qvH3zka77Wlt5ftQCCfuVYCpE37ms6ulV6WlL82-gL3p7LHpFJARgkRkK370GSSNCOQ08h7WWboiMjPu8bOlb-iwxDVF4SjiVKpjEkBuEFdwn4Bfk94eyzRDfJud3UecId2E8lOJnRHZVFiIhoxkAXdx-f25ot4eytNaU25rfNLTKNFOAHMG4FaYVlM6VjUhE6zqIubyPiRPmySjM329u1fvfiCf-2cXc7fma8aTSPONtSXKHQ8ReLPl8N00haJQBmEMAQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+    },
   ]
 
   return (
@@ -26,16 +31,16 @@ function Features() {
         Save your time, stay organized, get more done!
       </p>
 
-      <div className="w-screen px-8 flex flex-wrap items-center justify-center gap-8">
+      <div className="w-screen px-8 flex flex-wrap items-center justify-center gap-8 lg:px-16">
         {features.map((f, i) => (
           <div key={i} className="bg-grey-2 w-fit">
             <img
               alt={f.title + " Image"}
               src={f.img}
-              className="object-cover w-full h-56 lg:h-80 lg:w-96"
+              className="object-cover w-full h-56 lg:h-64 lg:w-72"
             />
 
-            <div className="w-full py-4 px-6 lg:max-w-sm lg:h-52">
+            <div className="w-full py-4 px-6 lg:max-w-[288px] lg:h-64 lg:text-center">
               <Link
                 to={`/feature/${f.title.toLowerCase().replace(" ", "-")}`}
                 className="font-extrabold text-base underline lg:text-xl"
