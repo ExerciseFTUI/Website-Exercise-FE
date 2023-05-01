@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    html {
+        overflow: hidden;
+        overflow-y: auto;
+
+        color: #FAFAFA;
+        font-family: 'Inter', sans-serif;
+    }
+
+    a::selection, h1::selection, p::selection, span::selection {
+        color: #0D2734;
+        background: #FAFAFA;
+    }
+}
