@@ -34,7 +34,7 @@ function Carousel() {
 
             <Link
               to="/get-to-know"
-              className="btn bg-light text-dark-2 text-xl md:text-2xl lg:text-4xl xl:text-2xl"
+              className="btn bg-light text-dark-2 text-xl rounded-md md:text-2xl lg:text-4xl xl:text-2xl"
             >
               Get to Know
             </Link>

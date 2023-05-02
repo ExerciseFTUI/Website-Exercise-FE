@@ -13,6 +13,8 @@ function NavBar() {
     "EXTICLE",
     "ABOUT US",
   ]
+  const beforeStyles =
+    "before:bg-light before:absolute before:top-0 before:left-0 before:h-full before:w-0 before:-z-10 before:ease-in-out before:duration-200 hover:before:w-full"
   const burgerStyle =
     "burger-item w-8 h-1 mb-1 bg-light ease-in-out duration-150 "
 
@@ -27,24 +29,23 @@ function NavBar() {
       id="navigation-bar"
       className="bg-dark text-light sticky top-0 z-10 w-screen h-20 px-6 flex items-center justify-between xl:px-16"
     >
-      <Logo size="w-[84px]" style="xl:hidden" onClick={closeMenu} />
+      <Logo size="w-[104px]" style="xl:hidden" onClick={closeMenu} />
 
       <div
         id="navigation-lists"
         className={`bg-dark absolute left-0 w-full flex flex-col ${
-          open ? "top-16" : "-top-[500%]"
+          open ? "top-20" : "-top-[500%]"
         } ease-in-out duration-150 xl:relative xl:top-0 xl:flex-row xl:items-center xl:gap-11`}
       >
         <Logo
-          size="w-[86px]"
+          size="w-[104px]"
           style="hidden px-2 xl:block"
           onClick={closeMenu}
         />
 
         <Lists
-          nav
           lists={lists}
-          style="xl:font-bold"
+          style={`${beforeStyles} px-6 z-10 h-12 hover:text-dark xl:h-auto xl:px-2 xl:font-bold`}
           onClick={closeMenu}
           path={path}
         />

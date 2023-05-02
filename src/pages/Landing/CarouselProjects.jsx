@@ -29,80 +29,80 @@ function CarouselProjects() {
   ]
 
   return (
-    <section
-      id="landing-collaborated-projects"
-      className="bg-grey relative pt-14 pb-16 sm:px-12 lg:p-0 lg:px-24 xl:px-40"
+    <div
+      id="landing-collaborated-projects-section"
+      className="bg-grey py-20 lg:py-20"
     >
-      <p className="text-dark-2 text-center text-4xl mb-14 lg:hidden">
-        Our Collaborated Projects
-      </p>
+      <div className="site-wrapper w-container">
+        <p className="section-head text-dark-2 text-4xl lg:hidden">
+          Our Collaborated Projects
+        </p>
 
-      <Swiper
-        modules={[Autoplay, EffectCoverflow, Navigation]}
-        effect="coverflow"
-        loop={true}
-        slidesPerView={1}
-        spaceBetween={30}
-        coverflowEffect={{
-          slideShadows: false,
-        }}
-        autoplay={{ delay: 5000 }}
-        navigation={{
-          nextEl: ".landing-next-project",
-          prevEl: ".landing-prev-project",
-        }}
-        breakpoints={{
-          1024: {
-            spaceBetween: 0,
-          },
-        }}
-        className="m-2 lg:m-0 lg:text-dark-2 xl:h-screen"
-      >
-        {projects.map((p, i) => (
-          <SwiperSlide
-            key={i}
-            className="lg:flex lg:items-center lg:justify-center lg:py-12 lg:gap-16 xl:py-0"
-          >
-            <img
-              alt={"project" + (i + 1)}
-              src={p.img}
-              className="object-cover relative block h-72 w-full lg:w-[482px] lg:h-[624px] xl:w-[474px] xl:h-[85%]"
-            />
+        <Swiper
+          modules={[Autoplay, EffectCoverflow, Navigation]}
+          effect="coverflow"
+          loop={true}
+          slidesPerView={1}
+          spaceBetween={0}
+          coverflowEffect={{
+            rotate: 90,
+            scale: 0,
+            slideShadows: false,
+          }}
+          //   autoplay={{ delay: 5000 }}
+          navigation={{
+            nextEl: ".landing-next-project",
+            prevEl: ".landing-prev-project",
+          }}
+          className="lg:text-dark-2 relative overflow-visible"
+        >
+          {projects.map((p, i) => (
+            <SwiperSlide key={i}>
+              <div className="lg:flex-center">
+                <div className="relative h-56 w-full md:h-72 lg:w-[40%] lg:h-[524px]">
+                  <img
+                    alt={"project" + (i + 1)}
+                    src={p.img}
+                    className="object-cover object-center w-full h-full"
+                  />
+                </div>
 
-            <div className="bg-dark px-4 py-8 flex flex-col gap-4 sm:px-8 lg:bg-grey lg:pl-0 lg:gap-8">
-              <p className="hidden lg:block text-2xl xl:text-3xl">
-                Our Collaborated Projects
-              </p>
+                <div className="bg-dark p-8 flex flex-col gap-4 lg:bg-grey lg:gap-8 lg:w-[60%]">
+                  <p className="hidden lg:block text-2xl">
+                    Our Collaborated Projects
+                  </p>
 
-              <h1 className="-m-0.5 text-4xl lg:text-5xl xl:text-7xl">
-                {p.title}
-              </h1>
+                  <h1 className="-m-0.5 font-bold text-4xl lg:text-5xl">
+                    {p.title}
+                  </h1>
 
-              <p className="text-justify lg:text-lg xl:text-2xl">{p.desc}</p>
-              <p className="text-grey-2 lg:text-lg xl:text-2xl">
-                {p.corp}, {p.year}
-              </p>
+                  <p className="text-justify lg:text-lg">{p.desc}</p>
+                  <p className="text-grey-2 lg:text-lg">
+                    {p.corp}, {p.year}
+                  </p>
 
-              <Link
-                to={`/project/${p.title.toLowerCase().replace(" ", "-")}`}
-                className="btn mb-4 lg:mb-0 lg:text-lg xl:text-2xl xl:py-2"
-              >
-                Get To Know
-              </Link>
+                  <Link
+                    to={`/project/${p.title.toLowerCase().replace(" ", "-")}`}
+                    className="btn lg:mb-0 lg:bg-dark-2"
+                  >
+                    Get To Know
+                  </Link>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+
+          <div className="pointer-events-none text-grey text-2xl hidden absolute top-0 -left-8 z-[1] w-[calc(100%+3.5rem)] h-full lg:flex items-center justify-between">
+            <div className="landing-prev-project bg-dark-2 px-1 rounded-lg cursor-pointer pointer-events-auto selection:bg-none">
+              ◀
             </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-
-      <div className="pointer-events-none text-dark-2 text-2xl hidden absolute top-0 left-0 z-[1] w-full h-full px-12 lg:flex items-center justify-between xl:text-4xl">
-        <div className="landing-prev-project cursor-pointer pointer-events-auto w-6 h-6 selection:bg-none">
-          ◀
-        </div>
-        <div className="landing-next-project cursor-pointer pointer-events-auto w-6 h-6 selection:bg-none">
-          ▶
-        </div>
+            <div className="landing-next-project bg-dark-2 px-1 rounded-lg cursor-pointer pointer-events-auto selection:bg-none">
+              ▶
+            </div>
+          </div>
+        </Swiper>
       </div>
-    </section>
+    </div>
   )
 }
 

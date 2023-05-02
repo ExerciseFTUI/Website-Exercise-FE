@@ -79,54 +79,63 @@ function testimoni() {
   ]
 
   return (
-    <section className="bg-grey py-8 text-center">
-      <h1 className="font-light text-dark-2 text-3xl">Testimoni Alumni</h1>
+    <div id="landing-testimoni-section" className="bg-grey py-20">
+      <div className="site-wrapper w-container text-center">
+        <h1 className="font-light text-dark-2 text-3xl mb-8">
+          Testimoni Alumni
+        </h1>
 
-      <Swiper
-        modules={[EffectCoverflow, Autoplay]}
-        effect="coverflow"
-        loop={true}
-        grabCursor={true}
-        slidesPerView={1}
-        spaceBetween={30}
-        coverflowEffect={{
-          rotate: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: false,
-        }}
-        autoplay={{
-          delay: 3000,
-          pauseOnMouseEnter: true,
-        }}
-        breakpoints={{
-          1024: {
-            slidesPerView: 3,
-          },
-        }}
-        className="relative h-[calc(90vh-4rem)] py-16 px-8 max-h-[524px]"
-      >
-        {alums.map((a, i) => (
-          <SwiperSlide
-            key={i}
-            className="relative bg-light shadow-lg shadow-grey-1 text-dark-2 flex flex-col justify-center gap-8 max-h-[524px]"
-          >
-            <div className="text-center">
-              <h1 className="text-lg">{a.name}</h1>
-              <p className="font-extralight text-sm">{a.position}</p>
-            </div>
+        <Swiper
+          modules={[EffectCoverflow, Autoplay]}
+          effect="coverflow"
+          loop={true}
+          grabCursor={true}
+          roundLengths={true}
+          autoHeight={true}
+          centeredSlides={true}
+          slidesPerView={1}
+          spaceBetween={30}
+          coverflowEffect={{
+            rotate: 0,
+            modifier: 1,
+            depth: 100,
+            slideShadows: false,
+          }}
+          autoplay={{
+            delay: 3000,
+            pauseOnMouseEnter: true,
+          }}
+          breakpoints={{
+            768: {
+              slidesPerView: 2,
+            },
+          }}
+          className="py-8 mb-8"
+        >
+          {alums.map((a, i) => (
+            <SwiperSlide
+              key={i}
+              className="bg-light shadow-lg shadow-grey-1 text-dark-2 px-6 py-12"
+            >
+              <div className="text-center mb-8">
+                <h1 className="font-bold text-lg lg:text-xl">{a.name}</h1>
+                <p className="font-extralight text-sm lg:text-lg">
+                  {a.position}
+                </p>
+              </div>
 
-            <p className="text-justify text-sm font-light px-5">
-              {a.testimoni}
-            </p>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+              <p className="font-light text-justify text-sm lg:text-base">
+                {a.testimoni}
+              </p>
+            </SwiperSlide>
+          ))}
+        </Swiper>
 
-      <Link to="/testimoni-alumni" className="btn">
-        View All
-      </Link>
-    </section>
+        <Link to="/testimoni-alumni" className="btn">
+          View All
+        </Link>
+      </div>
+    </div>
   )
 }
 

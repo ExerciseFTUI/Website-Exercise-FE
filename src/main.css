@@ -25,6 +25,10 @@
     body::-webkit-scrollbar-thumb {
         @apply bg-dark-1 hover:bg-dark-2
     }
+
+    p {
+        @apply font-light
+    }
 }
 
 @layer components {

@@ -1,8 +1,8 @@
-import design from "./Design.png"
-import iot from "./IoT.png"
-import mobdev from "./mobdev.png"
-import uiux from "./UIUX.png"
-import webdev from "./webdev.png"
+import design from "./Design.svg"
+import iot from "./IoT.svg"
+import mobdev from "./mobdev.svg"
+import uiux from "./UIUX.svg"
+import webdev from "./webdev.svg"
 
 export default [
     {
