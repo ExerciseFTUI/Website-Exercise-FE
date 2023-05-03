@@ -3,7 +3,9 @@ import ReactDOM from "react-dom/client"
 import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom"
 
 import App from "./App"
-import LandingPages from "./pages/Landing/"
+
+import EventPage from "./pages/Event"
+import LandingPage from "./pages/Landing/"
 
 import "./main.css"
 
@@ -13,7 +15,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/home",
-        element: <LandingPages />,
+        element: <LandingPage />,
+      },
+      {
+        path: "/events",
+        element: <EventPage />,
       },
     ],
   },

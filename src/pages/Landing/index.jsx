@@ -7,9 +7,9 @@ import WhatsInOurHands from "./WhatsInOurHands"
 import FeaturesCards from "./FeaturesCards"
 import Testimoni from "./Testimoni"
 
-function LandingPages() {
+function LandingPage() {
   return (
-    <div id="landing-pages" className="">
+    <div id="landing-pages">
       <CarouselExercise />
 
       <WhatsInOurHands />
@@ -61,4 +61,4 @@ function LandingPages() {
   )
 }
 
-export default LandingPages
+export default LandingPage

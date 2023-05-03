@@ -36,6 +36,10 @@
         @apply bg-dark-1 font-bold text-light w-fit py-2 px-4
     }
 
+    .btn-light {
+        @apply bg-light font-bold text-dark-2 w-fit py-2 px-4
+    }
+
     .section-head {
         @apply max-w-2xl mb-12 mx-auto flex flex-col items-center justify-center text-center
     }
