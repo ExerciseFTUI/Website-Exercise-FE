@@ -2,7 +2,11 @@
 module.exports = {
   content: [
     "./index.html",
+<<<<<<< HEAD
     "./src/**/*.{js,ts,jsx,tsx}",
+=======
+    "./src/**/*.{js,ts,jsx,tsx}"
+>>>>>>> 8a0538f714f9f65e73a976538d9c3fbe0bf5454a
   ],
   theme: {
     colors: {
