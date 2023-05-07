@@ -8,6 +8,7 @@ import EventPage from "./pages/Event"
 import LandingPage from "./pages/Landing/"
 
 import "./main.css"
+import GetToKnow from "./pages/GetToKnow"
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
         path: "/events",
         element: <EventPage />,
       },
+      {
+        path: "/get-to-know",
+        element: <GetToKnow />
+      }
     ],
   },
   {
