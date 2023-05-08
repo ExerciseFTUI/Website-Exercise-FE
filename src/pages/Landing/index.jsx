@@ -33,16 +33,16 @@ function LandingPage() {
             like yours thrive in today's competitive market. So why wait?
           </p>
 
-          <div className="">
+          <div className="flex">
             <Link
               to="/portfolios"
-              className="btn bg-light text-dark-2 text-sm rounded-md mr-6 md:text-2xl lg:text-3xl lg:mr-20 xl:text-2xl"
+              className="btn-light text-sm rounded-md mr-6 md:text-2xl lg:text-3xl lg:mr-20 xl:text-2xl"
             >
               Our portfolio
             </Link>
             <Link
               to="/social-media"
-              className="btn bg-light text-dark-2 text-sm rounded-md md:text-2xl lg:text-3xl xl:text-2xl"
+              className="btn-light text-sm rounded-md md:text-2xl lg:text-3xl xl:text-2xl"
             >
               Connect with us
             </Link>

@@ -4,8 +4,9 @@ import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom"
 
 import App from "./App"
 
-import EventPage from "./pages/Event"
 import LandingPage from "./pages/Landing/"
+import EventPage from "./pages/EventList/"
+import EventDetails from "./pages/EventDetails/"
 
 import "./main.css"
 
@@ -21,10 +22,14 @@ const router = createBrowserRouter([
         path: "/events",
         element: <EventPage />,
       },
+      {
+        path: "/events/event/:name",
+        element: <EventDetails />,
+      },
     ],
   },
   {
-    path: "/*",
+    path: "/",
     element: <Navigate to="/home" />,
   },
 ])

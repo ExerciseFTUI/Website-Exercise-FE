@@ -90,7 +90,7 @@ function testimoni() {
           effect="coverflow"
           loop={true}
           grabCursor={true}
-          roundLengths={true}
+          roundLengths={false}
           autoHeight={true}
           centeredSlides={true}
           slidesPerView={1}
@@ -131,7 +131,7 @@ function testimoni() {
           ))}
         </Swiper>
 
-        <Link to="/testimoni-alumni" className="btn">
+        <Link to="/testimoni-alumni" className="btn-dark mx-auto">
           View All
         </Link>
       </div>
