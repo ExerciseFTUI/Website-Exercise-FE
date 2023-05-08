@@ -1,14 +1,14 @@
 import React from "react"
 import { Link } from "react-router-dom"
 
-import SideBar from "./SideBar"
+// import SideBar from "./SideBar"
 
 import Collapsable from "./Collapsable"
 import CurriculumCard from "./CurriculumCards"
 
-import price from "../../assets/event/price"
-import benefits from "../../assets/event/benefits"
-import applications from "../../assets/event/applications"
+import price from "../../assets/event-details/price"
+import benefits from "../../assets/event-details/benefits"
+import applications from "../../assets/event-details/applications"
 
 function EventDetails() {
   const lists = ["About", "Benefits", "Kurikulum", "Aplikasi", "FAQ", "Harga"]
