@@ -1,6 +1,6 @@
 import React from "react"
 
-import icons from "../../assets/landing/icons"
+import icons from "../../assets/landing/whats-in-our-hands"
 
 function WhatsInOurHands() {
   return (
