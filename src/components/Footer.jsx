@@ -94,10 +94,7 @@ function Footer() {
               placeholder="Enter your email address..."
               className="resize-none h-10 text-dark-2 text-sm leading-10 pl-2"
             />
-            <Link
-              to="/newsletter"
-              className="btn bg-dark-2 tracking-wider text-center"
-            >
+            <Link to="/newsletter" className="btn-dark bg-dark-2">
               SUBMIT
             </Link>
           </div>
