@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 function EventPage() {
   const eventList = [
@@ -20,9 +21,13 @@ function EventPage() {
     <div id="event-page">
       <div className="site-wrapper w-container text-dark-2">
         {eventList.map((ev, i) => (
-          <div key={i} className="h-screen border-solid border-dark-2 border-4">
+          <Link
+            key={i}
+            to={`event/${ev.title.toLowerCase().replace(" ", "-")}`}
+            className="block h-screen border-solid border-dark-2 border-4"
+          >
             {ev.title}
-          </div>
+          </Link>
         ))}
       </div>
     </div>

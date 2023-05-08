@@ -83,7 +83,7 @@ function CarouselProjects() {
 
                   <Link
                     to={`/project/${p.title.toLowerCase().replace(" ", "-")}`}
-                    className="btn lg:mb-0 lg:bg-dark-2"
+                    className="btn-dark lg:mb-0 lg:bg-dark-2"
                   >
                     Get To Know
                   </Link>

@@ -6,11 +6,11 @@ import webdev from "./webdev.svg"
 
 export default [
     {
-        title: "Design",
+        title: "Content Specialist",
         img: design
     },
     {
-        title: "UI/UX",
+        title: "UI/UX Specialist",
         img: uiux
     },
     {
