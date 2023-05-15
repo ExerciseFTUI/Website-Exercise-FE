@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import blank from '../../assets/get-to-know/blank.png'
+import compass from '../../assets/get-to-know/compass.png'
 
 const Since = () => {
 
@@ -8,25 +8,25 @@ const Since = () => {
     return (
 
     <div className='relative'>
-        <div className='fixed z-10 bg-light left-10 top-32 drop-shadow-lg'>
+        {/* <div className='fixed z-10 bg-light left-10 top-32 drop-shadow-lg'>
             <div className="menu rounded-sm">
                 <li
-                    // onMouseEnter={() => setIsShown(true)}
-                    // onMouseLeave={() => setIsShown(false)} 
-                    // className='before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-dark before:origin-right before:scale-x-0 before:hover:origin-left before:hover:'
+                    onMouseEnter={() => setIsShown(true)}
+                    onMouseLeave={() => setIsShown(false)} 
+                    className='before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-dark before:origin-right before:scale-x-0 before:hover:origin-left before:hover:'
                 >
                     <a href='#design-specialist' className=''>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42" />
                     </svg>
                     </a>
-                    {/* {
+                    {
                         isShown && (
                             <div className='bg-transparent max-h-5'>
                                 <p className='text-md font-light text-dark uppercase'>Design Specialist</p>
                             </div>
                         )
-                    } */}
+                    }
                 </li>
                 <li>
                     <a href='#digital-marketing'>
@@ -89,13 +89,13 @@ const Since = () => {
                     </a>
                 </li>
             </div>
-        </div>
+        </div> */}
 
-        <div className='text-light font-light min-h-screen md:pb-20 grid justify-items-center place-content-center w-full bg-dark'>
-            <div className="w-5/6 space-y-8 px-5">
-                <div className='space-y-6'>
-                    <h1 className="text-3xl md:text-4xl">Since the very beginning...</h1>
-                    <div className="my-5 text-lg md:text-xl text-justify md:w-full md:mt-3 space-y-6">
+        <div className='text-light min-h-screen md:pb-20 grid justify-items-center w-full bg-dark'>
+            <div className="w-5/6 mt-28 lg:my-auto space-y-8 px-5">
+                <div className='space-y-12 lg:space-y-6 w-4/5 lg:w-full'>
+                    <h1 className="text-5xl text-justify md:text-start lg:text-4xl font-semibold lg:font-light">Since the very beginning...</h1>
+                    <div className="my-5 text-lg md:text-xl text-justify md:w-full md:mt-3 space-y-6 tracking-wider">
                         <p className="">Exercise has always been a place well known for developing electrical engineering department students in terms of hard skill and soft skill by pushing themselves further and <b className='font-bold'>encourage</b> each other to become a better engineer.</p>
                         <p className="mt-1">Exercise also provides a place for students to <b className='font-bold'>learn</b> how professional companies work to achieve a target on a similar project category developed by this organization. Lastly, Exercise will keep the spirit by creating a space where UI electrical engineering students can properly <b className='font-bold'>implement</b> and <b className='font-bold'>hone</b> their core competence in this collaborative and educative
 environment..</p>
@@ -103,22 +103,25 @@ environment..</p>
                 </div>
             </div>
         </div>
-        <div className="bg-light text-dark min-h-screen grid place-content-center">
-            <div className='grid grid-row-2 justify-items-center space-y-4 px-5 text-black '>
-                <h1 className="font-light text-5xl md:text-6xl">Our Goals</h1>
-                <div className="font-extralight w-3/4 text-xl lg:text-2xl md:w-1/2 md:mt-3">
-                    <ul className='list-disc text-justify'>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac arcu ornare, tincidunt neque non, ultrices magna. Quisque in purus eu</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac arcu ornare, tincidunt neque non, ultrices magna. Quisque in purus eu</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac arcu ornare, tincidunt neque non, ultrices magna. Quisque in purus eu</li>
-                    </ul>
+        
+        <div className=" bg-grey-1 text-light w-full lg:min-h-screen flex items-center px-20">
+            <div className='lg:hidden my-20 w-5/6'>
+                <div className='flex space-x-6'>
+                    <div className='flex justify-center space-x-1 flex-col mt-20'>
+                        <p className='text-4xl font-light'>Our</p>
+                        <p className='text-5xl font-bold'>Vision</p>
+                    </div>    
+                    <img src={compass} className="h-48" />
                 </div>
-            </div> 
-        </div>
-        <div className=" bg-grey-1 text-light w-full min-h-screen flex items-center px-20">
-            <div className="hero-content flex-col py-20 lg:flex-row lg:space-x-14 lg:mx-5">
-                <img src={blank}className="lg:ml-0 w-4/5 md:w-3/5 lg:w-1/2 rounded-md shadow-xl" />
-                <div className='mt-10 w-full md:w-4/5 lg:w-1/2 text-center md:text-start'>
+                <div className='mt-0 w-full md:w-4/5 lg:w-1/2 text-center md:text-start'>              
+                    <p className="py-4 text-lg lg:text-xl font-extralight text-justify leading-6 tracking-wider">
+                    Creating EXERCISE 2023 to be a career catalyst and a platform to inspire and help members apply knowledge and develop relevant skills in an adaptive and progressive environment.
+                    </p>
+                </div>
+            </div>
+            <div className="max-lg:hidden hero-content flex-col py-20 lg:flex-row lg:space-x-14  lg:mx-5">
+                <img src={compass} className="lg:ml-0 w-1/3 md:w-3/5 lg:w-1/2 rounded-md" />
+                <div className='mt-0 w-full md:w-4/5 lg:w-1/2 text-center md:text-start'>
                     <div className='flex justify-center space-x-1 lg:space-x-0 lg:flex-col'>
                         <p className='text-5xl lg:text-4xl font-light'>Our</p>
                         <p className='text-5xl lg:text-6xl font-bold'>Vision</p>
@@ -128,6 +131,20 @@ environment..</p>
                     </p>
                 </div>
             </div>
+        </div>
+        <div className="bg-light text-dark flex  justify-center my-20">
+            <div className='grid grid-row-2 justify-items-center space-y-10 px-5 w-11/12'>
+                <div className='w-3/4 flex justify-end lg:justify-center'>
+                    <h1 className="font-bold lg:font-light text-5xl md:text-6xl lg:text-7xl text-dark-2">Our Goals</h1>
+                </div>
+                <div className="font-light lg:font-extralight text-dark-2 w-3/4 text-lg lg:text-2xl md:w-3/4 md:mt-3">
+                    <ul className='list-disc text-justify tracking-wider'>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac arcu ornare, tincidunt neque non, ultrices magna. Quisque in purus eu</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac arcu ornare, tincidunt neque non, ultrices magna. Quisque in purus eu</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac arcu ornare, tincidunt neque non, ultrices magna. Quisque in purus eu</li>
+                    </ul>
+                </div>
+            </div> 
         </div>
     </div>    
   )

@@ -6,15 +6,21 @@ module.exports = {
   ],
   theme: {
     colors: {
-      'light': '#FAFAFA',
-      'grey': '#BFC8CE',
-      'grey-1': '#889DA8',
-      'grey-2': '#527182',
-      'dark-2': '#1C465C',
-      'dark-1': '#15394A',
-      'dark': '#0D2734'
+      'light' : '#FAFAFA',
+      'grey' : '#BFC8CE',
+      'grey-1' : '#889DA8',
+      'grey-2' : '#527182',
+      'dark-2' : '#1C465C',
+      'dark-1' : '#15394A',
+      'dark' : '#0D2734'
     },
-    extend: {},
+    extend: {
+      margin: {
+        62 : '15.6rem',
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    require("daisyui"),
+  ],
 }
