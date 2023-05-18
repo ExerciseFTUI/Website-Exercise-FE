@@ -13,11 +13,11 @@ import { Autoplay, EffectCoverflow, Navigation } from "swiper"
 function CarouselProjects() {
   const projects = [
     {
-      title: "Project Title",
-      desc: "We started innovating since 1234 with a track record of qualified work and has become one of the growing technology organizations of the University of Indonesia. Dig further to find out the best of us!",
-      corp: "Corporation",
-      year: 2016,
-      img: "https://s3-alpha-sig.figma.com/img/bfaf/8871/6f6a0e93dae66aa4041aac2c39f4f3b3?Expires=1683504000&Signature=YftCXE4xHEl~fdCprOM4OZ0iOXx4~WX6ouwHQsC4YjwjOS4tEJRraCR6WJfpwwNPQuYI1uMMhD-S2oNW0O6pDYvQzoc5G5kXa-LKquczV9hmWwOitqcTSLwtWgQPJU-egf00DcEXWUnv4Zkl0UNpGhiK4D09JI1PhO7eZJBdu9Jk88pCEtQP2zE6fOpTwYVbXl9ft074cGZ3nbwZUaLNeCq3DdVWe1qCqjTL6gXAzUkYLnThKbHIpuNg27~vA53mYJQh0JVz~BXeGknZMMuddoP-q5VYZFT17dLKeiuZc30PgvvMjHeD6rj6BKZRyiluHCgMa42J6PSo~2WuuT5GBQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      title: "E-Commerce Product Web Scraping  ",
+      desc: "Build a desktop GUI Application with Python programming language to create a web scraping system based on Selenium. The goal of this project is to gather data for Data Analytics purposes to predict future behavior.",
+      corp: "Tokopedia",
+      year: 2021,
+      img: "https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
     },
     {
       title: "Project Title",
@@ -83,7 +83,7 @@ function CarouselProjects() {
 
                   <Link
                     to={`/project/${p.title.toLowerCase().replace(" ", "-")}`}
-                    className="btn lg:mb-0 lg:bg-dark-2"
+                    className="btn-dark lg:mb-0 lg:bg-dark-2"
                   >
                     Get To Know
                   </Link>

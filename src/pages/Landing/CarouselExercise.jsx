@@ -17,7 +17,7 @@ function Carousel() {
         <AutoSlider imgs={imgs} />
 
         <div className="bg-dark bg-opacity-90 text-center text-light absolute top-0 left-0 z-[1] w-full h-full flex-center">
-          <div className="site-wrapper w-container text-center flex flex-col items-center">
+          <div className="w-container site-wrapper text-center flex flex-col items-center">
             <h1 className="font-extrabold text-6xl mb-8 md:text-8xl lg:text-[9rem] lg:mb-16 xl:text-[7rem]">
               EXERCISE <br className="lg:hidden" />
               <span className="text-8xl sm:text-6xl md:text-[10rem] lg:text-[9rem] xl:text-[7rem]">
@@ -34,7 +34,7 @@ function Carousel() {
 
             <Link
               to="/get-to-know"
-              className="btn bg-light text-dark-2 text-xl rounded-md md:text-2xl lg:text-4xl xl:text-2xl"
+              className="btn-light bg-light text-dark-2 text-xl rounded-md md:text-2xl lg:text-4xl xl:text-2xl"
             >
               Get to Know
             </Link>
