@@ -31,9 +31,9 @@ function Features() {
           <div
             key={i}
             id={`${e.title.toLowerCase().replace(/ +/g, "-")}-section`}
-            className="group py-12 flex-center even:bg-dark text-dark-2 even:text-light"
+            className="group py-12 flex-center bg-light even:bg-dark text-dark-2 even:text-light"
           >
-            <div className="site-wrapper w-container flex-center flex-col lg:flex-row-reverse gap-8 lg:justify-between lg:w-full">
+            <div className="site-wrapper w-container flex-center flex-col lg:flex-row-reverse gap-8 lg:justify-between lg:w-full xl:max-w-6xl">
               <img
                 alt={`${e.title} Poster`}
                 src={e.img}

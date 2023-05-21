@@ -56,7 +56,7 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img alt="socmed icon" src={s.img} className="w-9 lg:w-8" />
+                <img alt={s.link} src={s.img} className="w-8 h-8" />
               </Link>
             ))}
           </div>
