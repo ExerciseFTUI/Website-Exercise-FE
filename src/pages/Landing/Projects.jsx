@@ -31,7 +31,7 @@ function CarouselProjects() {
   return (
     <div
       id="collaborated-projects-section"
-      className="bg-grey-1 py-20 lg:py-20"
+      className="bg-light py-20 lg:py-20"
     >
       <div className="site-wrapper w-container relative">
         <h1 className="section-head text-dark-2 text-4xl lg:hidden">
@@ -67,7 +67,7 @@ function CarouselProjects() {
                   />
                 </div>
 
-                <div className="bg-dark p-8 flex flex-col gap-4 lg:bg-grey-1 lg:gap-8 lg:w-[60%] lg:max-w-xl">
+                <div className="bg-dark p-8 flex flex-col gap-4 lg:bg-light lg:gap-8 lg:w-[60%] lg:max-w-xl">
                   <p className="hidden lg:block text-2xl">
                     Our Collaborated Projects
                   </p>
@@ -83,7 +83,7 @@ function CarouselProjects() {
 
                   <Link
                     to={`/project/${p.title.toLowerCase().replace(" ", "-")}`}
-                    className="btn-light lg:btn-dark lg:bg-dark-2"
+                    className="btn-light lg:btn-dark lg:bg-dark-2 rounded-md"
                   >
                     Get To Know
                   </Link>
