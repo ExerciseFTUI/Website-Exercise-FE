@@ -91,7 +91,7 @@ const Since = () => {
             </div>
         </div> */}
 
-        <div className='text-light min-h-screen md:pb-20 grid justify-items-center w-full bg-dark'>
+        <div className='text-light min-h-screen grid justify-items-center w-full bg-dark py-20 pl-5'>
             <div className="w-5/6 mt-28 lg:my-auto space-y-8 px-5">
                 <div className='space-y-12 lg:space-y-6 w-4/5 lg:w-full'>
                     <h1 className="text-5xl text-justify md:text-start lg:text-4xl font-semibold lg:font-light">Since the very beginning...</h1>
@@ -104,7 +104,7 @@ environment..</p>
             </div>
         </div>
         
-        <div className=" bg-grey-1 text-light w-full lg:min-h-screen flex items-center px-20">
+        <div className="bg-grey border border-ligth text-light w-full lg:min-h-screen flex items-center px-20">
             <div className='lg:hidden my-20 w-5/6'>
                 <div className='flex space-x-6'>
                     <div className='flex justify-center space-x-1 flex-col mt-20'>
@@ -132,7 +132,8 @@ environment..</p>
                 </div>
             </div>
         </div>
-        <div className="bg-light text-dark flex  justify-center my-20">
+
+        <div className="bg-light text-dark flex  justify-center py-20">
             <div className='grid grid-row-2 justify-items-center space-y-10 px-5 w-11/12'>
                 <div className='w-3/4 flex justify-end lg:justify-center'>
                     <h1 className="font-bold lg:font-light text-5xl md:text-6xl lg:text-7xl text-dark-2">Our Goals</h1>

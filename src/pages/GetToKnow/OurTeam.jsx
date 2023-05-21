@@ -176,7 +176,7 @@ const OurTeam = () => {
             </div> 
         </section>
         
-        <section id='business-dev'>
+        <section id='business-development'>
             <div className='min-h-screen text-dark w-full my-32'>
                 <div className='flex justify-center'>
                     <div className='flex w-full lg:w-4/5 flex-col lg:flex-row px-4'>
@@ -287,7 +287,7 @@ const OurTeam = () => {
             </div> 
         </section>
 
-        <section id='training-dev'>
+        <section id='training-&-development'>
             <div className='min-h-screen text-dark w-full my-32'>
                 <div className='flex justify-center'>
                     <div className='flex w-full lg:w-4/5 flex-col lg:flex-row px-4'>
@@ -950,7 +950,7 @@ const OurTeam = () => {
             </div> 
         </section>
 
-        <section id='marketing-branding'>
+        <section id='marketing-&-branding'>
             <div className='min-h-screen text-dark w-full my-32'>
                 <div className='flex justify-center'>
                     <div className='flex w-full lg:w-4/5 flex-col lg:flex-row px-4'>
@@ -980,7 +980,7 @@ const OurTeam = () => {
                                     <p className='text-light font-bold text-xl text-center'>EXTERNAL</p>
                                 </div>
                                 <div className='w-4/5 text-dark-2 mt-3'>
-                                    <p className='w-11/12 sm:w-3/4 md:4/5 lg:w-72 font-extrabold text-5xl lg:text-5xl leading-8 lg:leading-10 border border-dark'>MARKETING <span className='text-4xl lg:text-4xl'>AND BRANDING</span></p>
+                                    <p className='w-11/12 sm:w-3/4 md:4/5 lg:w-72 font-extrabold text-5xl lg:text-5xl leading-8 lg:leading-10'>MARKETING <span className='text-4xl lg:text-4xl'>AND BRANDING</span></p>
                                     </div>
                                     <p className='font-light text-dark text-lg lg:text-xl text-justify leading-5 lg:leading-5 mt-5 tracking-wider lg:tracking-normal'>Weaving the magic of creativity with the power of strategy, our Marketing and Branding division crafts a distinctive narrative for Exercise that resonates with audiences and leaves a lasting impact. From developing marketing strategies, to executing campaigns and analyzing results.</p>
                             </div>  

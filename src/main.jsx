@@ -10,6 +10,7 @@ import LandingPage from "./pages/Landing/"
 import EventPage from "./pages/EventList/"
 import EventDetails from "./pages/EventDetails/"
 import Features from "./pages/Features"
+import GetToKnow from "./pages/GetToKnow"
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
         path: "/features",
         element: <Features />,
       },
+      {
+        path: "/get-to-know",
+        element: < GetToKnow />
+      }
     ],
   },
   {

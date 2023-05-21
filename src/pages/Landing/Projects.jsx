@@ -30,13 +30,13 @@ function CarouselProjects() {
 
   return (
     <div
-      id="landing-collaborated-projects-section"
-      className="bg-grey py-20 lg:py-20"
+      id="collaborated-projects-section"
+      className="bg-grey-1 py-20 lg:py-20"
     >
-      <div className="site-wrapper w-container">
-        <p className="section-head text-dark-2 text-4xl lg:hidden">
+      <div className="site-wrapper w-container relative">
+        <h1 className="section-head text-dark-2 text-4xl lg:hidden">
           Our Collaborated Projects
-        </p>
+        </h1>
 
         <Swiper
           modules={[Autoplay, EffectCoverflow, Navigation]}
@@ -54,20 +54,20 @@ function CarouselProjects() {
             nextEl: ".landing-next-project",
             prevEl: ".landing-prev-project",
           }}
-          className="lg:text-dark-2 relative overflow-visible"
+          className="lg:text-dark-1 overflow-visible"
         >
           {projects.map((p, i) => (
             <SwiperSlide key={i}>
-              <div className="lg:flex-center">
-                <div className="relative h-56 w-full md:h-72 lg:w-[40%] lg:h-[524px]">
+              <div className="lg:flex-center xl:gap-12">
+                <div className="relative h-56 w-full md:h-72 lg:w-fit lg:h-[524px]">
                   <img
                     alt={"project" + (i + 1)}
                     src={p.img}
-                    className="object-cover object-center w-full h-full"
+                    className="object-cover object-center w-full h-full lg:max-w-sm"
                   />
                 </div>
 
-                <div className="bg-dark p-8 flex flex-col gap-4 lg:bg-grey lg:gap-8 lg:w-[60%]">
+                <div className="bg-dark p-8 flex flex-col gap-4 lg:bg-grey-1 lg:gap-8 lg:w-[60%] lg:max-w-xl">
                   <p className="hidden lg:block text-2xl">
                     Our Collaborated Projects
                   </p>
@@ -77,13 +77,13 @@ function CarouselProjects() {
                   </h1>
 
                   <p className="text-justify lg:text-lg">{p.desc}</p>
-                  <p className="text-grey-2 lg:text-lg">
+                  <p className="text-grey-1 lg:text-dark-2 lg:text-lg">
                     {p.corp}, {p.year}
                   </p>
 
                   <Link
                     to={`/project/${p.title.toLowerCase().replace(" ", "-")}`}
-                    className="btn-dark lg:mb-0 lg:bg-dark-2"
+                    className="btn-light lg:btn-dark lg:bg-dark-2"
                   >
                     Get To Know
                   </Link>
@@ -91,16 +91,17 @@ function CarouselProjects() {
               </div>
             </SwiperSlide>
           ))}
-
-          <div className="pointer-events-none text-grey text-2xl hidden absolute top-0 -left-8 z-[1] w-[calc(100%+3.5rem)] h-full lg:flex items-center justify-between">
-            <div className="landing-prev-project bg-dark-2 px-1 rounded-lg cursor-pointer pointer-events-auto selection:bg-none">
-              ◀
-            </div>
-            <div className="landing-next-project bg-dark-2 px-1 rounded-lg cursor-pointer pointer-events-auto selection:bg-none">
-              ▶
-            </div>
-          </div>
         </Swiper>
+
+        <div className="pointer-events-none text-light text-2xl hidden absolute top-0 z-[1] w-full max-w-sm h-full lg:flex items-center justify-between lg:left-7 xl:left-[8.3rem]">
+          <div className="landing-prev-project bg-dark-2 px-1 rounded-lg cursor-pointer pointer-events-auto selection:bg-none">
+            ◀
+          </div>
+
+          <div className="landing-next-project bg-dark-2 px-1 rounded-lg cursor-pointer pointer-events-auto selection:bg-none">
+            ▶
+          </div>
+        </div>
       </div>
     </div>
   )

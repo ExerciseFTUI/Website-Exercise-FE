@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import { motion, useScroll, useSpring, useTransform } from "framer-motion"
 
 // import SideBar from "./SideBar"
 
@@ -13,16 +14,24 @@ import applications from "../../assets/event-details/applications"
 function EventDetails() {
   const lists = ["About", "Benefits", "Kurikulum", "Aplikasi", "FAQ", "Harga"]
 
+  const { scrollY } = useScroll()
+
+  const topOff = useTransform(scrollY, [0, 60], [-80, 0])
+  const top = useSpring(topOff, {
+    stiffness: 100,
+    damping: 20,
+  })
+
   return (
-    <div id="event-details-page" className="relative">
-      <div id="about-section" className="bg-grey-2 text-light w-full py-12">
+    <div id="event-details-page" className="relative mt-20 bg-light">
+      <div id="about-section" className="bg-dark text-light w-full py-12">
         <div className="site-wrapper w-container">
           <div className="flex flex-col gap-4 mb-4">
             <h1 className="font-extrabold text-3xl lg:text-4xl">
               Power Factory DigSILENT Training
             </h1>
 
-            <p className="bg-light tracking-widest font-medium text-grey-2 text-xl w-fit pl-2 pr-1.5 py-0.5 lg:text-2xl">
+            <p className="bg-light tracking-widest font-medium text-dark-2 text-xl w-fit pl-2 pr-1.5 py-0.5 lg:text-2xl">
               Rp 100.000
             </p>
 
@@ -32,17 +41,14 @@ function EventDetails() {
             </p>
           </div>
 
-          <p className="text-justify mb-5 font-extralight lg:text-xl">
+          <p className="text-justify mb-5 font-extralight max-w-4xl lg:text-xl">
             Training Digsilent adalah pelatihan dengan aplikasi DigSilent yang
             dikhususkan untuk mahasiswa jurusan Teknik Elektro yang ingin
             mengambil peminatan Tenaga Listrik. Training Digsilent berkolaborasi
             dengan Laboratorium STL FTUI pada bulan Maret 2023.
           </p>
 
-          <Link
-            to="#header-section"
-            className="btn-light text-grey-2 py-0.5 lg:text-xl"
-          >
+          <Link to="#header-section" className="btn-light py-0.5 lg:text-xl">
             REGISTER
           </Link>
         </div>
@@ -51,9 +57,9 @@ function EventDetails() {
       <div className="flex">
         <aside
           id="event-sidebar"
-          className="hidden xl:flex flex-col h-screen sticky top-20 py-8 px-2 border-solid border-dark-2 border-r-2"
+          className="hidden xl:flex flex-col h-screen sticky top-20 px-2 bg-dark"
         >
-          <div className="border-solid border-dark-2 border-2 pb-4 mb-8 shadow-xl">
+          <div className="border-solid border-dark-2 border-2 pb-4 mb-8 shadow-xl bg-light">
             <h1 className="bg-dark-2 font-semibold text-light text-2xl text-center mb-4 py-2">
               Go To
             </h1>
@@ -75,7 +81,7 @@ function EventDetails() {
             </ul>
           </div>
 
-          <div className="border-solid border-dark-2 border-2 text-center text-dark-2 w-full pt-8 flex-center flex-col shadow-xl">
+          <div className="border-solid border-dark-2 border-2 text-center text-dark-2 w-full pt-8 flex-center flex-col shadow-xl bg-light">
             <p className="text-xl mb-4">Kuota Terbatas!</p>
             <h1 className="text-xl tracking-widest mb-4">Rp100.000</h1>
 
@@ -181,7 +187,7 @@ function EventDetails() {
             </div>
           </div>
 
-          <div id="harga-section" className="py-20 bg-dark-2">
+          <div id="harga-section" className="py-20 bg-grey-2">
             <div className="site-wrapper w-container text-center">
               <h1 className="section-head tracking-widest text-3xl bg-light text-dark-2 inline-block px-2 py-1 mb-20 lg:text-5xl">
                 Price
@@ -191,12 +197,12 @@ function EventDetails() {
                 {price.map((p, i) => (
                   <div
                     key={i}
-                    className="bg-light text-dark-2 rounded-t-[100%] rounded-b-sm flex-center justify-between flex-col w-64 h-64 px-4 lg:w-72 lg:h-72"
+                    className="bg-light text-dark-2 rounded-b-sm flex-center justify-between flex-col w-64 h-64 px-4 lg:w-72 lg:h-72"
                   >
                     <img
                       alt={p.img + " Icon"}
                       src={p.img}
-                      className="w-24 -mt-8 lg:w-32 lg:-mt-12"
+                      className="w-24 -mt-8 lg:w-32 lg:-mt-16"
                     />
 
                     <div className="text-center">
@@ -206,7 +212,7 @@ function EventDetails() {
                       </p>
                     </div>
 
-                    <Link className="btn-dark bg-dark-2 px-2 lg:text-xl">
+                    <Link className="btn-dark bg-dark-2 px-2 -mb-2.5 lg:text-xl">
                       Register
                     </Link>
                   </div>
@@ -227,6 +233,22 @@ function EventDetails() {
           </div>
         </main>
       </div>
+
+      <motion.div
+        style={{
+          bottom: top,
+        }}
+        className="w-full h-16 bg-dark p-2 flex justify-between items-center sticky bottom-0 xl:hidden"
+      >
+        <div>
+          <p className="md:text-lg">Ikuti training hanya dengan</p>
+          <p className="tracking-widest font-medium md:text-lg">Rp 100.000</p>
+        </div>
+
+        <Link to="#" className="btn-light">
+          Register
+        </Link>
+      </motion.div>
     </div>
   )
 }
