@@ -4,27 +4,18 @@ import icons from "../../assets/landing/whats-in-our-hands"
 
 function WhatsInOurHands() {
   return (
-    <div id="landing-whats-in-our-hands-section" className="py-20 xl:pb-32">
+    <div id="wioh-section" className="py-24 bg-dark">
       <div className="site-wrapper w-container">
-        <p className="section-head font-light text-grey-2 text-5xl mb-16 xl:text-6xl">
-          What's in Our <br className="xl:hidden" />
+        <h1 className="section-head text-4xl mb-16 lg:text-5xl">
+          What's in Our <br className="xl:idden" />
           Hands?
-        </p>
+        </h1>
 
-        <div className="flex flex-wrap justify-center gap-6 md:gap-12 xl:gap-4">
+        <div className="flex flex-wrap justify-center gap-8 mx-auto py-16 md:gap-12 lg:gap-28 xl:gap-16 ">
           {icons.map(({ img, title }, i) => (
-            <div
-              key={i}
-              className="group bg-grey-2 cursor-alias duration-300 ease-out w-36 h-36 p-4 flex-center text-center hover:bg-opacity-0 md:w-44 md:h-44 lg:w-48 lg:h-48 xl:w-40 xl:h-40"
-            >
-              <img
-                alt={title + " Icon"}
-                src={img}
-                className="group-hover:hidden duration-300 ease-out"
-              />
-              <p className="font-semibold text-grey-2 text-lg hidden group-hover:block duration-300 ease-out md:text-xl xl:text-2xl">
-                {title}
-              </p>
+            <div key={i} className="text-center flex-center flex-col gap-4">
+              <img alt={title + " Icon"} src={img} className="w-36 h-36" />
+              <p className="font-medium text-lg">{title}</p>
             </div>
           ))}
         </div>

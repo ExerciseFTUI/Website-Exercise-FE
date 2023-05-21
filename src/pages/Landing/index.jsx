@@ -1,33 +1,48 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import { motion } from "framer-motion"
 
-import CarouselExercise from "./CarouselExercise"
-import CarouselProjects from "./CarouselProjects"
+import Header from "./Header"
+import CollaboratedProjects from "./Projects"
 import WhatsInOurHands from "./WhatsInOurHands"
-import FeaturesCards from "./FeaturesCards"
+import Features from "./Features"
 import Testimoni from "./Testimoni"
+import { HexaBorder } from "../../components/hexagon"
+import Event from "./Event"
+import ExTicle from "./ExTicle"
 
 function LandingPage() {
   return (
     <div id="landing-pages">
-      <CarouselExercise />
+      <Header />
 
       <WhatsInOurHands />
 
-      <CarouselProjects />
+      <CollaboratedProjects />
 
-      <FeaturesCards />
+      <Features />
+
+      <Testimoni />
+
+      <Event />
+
+      <ExTicle />
 
       <div
-        id="landing-be-our-client-section"
-        className="relative bg-dark bg-opacity-90 text-center"
+        id="our-client-section"
+        className="relative bg-dark bg-opacity-95 text-center overflow-clip"
       >
         <div className="site-wrapper w-container h-screen flex-center flex-col gap-16">
-          <h1 className="font-extrabold text-5xl md:text-7xl lg:text-8xl">
+          <HexaBorder
+            duration={24}
+            className="absolute -z-[5] w-96 h-96 md:w-[48rem] md:h-[48rem]"
+          />
+
+          <h1 className="font-extrabold text-4xl md:text-7xl lg:text-8xl">
             Be our client
           </h1>
 
-          <p className="font-light text-lg leading-relaxed md:text-2xl lg:text-3xl lg:leading-relaxed xl:text-2xl xl:leading-relaxed">
+          <p className="font-light text-lg leading-relaxed md:text-2xl lg:text-3xl lg:leading-relaxed xl:text-2xl xl:leading-relaxed max-w-4xl">
             We pride ourselves on our ability to deliver results that exceed
             your expectations, and we're passionate about helping businesses
             like yours thrive in today's competitive market. So why wait?
@@ -55,8 +70,6 @@ function LandingPage() {
           />
         </div>
       </div>
-
-      <Testimoni />
     </div>
   )
 }
