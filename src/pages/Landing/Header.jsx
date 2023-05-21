@@ -40,7 +40,7 @@ function Header() {
             the University of Indonesia. Dig further to find out the best of us!
           </p>
 
-          <Link to="/get-to-know" className="btn-light text-lg lg:text-xl">
+          <Link to="/get-to-know" className="btn-light rounded-md text-lg lg:text-xl">
             Get to Know
           </Link>
         </div>

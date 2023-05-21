@@ -70,12 +70,12 @@ function Footer() {
             </p>
           </div>
 
-          <div className="flex flex-col gap-2 mb-2">
+          <div className="flex flex-col gap-2 mb-2 ">
             <textarea
               placeholder="Enter your email address..."
               className="resize-none h-10 text-dark-2 text-sm leading-10 pl-2"
             />
-            <Link to="/newsletter" className="btn-dark bg-dark-2">
+            <Link to="/newsletter" className="btn-dark rounded-md bg-dark-2">
               SUBMIT
             </Link>
           </div>

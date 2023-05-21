@@ -15,7 +15,7 @@ function NavBar() {
     "ABOUT US",
   ]
   const beforeStyles =
-    "before:bg-light before:absolute before:top-0 before:left-0 before:h-full before:w-0 before:-z-10 before:ease-in-out before:duration-200 hover:before:w-full"
+    "before:bg-light before:rounded-md before:absolute before:top-0 before:left-0 before:h-full before:w-0 before:-z-10 before:ease-in-out before:duration-200 hover:before:w-full"
   const burgerStyle =
     "burger-item w-8 h-1 mb-1 bg-light ease-in-out duration-150 "
 
@@ -89,7 +89,7 @@ function NavBar() {
           />
         </motion.span>
 
-        <ul className="bg-dark flex flex-col xl:bg-opacity-0 xl:flex-row xl:items-center xl:gap-8">
+        <ul className="bg-dark  flex flex-col xl:bg-opacity-0 xl:flex-row xl:items-center xl:gap-8">
           <Lists
             lists={lists}
             style={`${beforeStyles} px-6 z-10 h-12 hover:text-dark xl:h-auto xl:px-2 xl:font-bold`}
@@ -100,7 +100,7 @@ function NavBar() {
 
         <Link
           to="/client"
-          className="bg-light text-dark-2 font-extrabold hidden xl:block py-1 px-2 overflow-hidden w-24 h-8"
+          className="bg-light rounded-md text-dark-2 font-extrabold hidden xl:block py-1 px-2 overflow-hidden w-24 h-8"
         >
           <motion.div
             variants={marqueeVariants}

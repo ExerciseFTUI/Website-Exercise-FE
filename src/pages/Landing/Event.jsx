@@ -16,12 +16,12 @@ function Event() {
         <img
           alt="Upcome Photo"
           src={upcoming}
-          className="object-cover object-center w-full h-full absolute left-0 top-0 -z-10"
+          className="object-cover  object-center w-full h-full absolute left-0 top-0 -z-10"
         />
         <img
           alt={ev.title}
           src={ev.img}
-          className="object-contain h-72 md:h-96 xl:h-[32rem]"
+          className="object-contain rounded-md h-72 md:h-96 xl:h-[32rem]"
         />
 
         <div className="flex-center flex-col gap-4 md:items-start md:max-w-2xl md:gap-6">
@@ -35,7 +35,7 @@ function Event() {
 
           <Link
             to="/events/event/technoskill-1.0"
-            className="btn-light md:text-lg"
+            className="btn-light md:text-lg rounded-md"
           >
             See more
           </Link>
