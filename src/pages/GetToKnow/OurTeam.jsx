@@ -107,14 +107,17 @@ const OurTeam = () => {
                         <p className='text-dark-2 font-light text-3xl'>Staffs</p>
                         <div className=''>
                         <Swiper
-                                slidesPerView={3}
-                                spaceBetween={200}
-                                centeredSlides={false}                             
+                                slidesPerView={2}
+                                spaceBetween={80}                
+                                loop={true}   
                                 pagination={{
                                 clickable: true,
                                 }}
                                 breakpoints={{
-
+                                    550: {
+                                        slidePerView: 2,
+                                        spaceBetween:120
+                                    },
                                     768: {
                                         slidesPerView: 3,
                                         spaceBetween: 150,

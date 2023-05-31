@@ -6,7 +6,7 @@ const Sidebar = () => {
   return (
     <>
         
-        <ul className="fixed z-10 bg-light left-4 top-64 drop-shadow-md menu rounded-sm md:left-8 ">
+        <ul className="fixed z-10 bg-light left-4 top-36 drop-shadow-md menu rounded-sm md:left-8 ">
             {
                 sidebar.map((ic, i) => {
                     return(
