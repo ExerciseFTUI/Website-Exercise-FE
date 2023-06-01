@@ -11,6 +11,7 @@ import EventPage from "./pages/EventList/"
 import EventDetails from "./pages/EventDetails/"
 import Features from "./pages/Features"
 import GetToKnow from "./pages/GetToKnow"
+import PastProject from "./pages/PastProject"
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,14 @@ const router = createBrowserRouter([
         path: "/features",
         element: <Features />,
       },
+      {
+        path: "/get-to-know",
+        element: < GetToKnow />
+      },
+      {
+        path: "past-projects",
+        element: <PastProject />
+      }
     ],
   },
   {

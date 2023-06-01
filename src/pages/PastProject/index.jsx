@@ -1,9 +1,10 @@
 import React from 'react'
+import OurProject from './OurProject'
 
-const PastProject = (props) => {
+const PastProject = () => {
   return (
     <>
-        {props.children}
+        <OurProject />
     </>
     
   )
