@@ -2,12 +2,14 @@ import React from "react"
 import ReactDOM from "react-dom/client"
 import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom"
 
+import "./main.css"
+
 import App from "./App"
 
-import EventPage from "./pages/Event"
 import LandingPage from "./pages/Landing/"
-
-import "./main.css"
+import EventPage from "./pages/EventList/"
+import EventDetails from "./pages/EventDetails/"
+import Features from "./pages/Features"
 import GetToKnow from "./pages/GetToKnow"
 
 const router = createBrowserRouter([
@@ -26,10 +28,18 @@ const router = createBrowserRouter([
         path: "/get-to-know",
         element: <GetToKnow />
       }
+      {
+        path: "/events/event/:name",
+        element: <EventDetails />,
+      },
+      {
+        path: "/features",
+        element: <Features />,
+      },
     ],
   },
   {
-    path: "/*",
+    path: "/",
     element: <Navigate to="/home" />,
   },
 ])

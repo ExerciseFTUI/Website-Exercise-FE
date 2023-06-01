@@ -1,5 +1,6 @@
 import React, { useState } from "react"
-import { useLocation } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
+import { motion, useScroll, useSpring, useTransform } from "framer-motion"
 
 import Lists from "./lists/Lists"
 import Logo from "./logo/Logo"
@@ -14,7 +15,7 @@ function NavBar() {
     "ABOUT US",
   ]
   const beforeStyles =
-    "before:bg-light before:absolute before:top-0 before:left-0 before:h-full before:w-0 before:-z-10 before:ease-in-out before:duration-200 hover:before:w-full"
+    "before:bg-light before:rounded-md before:absolute before:top-0 before:left-0 before:h-full before:w-0 before:-z-10 before:ease-in-out before:duration-200 hover:before:w-full"
   const burgerStyle =
     "burger-item w-8 h-1 mb-1 bg-light ease-in-out duration-150 "
 
@@ -24,31 +25,92 @@ function NavBar() {
 
   let closeMenu = () => setOpen(false)
 
+  const { scrollY } = useScroll()
+
+  const topOff = useTransform(scrollY, [0, 540], [-80, 0])
+  const top = useSpring(topOff, {
+    stiffness: 50,
+    damping: 40,
+  })
+
+  const topDesk = useTransform(scrollY, [0, 340], [-80, 0])
+  const topD = useSpring(topDesk, {
+    stiffness: 50,
+    damping: 40,
+  })
+
+  const opacityOff = useTransform(scrollY, [0, 540], ["#0D273400", "#0D2734ff"])
+
+  const marqueeVariants = {
+    animate: {
+      x: [0, -495],
+      transition: {
+        x: {
+          repeat: Infinity,
+          repeatType: "loop",
+          duration: 15,
+          ease: "linear",
+        },
+      },
+    },
+  }
+
   return (
-    <nav
+    <motion.nav
       id="navigation-bar"
-      className="bg-dark text-light sticky top-0 z-10 w-screen h-20 px-6 flex items-center justify-between xl:px-16"
+      className="fixed top-0 z-10 w-screen h-20 px-6 flex items-center justify-between xl:px-14"
+      style={{
+        backgroundColor: opacityOff,
+      }}
     >
-      <Logo size="w-[104px]" style="xl:hidden" onClick={closeMenu} />
+      <motion.span
+        className="relative z-20"
+        style={{ top: path == "home" ? top : 0 }}
+      >
+        <Logo size="w-20" style="xl:hidden" onClick={closeMenu} />
+      </motion.span>
 
       <div
         id="navigation-lists"
-        className={`bg-dark absolute left-0 w-full flex flex-col ${
-          open ? "top-20" : "-top-[500%]"
-        } ease-in-out duration-150 xl:relative xl:top-0 xl:flex-row xl:items-center xl:gap-11`}
+        className={
+          "ease-in-out duration-150 bg-dark shadow-dark-2 shadow-md absolute top-0 py-20 w-[80%] h-[100vh] " +
+          (open ? "-left-0 " : "-left-[500%] ") +
+          "xl:bg-opacity-0 xl:shadow-none xl:h-20 xl:w-full xl:py-0 xl:relative xl:left-0 xl:flex xl:flex-row xl:items-center xl:justify-between"
+        }
       >
-        <Logo
-          size="w-[104px]"
-          style="hidden px-2 xl:block"
-          onClick={closeMenu}
-        />
+        <motion.span
+          className="relative z-20"
+          style={{ top: path == "home" ? topD : 0 }}
+        >
+          <Logo
+            size="w-[104px]"
+            style="hidden px-2 xl:block"
+            onClick={closeMenu}
+          />
+        </motion.span>
 
-        <Lists
-          lists={lists}
-          style={`${beforeStyles} px-6 z-10 h-12 hover:text-dark xl:h-auto xl:px-2 xl:font-bold`}
-          onClick={closeMenu}
-          path={path}
-        />
+        <ul className="bg-dark  flex flex-col xl:bg-opacity-0 xl:flex-row xl:items-center xl:gap-8">
+          <Lists
+            lists={lists}
+            style={`${beforeStyles} px-6 z-10 h-12 hover:text-dark xl:h-auto xl:px-2 xl:font-bold`}
+            onClick={closeMenu}
+            path={path}
+          />
+        </ul>
+
+        <Link
+          to="/client"
+          className="bg-light rounded-md text-dark-2 font-extrabold hidden xl:block py-1 px-2 overflow-hidden w-24 h-8"
+        >
+          <motion.div
+            variants={marqueeVariants}
+            animate="animate"
+            className="whitespace-nowrap"
+          >
+            BE OUR CLIENT BE OUR CLIENT BE OUR CLIENT BE OUR CLIENT BE OUR
+            CLIENT
+          </motion.div>
+        </Link>
       </div>
 
       <div
@@ -64,15 +126,7 @@ function NavBar() {
           }
         />
       </div>
-
-      <div
-        id="navigation-client"
-        className="font-bold items-center gap-6 hidden whitespace-nowrap xl:flex"
-      >
-        <div className="w-1 h-10 bg-light" />
-        <p className="text-lg font-bold">BE OUR CLIENT</p>
-      </div>
-    </nav>
+    </motion.nav>
   )
 }
 

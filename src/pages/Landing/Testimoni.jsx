@@ -79,10 +79,10 @@ function testimoni() {
   ]
 
   return (
-    <div id="landing-testimoni-section" className="bg-grey py-20">
+    <div id="landing-testimoni-section" className="bg-light  py-20">
       <div className="site-wrapper w-container text-center">
-        <h1 className="font-light text-dark-2 text-3xl mb-8">
-          Testimoni Alumni
+        <h1 className="font-bold text-dark-2 text-4xl mb-8">
+          Our Alumni Testimonials
         </h1>
 
         <Swiper
@@ -90,7 +90,7 @@ function testimoni() {
           effect="coverflow"
           loop={true}
           grabCursor={true}
-          roundLengths={true}
+          roundLengths={false}
           autoHeight={true}
           centeredSlides={true}
           slidesPerView={1}
@@ -115,7 +115,7 @@ function testimoni() {
           {alums.map((a, i) => (
             <SwiperSlide
               key={i}
-              className="bg-light shadow-lg shadow-grey-1 text-dark-2 px-6 py-12"
+              className="bg-dark-1 rounded-lg shadow-lg shadow-grey-1 text-light px-6 py-12"
             >
               <div className="text-center mb-8">
                 <h1 className="font-bold text-lg lg:text-xl">{a.name}</h1>
@@ -131,7 +131,7 @@ function testimoni() {
           ))}
         </Swiper>
 
-        <Link to="/testimoni-alumni" className="btn">
+        <Link to="/testimoni-alumni" className="btn-dark rounded-md mx-auto">
           View All
         </Link>
       </div>
