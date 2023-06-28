@@ -7,7 +7,7 @@ import headerImg from "../../assets/features/header.jpg"
 function Features() {
   return (
     <div id="features-page">
-      <div className="relative w-screen bg-dark bg-opacity-90 flex-center">
+      <div className="relative w-screen pb-12 bg-dark bg-opacity-90 flex-center">
         <img
           alt="Header Image"
           src={headerImg}

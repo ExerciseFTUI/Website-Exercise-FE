@@ -15,6 +15,9 @@ import LoginPage from "./pages/Login"
 import RegisterPage from "./pages/Register/"
 import ResetPasswordPage from "./pages/ResetPassword"
 
+import PastProject from "./pages/PastProject"
+import GetToKnow from "./pages/GetToKnow"
+
 const router = createBrowserRouter([
   {
     element: <App />,
@@ -34,6 +37,14 @@ const router = createBrowserRouter([
       {
         path: "/features",
         element: <Features />,
+      },
+      {
+        path: "/past-projects",
+        element: <PastProject />,
+      },
+      {
+        path: "/about-us",
+        element: <GetToKnow />,
       },
     ],
   },
