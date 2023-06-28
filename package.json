@@ -14,8 +14,11 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
     "react-router-dom": "^6.9.0",
+    "react-tsparticles": "^2.10.1",
     "react-type-animation": "^3.0.1",
-    "swiper": "^9.2.4"
+    "swiper": "^9.2.4",
+    "tsparticles": "^2.10.1",
+    "tsparticles-slim": "^2.10.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
