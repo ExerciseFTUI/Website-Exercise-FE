@@ -7,9 +7,13 @@ import "./main.css"
 import App from "./App"
 
 import LandingPage from "./pages/Landing/"
+import Features from "./pages/Features"
 import EventPage from "./pages/EventList/"
 import EventDetails from "./pages/EventDetails/"
-import Features from "./pages/Features"
+
+import LoginPage from "./pages/Login"
+import RegisterPage from "./pages/Register/"
+import ResetPasswordPage from "./pages/ResetPassword"
 
 const router = createBrowserRouter([
   {
@@ -30,6 +34,23 @@ const router = createBrowserRouter([
       {
         path: "/features",
         element: <Features />,
+      },
+    ],
+  },
+  {
+    path: "/account",
+    children: [
+      {
+        path: "login",
+        element: <LoginPage />,
+      },
+      {
+        path: "register",
+        element: <RegisterPage />,
+      },
+      {
+        path: "reset-password",
+        element: <ResetPasswordPage />,
       },
     ],
   },
