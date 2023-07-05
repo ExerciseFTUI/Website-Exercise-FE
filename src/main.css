@@ -34,6 +34,10 @@
     h1 {
         @apply font-bold
     }
+
+    b {
+        @apply font-bold
+    }
 }
 
 @layer components {
@@ -66,4 +70,16 @@
     .h-screen {
         height: calc(100vh - 5rem);
     }
+}
+
+#staffs-carousel::-webkit-scrollbar {
+    height: 0.2rem;
+}
+
+#staffs-carousel::-webkit-scrollbar-track {
+    @apply bg-grey bg-opacity-60
+}
+
+#staffs-carousel::-webkit-scrollbar-thumb {
+    @apply bg-grey-1
 }
