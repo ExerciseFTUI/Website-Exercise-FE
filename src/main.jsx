@@ -11,10 +11,6 @@ import Features from "./pages/Features"
 import EventPage from "./pages/EventList/"
 import EventDetails from "./pages/EventDetails/"
 
-import LoginPage from "./pages/Login"
-import RegisterPage from "./pages/Register/"
-import ResetPasswordPage from "./pages/ResetPassword"
-
 import PastProject from "./pages/PastProject"
 import GetToKnow from "./pages/GetToKnow"
 
@@ -45,23 +41,6 @@ const router = createBrowserRouter([
       {
         path: "/about-us",
         element: <GetToKnow />,
-      },
-    ],
-  },
-  {
-    path: "/account",
-    children: [
-      {
-        path: "login",
-        element: <LoginPage />,
-      },
-      {
-        path: "register",
-        element: <RegisterPage />,
-      },
-      {
-        path: "reset-password",
-        element: <ResetPasswordPage />,
       },
     ],
   },
