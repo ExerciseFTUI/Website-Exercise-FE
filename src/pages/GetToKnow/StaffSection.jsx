@@ -1,3 +1,6 @@
+import { useInView } from "framer-motion"
+import { useEffect, useRef } from "react"
+
 const personModel = {
   img: "",
   name: "",
@@ -15,9 +18,18 @@ function StaffSection({
   div = "",
   desc = "",
   staffs = [staffModel],
+  index = -1,
+  setIndex,
 }) {
+  const divRef = useRef(null)
+  const divInView = useInView(divRef, { margin: "-5% 0% -95% 0%" })
+
+  useEffect(() => {
+    setIndex(index)
+  }, [divInView])
   return (
     <section
+      ref={divRef}
       id={div.replace(/[ ]/g, "-").toLowerCase()}
       className="pt-24 w-full"
     >

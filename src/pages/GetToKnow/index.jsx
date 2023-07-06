@@ -5,7 +5,7 @@ import Sidebar from "./Sidebar"
 const GetToKnow = () => {
   return (
     <>
-      <Sidebar />
+      {/* <Sidebar /> */}
       <Since />
       <OurTeam />
     </>
