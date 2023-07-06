@@ -50,11 +50,6 @@ export default [
     active: usersActive,
   },
   {
-    desc: "HARDWARE",
-    inactive: toolInactive,
-    active: toolActive,
-  },
-  {
     desc: "MANAGEMENT",
     inactive: calendarInactive,
     active: calendarActive,
@@ -63,5 +58,10 @@ export default [
     desc: "FINANCE",
     inactive: dollarInactive,
     active: dollarActive,
+  },
+  {
+    desc: "HARDWARE",
+    inactive: toolInactive,
+    active: toolActive,
   },
 ]
