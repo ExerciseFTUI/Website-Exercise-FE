@@ -1,13 +1,20 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 import sidebar from "../../assets/get-to-know"
 
-const Sidebar = () => {
+const Sidebar = ({ style = {}, index = -1 }) => {
   const [selected, setSelected] = useState(-1)
   const [hovered, setHovered] = useState(-1)
 
+  useEffect(() => {
+    setSelected(index)
+  }, [index])
+
   return (
-    <ul className="bg-light fixed z-10 top-36 left-8 drop-shadow-md rounded-sm hidden xl:block">
+    <ul
+      className="bg-light fixed z-10 top-36 left-8 drop-shadow-md rounded-sm hidden xl:block"
+      style={style}
+    >
       {sidebar.map((ic, i) => {
         return (
           // prettier-ignore
