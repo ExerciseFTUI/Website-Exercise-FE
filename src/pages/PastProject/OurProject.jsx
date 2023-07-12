@@ -23,17 +23,17 @@ const OurProject = () => {
         {
             projects.map((project, i) => {
                 return (
-                    <div className='projects h-screen md:h-full bg-light flex relative flex-col' key={i}>
+                    <div className='projects h-screen bg-light flex relative flex-col' key={i}>
                         {
                             project.logo != null && 
                             <img src={project.logo} className='ml-2 mt-5 absolute h-14 md:h-18' />
                         }
-                        <div className='bg-dark h-3/5 py-32 lg:py-20'>
-                            <div className='flex justify-center'>
+                        <div className='grid place-items-center bg-dark h-3/5 py-32'>
+                            <div className='flex justify-center m-2'>
                                 <p className='text-4xl sm:text-5xl font-extrabold text-light text-center hyphens-manuals w-3/5 sm:w-4/5'>{project.name}<br/>{project.x}<br/>{project.comp}</p>
                             </div>
                         </div>
-                        <div className='absolute bottom-0 left-0 right-0 top-40 md:top-30 lg:top-0 xl:top-0 grid place-items-center'>
+                        <div className='absolute bottom-0 left-0 right-0 top-40 md:top-30 lg:top-50 grid place-items-center'>
                             <Link to=''>
                                 <button className='bg-grey-2 px-3 py-1 text-xl md:text-2xl font-semibold'>Get to Know</button>
                             </Link>
