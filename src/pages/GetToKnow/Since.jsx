@@ -1,4 +1,5 @@
 import compass from "../../assets/get-to-know/compass.png"
+import vision from "../../assets/get-to-know/vision_2.jpg"
 import hero from "../../assets/get-to-know/since-bg.jpg"
 
 const Since = () => {
@@ -6,14 +7,14 @@ const Since = () => {
     <div id="get-to-know-intro" className="">
       <div
         id="get-to-know-since"
-        className="relative py-32 overflow-hidden bg-dark bg-opacity-90"
+        className="relative lg:py-10 py-32 overflow-hidden bg-dark bg-opacity-90"
       >
         <img
           alt="Since's background img"
           src={hero}
-          className="absolute top-0 left-0 -z-10 h-full w-full object-cover object-center"
+          className="absolute top-0 left-0  -z-10 h-full w-full object-cover object-center"
         />
-        <div className="site-wrapper w-container max-w-5xl flex-center flex-col gap-12 lg:items-start">
+        <div className="site-wrapper lg:h-screen w-container max-w-5xl flex-center flex-col gap-12 lg:items-start">
           <h1 className="text-5xl lg:text-6xl">Since the very beginning...</h1>
 
           <div className="text-lg text-justify space-y-6 tracking-wider md:text-xl md:w-full md:mt-3">
@@ -36,10 +37,10 @@ const Since = () => {
         </div>
       </div>
 
-      <div id="get-to-know-vision" className="py-24">
+      <div id="get-to-know-vision" className="py-24 h-screen ">
         <div className="site-wrapper w-container flex-center flex-col gap-12 md:flex-row lg:gap-16 xl:gap-24">
-          <div className="flex items-center gap-6">
-            <img src={compass} className="w-48 md:w-72" />
+          <div className="flex items-center lg:gap-6">
+            <img src={vision} className="w-48 md:w-80" />
 
             <div className="md:hidden">
               <p className="text-4xl font-light">Our</p>

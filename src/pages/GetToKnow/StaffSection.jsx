@@ -39,10 +39,10 @@ function StaffSection({
             <img
               alt={head.name + "'s Photo"}
               src={head.img}
-              className="bg-grey-1 object-cover object-top h-60 w-44 md:h-64 lg:w-56 lg:h-80"
+              className="bg-dark-2 hover:scale-110 rounded-xl object-cover object-top h-60 w-44 md:h-64 lg:w-56 lg:h-80"
             />
 
-            <div className="relative flex flex-col justify-center before:absolute before:-right-4 before:h-[1.5px] before:w-4 before:bg-grey-1 md:text-lg md:before:h-0.5">
+            <div className="relative flex flex-col justify-center before:absolute before:-right-4 before:h-[1.5px] before:w-4 before:bg-dark-2  rounded-xl md:text-lg md:before:h-0.5">
               <h1>{vice.name}</h1>
               <p className="italic font-extralight">{vice.position}</p>
             </div>
@@ -52,10 +52,10 @@ function StaffSection({
             <img
               alt={vice.name + "'s Photo"}
               src={vice.img}
-              className="bg-grey-1 object-cover object-top h-60 w-44 md:h-64 lg:w-56 lg:h-80"
+              className="bg-dark-2 hover:scale-110 rounded-xl object-cover object-top h-60 w-44 md:h-64 lg:w-56 lg:h-80"
             />
 
-            <div className="relative flex flex-col justify-center before:absolute before:-left-4 before:h-[1.5px] before:w-4 before:bg-grey-1 md:text-lg md:before:h-0.5">
+            <div className="relative flex flex-col justify-center before:absolute before:-left-4 before:h-[1.5px] before:w-4 before:bg-dark-2  rounded-xl md:text-lg md:before:h-0.5">
               <h1>{head.name}</h1>
               <p className="italic font-extralight">{head.position}</p>
             </div>
@@ -74,15 +74,18 @@ function StaffSection({
 
         <div
           id="staffs-carousel"
-          className="overflow-x-auto flex gap-4 pt-4 pb-8"
+          className="overflow-x-auto lg:justify-around flex gap-4 pt-4 pb-8"
+          // style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
           {staffs.map(({ img, name }, i) => (
-            <div key={i} className="flex items-center flex-col w-44 lg:w-52">
-              <img
-                alt={name + "'s Photo"}
-                src={img}
-                className="bg-grey-1 object-cover object-top w-44 h-60 lg:w-52 lg:h-72"
-              />
+            <div key={i} className="flex items-center flex-col lg:w-52">
+              <div className="w-36 h-60 lg:w-44 lg:h-72">
+                <img
+                  alt={name + "'s Photo"}
+                  src={img}
+                  className="bg-dark-2 hover:scale-110 rounded-xl object-cover object-top w-full h-full"
+                />
+              </div>
 
               <div className="text-center mt-4 lg:text-lg">
                 <h1>{name}</h1>
@@ -95,7 +98,7 @@ function StaffSection({
         </div>
       </div>
 
-      <div className="w-full h-[0.5px] bg-grey-1 mt-20" />
+      <div className="w-full h-[0.5px] bg-dark-2  rounded-xl mt-20" />
     </section>
   )
 }
