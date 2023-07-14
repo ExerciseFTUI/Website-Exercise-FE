@@ -91,11 +91,11 @@ const Since = () => {
             </div>
         </div> */}
 
-        <div className='text-light min-h-screen grid justify-items-center w-full bg-dark py-20 pl-5'>
+        <div className='text-light min-h-screen grid justify-items-center w-full bg-dark py-20'>
             <div className="w-5/6 mt-28 lg:my-auto space-y-8 px-5">
-                <div className='space-y-12 lg:space-y-6 w-4/5 lg:w-full'>
-                    <h1 className="text-5xl text-justify md:text-start lg:text-4xl font-semibold lg:font-light">Since the very beginning...</h1>
-                    <div className="my-5 text-lg md:text-xl text-justify md:w-full md:mt-3 space-y-6 tracking-wider">
+                <div className='space-y-12 lg:space-y-6 w-full lg:w-full pl-2'>
+                    <h1 className="text-3xl text-justify md:text-start lg:text-4xl font-semibold lg:font-light">Since the very beginning...</h1>
+                    <div className="my-5 text-sm md:text-lg text-justify md:w-full md:mt-3 space-y-6 tracking-wider">
                         <p className="">Exercise has always been a place well known for developing electrical engineering department students in terms of hard skill and soft skill by pushing themselves further and <b className='font-bold'>encourage</b> each other to become a better engineer.</p>
                         <p className="mt-1">Exercise also provides a place for students to <b className='font-bold'>learn</b> how professional companies work to achieve a target on a similar project category developed by this organization. Lastly, Exercise will keep the spirit by creating a space where UI electrical engineering students can properly <b className='font-bold'>implement</b> and <b className='font-bold'>hone</b> their core competence in this collaborative and educative
 environment..</p>
@@ -104,17 +104,17 @@ environment..</p>
             </div>
         </div>
         
-        <div className="bg-grey border border-ligth text-light w-full lg:min-h-screen flex items-center px-20">
-            <div className='lg:hidden my-20 w-5/6'>
+        <div className="bg-grey-1 border border-ligth text-light w-full lg:min-h-screen flex items-center px-8 lg:px-20">
+            <div className='lg:hidden my-20 w-full border border-light'>
                 <div className='flex space-x-6'>
                     <div className='flex justify-center space-x-1 flex-col mt-20'>
-                        <p className='text-4xl font-light'>Our</p>
-                        <p className='text-5xl font-bold'>Vision</p>
+                        <p className='text-2xl lg:text-4xl font-light'>Our</p>
+                        <p className='text-3xl lg:text-5xl font-bold'>Vision</p>
                     </div>    
                     <img src={compass} className="h-48" />
                 </div>
                 <div className='mt-0 w-full md:w-4/5 lg:w-1/2 text-center md:text-start'>              
-                    <p className="py-4 text-lg lg:text-xl font-extralight text-justify leading-6 tracking-wider">
+                    <p className="py-4 text-sm lg:text-xl font-extralight text-justify leading-6 tracking-wider">
                     Creating EXERCISE 2023 to be a career catalyst and a platform to inspire and help members apply knowledge and develop relevant skills in an adaptive and progressive environment.
                     </p>
                 </div>
