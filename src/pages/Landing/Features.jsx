@@ -7,9 +7,9 @@ import features from "../../assets/features"
 function Features() {
   return (
     <div id="landing-features-section" className="py-32">
-      <div className="site-wrapper w-container">
+      <div className="site-wrapper  w-container">
         <TypeAnimation
-          className="bg-light text-dark text-center section-head w-fit h-9 p-2 text-4xl lg:mb-20 lg:h-12 lg:text-5xl"
+          className=" text-light text-center section-head w-fit h-9 p-2 text-4xl lg:mb-20 lg:h-12 lg:text-5xl"
           sequence={[
             "Save your time",
             1500,
@@ -26,11 +26,11 @@ function Features() {
           Save your time, stay organized, get more done!
         </TypeAnimation>
 
-        <div className="flex-center flex-wrap gap-8 lg:gap-12">
+        <div className="flex-center  flex-wrap gap-8 lg:gap-12">
           {features.map((f, i) => (
             <div
               key={i}
-              className="bg-light text-dark-2 w-fit rounded-xl overflow-hidden md:flex md:flex-row lg:flex-col"
+              className="bg-light  text-dark-2 w-fit rounded-xl overflow-hidden md:flex md:flex-row lg:flex-col"
             >
               <img
                 alt={f.title + " Image"}

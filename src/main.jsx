@@ -27,6 +27,10 @@ const router = createBrowserRouter([
         element: <EventPage />,
       },
       {
+        path: "/get-to-know",
+        element: <GetToKnow />,
+      },
+      {
         path: "/events/event/:name",
         element: <EventDetails />,
       },
