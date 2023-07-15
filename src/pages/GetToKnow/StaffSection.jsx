@@ -2,6 +2,8 @@ import { useEffect, useRef } from "react"
 import { useInView } from "framer-motion"
 import { Link } from "react-router-dom"
 
+import unknown from "../../assets/get-to-know/our-team/unknown.png"
+
 const personModel = {
   img: "",
   name: "",
@@ -112,7 +114,7 @@ function StaffSection({
             <div key={i} className="flex items-center flex-col">
               <img
                 alt={name + "'s Photo"}
-                src={img}
+                src={img || unknown}
                 className="bg-grey-1 object-cover object-top min-w-[11rem] w-44 h-60 lg:min-w-[13rem] lg:w-52 lg:h-72"
               />
 
