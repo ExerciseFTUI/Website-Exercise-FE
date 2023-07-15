@@ -61,7 +61,7 @@ function StaffSection({
                 className="bg-grey-1 object-cover object-top h-60 w-44 md:h-64 lg:w-56 lg:h-80"
               />
 
-              <div className="relative flex flex-col justify-center before:absolute before:-right-4 before:h-[1.5px] before:w-4 before:bg-grey-1 md:text-lg md:before:h-0.5">
+              <div className="relative flex flex-col justify-center before:absolute before:-right-3 before:h-[1.5px] before:w-4 before:bg-grey-1 md:text-lg md:before:h-0.5">
                 <Link
                   target="_blank"
                   rel="noopener noreferrer"
@@ -108,7 +108,7 @@ function StaffSection({
 
         <div
           id="staffs-carousel"
-          className="overflow-x-auto flex self-center gap-4 pt-8 pb-8 max-w-sm md:max-w-[38rem] lg:max-w-4xl xl:max-w-5xl min-[1440px]:max-w-[70rem]"
+          className="overflow-x-auto flex self-center gap-4 pt-8 pb-8 max-w-xs md:max-w-[38rem] lg:max-w-4xl xl:max-w-5xl min-[1440px]:max-w-[70rem]"
         >
           {staffs.map(({ img, name, ...data }, i) => (
             <div key={i} className="flex items-center flex-col">
