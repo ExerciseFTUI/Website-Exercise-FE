@@ -41,6 +41,12 @@ function Features() {
               />
 
               <div className="text-center  max-w-lg flex-center flex-col gap-6 lg:text-start lg:items-start">
+                {e.status == "COMING SOON" && (
+                  <p className="bg-light font-extrabold text-dark text-lg tracking-wide px-2 py-1 rounded-md">
+                    COMING SOON
+                  </p>
+                )}
+
                 <h1 className="font-extrabold  text-3xl md:text-4xl">
                   {e.title}
                 </h1>
@@ -50,7 +56,8 @@ function Features() {
                 </p>
 
                 <Link
-                  to={`event/${e.title.toLowerCase().replace(/ +/g, "-")}`}
+                  onClick={(a) => (e.link != "" ? "" : a.preventDefault())}
+                  to={e.link}
                   className="btn-dark rounded-md group-even:btn-light md:text-lg"
                 >
                   See More
