@@ -13,6 +13,7 @@ import EventDetails from "./pages/EventDetails/"
 
 import PastProject from "./pages/PastProject"
 import GetToKnow from "./pages/GetToKnow"
+import ExTicle from "./pages/ExTicle"
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: "/past-projects",
         element: <PastProject />,
+      },
+      {
+        path: "/exticle",
+        element: <ExTicle />,
       },
       {
         path: "/about-us",
