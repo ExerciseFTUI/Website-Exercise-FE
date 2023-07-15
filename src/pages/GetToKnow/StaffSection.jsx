@@ -27,10 +27,13 @@ function StaffSection({
   setIndex,
 }) {
   const divRef = useRef(null)
-  const divInView = useInView(divRef, { margin: "-5% 0% -95% 0%" })
+  const divInView = useInView(divRef, {
+    margin: "-20% 0% -80%",
+  })
 
   useEffect(() => {
     setIndex(index)
+    console.log(index)
   }, [divInView])
   return (
     <section
@@ -44,7 +47,7 @@ function StaffSection({
             <img
               alt={head.name + "'s Photo"}
               src={head.img}
-              className="bg-grey-1 object-cover object-top h-60 w-44 md:h-64 lg:w-56 lg:h-80"
+              className="bg-dark-2 object-cover object-top h-60 w-44 md:h-64 lg:w-56 lg:h-80 rounded-md"
             />
 
             <Link target="_blank" rel="noopener noreferrer" to={head.linkedin}>
@@ -58,10 +61,10 @@ function StaffSection({
               <img
                 alt={head.name + "'s Photo"}
                 src={head.img}
-                className="bg-grey-1 object-cover object-top h-60 w-44 md:h-64 lg:w-56 lg:h-80"
+                className="bg-dark-2 object-cover object-top h-60 w-44 md:h-64 lg:w-56 lg:h-80 rounded-md"
               />
 
-              <div className="relative flex flex-col justify-center before:absolute before:-right-3 before:h-[1.5px] before:w-4 before:bg-grey-1 md:text-lg md:before:h-0.5">
+              <div className="relative flex flex-col justify-center before:absolute before:-right-3 before:h-[1.5px] before:w-4 before:bg-dark-2 md:text-lg md:before:h-0.5">
                 <Link
                   target="_blank"
                   rel="noopener noreferrer"
@@ -77,10 +80,10 @@ function StaffSection({
               <img
                 alt={vice.name + "'s Photo"}
                 src={vice.img}
-                className="bg-grey-1 object-cover object-top h-60 w-44 md:h-64 lg:w-56 lg:h-80"
+                className="bg-dark-2 object-cover object-top h-60 w-44 md:h-64 lg:w-56 lg:h-80 rounded-md"
               />
 
-              <div className="relative flex flex-col justify-center before:absolute before:-left-4 before:h-[1.5px] before:w-4 before:bg-grey-1 md:text-lg md:before:h-0.5">
+              <div className="relative flex flex-col justify-center before:absolute before:-left-4 before:h-[1.5px] before:w-4 before:bg-dark-2 md:text-lg md:before:h-0.5">
                 <Link
                   target="_blank"
                   rel="noopener noreferrer"
@@ -102,7 +105,7 @@ function StaffSection({
       </div>
 
       <div className="mt-12 flex flex-col">
-        <p className="self-center rounded-md bg-gradient-to-r from-dark-2 to-grey-1 px-2 py-1 font-medium text-light text-xl md:text-2xl">
+        <p className="self-center rounded-md bg-gradient-to-r from-dark to-grey-2 px-2 py-1 font-bold tracking-wider text-light text-xl md:text-2xl">
           Staffs
         </p>
 
@@ -115,7 +118,7 @@ function StaffSection({
               <img
                 alt={name + "'s Photo"}
                 src={img || unknown}
-                className="bg-grey-1 object-cover object-top min-w-[11rem] w-44 h-60 lg:min-w-[13rem] lg:w-52 lg:h-72"
+                className="bg-dark-2 object-cover object-top min-w-[11rem] w-44 h-60 lg:min-w-[13rem] lg:w-52 lg:h-72 rounded-md"
               />
 
               <div className="text-center mt-4 lg:text-lg">
@@ -135,7 +138,7 @@ function StaffSection({
         </div>
       </div>
 
-      <div className="w-full h-[0.5px] bg-grey-1 mt-20" />
+      <div className="w-full h-[0.5px] bg-dark-2 mt-20" />
     </section>
   )
 }
