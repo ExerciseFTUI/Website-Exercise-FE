@@ -68,11 +68,13 @@ const executives = {
   head: {
     img: dio,
     name: "Rafie Amandio",
+    linkedin: "https://www.linkedin.com/",
     position: "Chairman",
   },
   vice: {
     img: bachul,
     name: "Luthfi Misbachul M.",
+    linkedin: "https://www.linkedin.com/",
     position: "Vice Chairman",
   },
   div: "THE EXECUTIVES",
@@ -84,11 +86,13 @@ const externals = [
     head: {
       img: Ryan,
       name: "Aldrian Raffi",
+      linkedin: "https://www.linkedin.com/",
       position: "Head",
     },
     vice: {
       img: hanan,
       name: "Zaki Hanan",
+      linkedin: "https://www.linkedin.com/",
       position: "Vice Head",
     },
     div: "DESIGN SPECIALIST",
@@ -97,26 +101,32 @@ const externals = [
       {
         img: zalfy,
         name: "Zalfy Putra Rezky",
+        linkedin: "https://www.linkedin.com/",
       },
       {
         img: lauren,
         name: "Lauren Christy",
+        linkedin: "https://www.linkedin.com/",
       },
       {
         img: jedan,
         name: "Rizqi Zaidan",
+        linkedin: "https://www.linkedin.com/",
       },
       {
         img: alif,
         name: "Alifya Zhafira Ananda",
+        linkedin: "https://www.linkedin.com/",
       },
       {
         img: fay,
         name: "Fayza Nirwasita",
+        linkedin: "https://www.linkedin.com/",
       },
       {
         img: "",
         name: "Bintang Marsuma",
+        linkedin: "https://www.linkedin.com/",
       },
     ],
   },
@@ -124,11 +134,13 @@ const externals = [
     head: {
       img: Ayas,
       name: "Dyah Laksmi",
+      linkedin: "https://www.linkedin.com/",
       position: "Head",
     },
     vice: {
       img: Azzah,
       name: "Azzah Angeli",
+      linkedin: "https://www.linkedin.com/",
       position: "Vice Head",
     },
     div: "MARKETING AND BRANDING",
@@ -137,18 +149,22 @@ const externals = [
       {
         img: gioge,
         name: "Sihombing Giovano G.",
+        linkedin: "https://www.linkedin.com/",
       },
       {
         img: adrien,
         name: "Adrien Ardra Ramadhan",
+        linkedin: "https://www.linkedin.com/",
       },
       {
         img: wendy,
         name: "Wendy Dharmawan",
+        linkedin: "https://www.linkedin.com/",
       },
       {
         img: nicho,
         name: "Nicholas Samosir",
+        linkedin: "https://www.linkedin.com/",
       },
     ],
   },
@@ -156,11 +172,13 @@ const externals = [
     head: {
       img: Tunjung,
       name: "Amrita Deviayu",
+      linkedin: "https://www.linkedin.com/",
       position: "Head",
     },
     vice: {
       img: Cecil,
       name: "Cecilia Inez Reva",
+      linkedin: "https://www.linkedin.com/",
       position: "Vice Head",
     },
     div: "BUSINESS DEVELOPMENT",
@@ -169,14 +187,17 @@ const externals = [
       {
         img: satrio,
         name: "Satrio Jati Pamungkas",
+        linkedin: "https://www.linkedin.com/",
       },
       {
         img: nuzul,
         name: "Farhan Nuzul Noufendri",
+        linkedin: "https://www.linkedin.com/",
       },
       {
         img: "",
         name: "Darren Nathanael B.",
+        linkedin: "https://www.linkedin.com/",
       },
     ],
   },
@@ -184,11 +205,13 @@ const externals = [
     head: {
       img: Khalisa,
       name: "Khalisa Wintarirani",
+      linkedin: "https://www.linkedin.com/",
       position: "Head",
     },
     vice: {
       img: Clarissa,
       name: "Clarissa Rikani",
+      linkedin: "https://www.linkedin.com/",
       position: "Vice Head",
     },
     div: "TRAINING AND DEVELOPMENT",
@@ -197,22 +220,27 @@ const externals = [
       {
         img: krisut,
         name: "Cristopher Sutandar",
+        linkedin: "https://www.linkedin.com/",
       },
       {
         img: hanif,
         name: "Hanif Nur Ilham Sanjaya",
+        linkedin: "https://www.linkedin.com/",
       },
       {
         img: palen,
         name: "Valentino Farish",
+        linkedin: "https://www.linkedin.com/",
       },
       {
         img: eze,
         name: "Devin Ezekiel",
+        linkedin: "https://www.linkedin.com/",
       },
       {
         img: daniel,
         name: "Daniel Valerian Depari",
+        linkedin: "https://www.linkedin.com/",
       },
     ],
   },
@@ -220,11 +248,13 @@ const externals = [
     head: {
       img: Denise,
       name: "Handaneswari Pramudhyta",
+      linkedin: "https://www.linkedin.com/",
       position: "Head",
     },
     vice: {
       img: Farrel,
       name: "Farrel Mirawan",
+      linkedin: "https://www.linkedin.com/",
       position: "Vice Head",
     },
     div: "HUMAN RESOURCES",
@@ -233,18 +263,22 @@ const externals = [
       {
         img: aida,
         name: "Rufaidah Kariemah",
+        linkedin: "https://www.linkedin.com/",
       },
       {
         img: atta,
         name: "Attafahqi Amirtha Dariswan",
+        linkedin: "https://www.linkedin.com/",
       },
       {
         img: yasmin,
         name: "Yasmin Devina Sinuraya",
+        linkedin: "https://www.linkedin.com/",
       },
       {
         img: "",
         name: "Ryan Safa Tjendana",
+        linkedin: "https://www.linkedin.com/",
       },
     ],
   },
@@ -252,12 +286,8 @@ const externals = [
     head: {
       img: Andin,
       name: "Qinthara Andini",
+      linkedin: "https://www.linkedin.com/",
       position: "Head",
-    },
-    vice: {
-      img: "",
-      name: "Unknown",
-      position: "Vice Head",
     },
     div: "MANAGEMENT",
     desc: "Work closely with the technical team to ensure projects are planned, executed, and delivered on time and within budget. Twenty-four seven, the Project Management division is the driving force behind our technical team’s success in bringing innovative ideas to life by leverages their expertise to overcome challenges, minimize risk, and maximize results.",
@@ -265,10 +295,12 @@ const externals = [
       {
         img: "",
         name: "Muhammad Daffa Hilmy",
+        linkedin: "https://www.linkedin.com/",
       },
       {
         img: "",
         name: "Timothy Farell Lasmana",
+        linkedin: "https://www.linkedin.com/",
       },
     ],
   },
@@ -276,12 +308,8 @@ const externals = [
     head: {
       img: Bisma,
       name: "Bisma Alif",
+      linkedin: "https://www.linkedin.com/",
       position: "Head",
-    },
-    vice: {
-      img: "",
-      name: "Unknown",
-      position: "Vice Head",
     },
     div: "FINANCE",
     desc: "The backbone of Exercise’s financial stability and success. Responsible for creating and implementing financial strategies, managing budgets, and making informed decisions that guide the financial future of our organization. Their unwavering commitment to accuracy and integrity ensures the long-term growth and prosperity of the team.",
@@ -289,10 +317,12 @@ const externals = [
       {
         img: pliho,
         name: "Rafli Adithia",
+        linkedin: "https://www.linkedin.com/",
       },
       {
         img: "",
         name: "Mikhael Morris Hapataran S.",
+        linkedin: "https://www.linkedin.com/",
       },
     ],
   },
@@ -300,11 +330,13 @@ const externals = [
     head: {
       img: Gavin,
       name: "Muhammad Gavin",
+      linkedin: "https://www.linkedin.com/",
       position: "Head",
     },
     vice: {
       img: Pudi,
       name: "Ricky Rahman",
+      linkedin: "https://www.linkedin.com/",
       position: "Vice Head",
     },
     div: "HARDWARE",
@@ -313,18 +345,22 @@ const externals = [
       {
         img: alex,
         name: "Alexander Maximilian",
+        linkedin: "https://www.linkedin.com/",
       },
       {
         img: david,
         name: "Stanislaus David Arelian W.",
+        linkedin: "https://www.linkedin.com/",
       },
       {
         img: davin,
         name: "Davin Nazhif Wilviadli",
+        linkedin: "https://www.linkedin.com/",
       },
       {
         img: wilky,
         name: "Wilky Martin",
+        linkedin: "https://www.linkedin.com/",
       },
     ],
   },
@@ -332,11 +368,13 @@ const externals = [
     head: {
       img: Dito,
       name: "Raditya Ihsan",
+      linkedin: "https://www.linkedin.com/",
       position: "Head",
     },
     vice: {
       img: Ivan,
       name: "Ivan Indirsyah",
+      linkedin: "https://www.linkedin.com/",
       position: "Vice Head",
     },
     div: "SOFTWARE",
@@ -345,26 +383,33 @@ const externals = [
       {
         img: eriqo,
         name: "Eriqo Arief",
+        linkedin: "https://www.linkedin.com/",
+        pos: "Expert",
       },
       {
         img: farrell,
         name: "Farrel Athaillah N.",
+        linkedin: "https://www.linkedin.com/",
       },
       {
         img: giovan,
         name: "Giovan C. Sihombing",
+        linkedin: "https://www.linkedin.com/",
       },
       {
         img: kamal,
         name: "Kamal Makarim",
+        linkedin: "https://www.linkedin.com/",
       },
       {
         img: dimas,
         name: "Dimas Dermawan",
+        linkedin: "https://www.linkedin.com/",
       },
       {
         img: harris,
         name: "M. Fahish",
+        linkedin: "https://www.linkedin.com/",
       },
     ],
   },
