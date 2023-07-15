@@ -51,6 +51,7 @@ import atta from "./hr/atta.png"
 import yasmin from "./hr/yasmin.png"
 
 import pliho from "./finance/pliho.png"
+import morris from "./unknown.png"
 
 import alex from "./technical/hardware/alex.png"
 import david from "./technical/hardware/david.png"
@@ -320,7 +321,7 @@ const externals = [
         linkedin: "https://www.linkedin.com/",
       },
       {
-        img: "",
+        img: morris,
         name: "Mikhael Morris Hapataran S.",
         linkedin: "https://www.linkedin.com/",
       },
