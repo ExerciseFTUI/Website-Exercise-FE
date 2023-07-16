@@ -7,6 +7,7 @@ import dollarInactive from "./inactive-sidebar/dollar-sign.png"
 import usersInactive from "./inactive-sidebar/users.png"
 import toolInactive from "./inactive-sidebar/tool.png"
 import shopInactive from "./inactive-sidebar/shopping-cart.png"
+import softwareInactive from "./inactive-sidebar/software-i.svg"
 
 import hexagonActive from "./active-sidebar/hexagon.png"
 import penActive from "./active-sidebar/pen-tool.png"
@@ -17,6 +18,7 @@ import dollarActive from "./active-sidebar/dollar-sign.png"
 import usersActive from "./active-sidebar/users.png"
 import toolActive from "./active-sidebar/tool.png"
 import shopActive from "./active-sidebar/shopping-cart.png"
+import softwareActive from "./active-sidebar/software-a.svg"
 
 export default [
   {
@@ -63,5 +65,10 @@ export default [
     desc: "HARDWARE",
     inactive: toolInactive,
     active: toolActive,
+  },
+  {
+    desc: "SOFTWARE",
+    inactive: softwareInactive,
+    active: softwareActive,
   },
 ]

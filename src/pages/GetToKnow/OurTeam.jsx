@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react"
 import { useInView } from "framer-motion"
+import { Link } from "react-router-dom"
 
 import StaffSection from "./StaffSection"
 import Sidebar from "./Sidebar"
@@ -14,7 +15,9 @@ const OurTeam = () => {
   const ourTeamRef = useRef(null)
   const executivesRef = useRef(null)
 
-  const ourTeamInView = useInView(ourTeamRef, { margin: "-5% 0% -95% 0%" })
+  const ourTeamInView = useInView(ourTeamRef, {
+    margin: "90px 0px -90px 0px",
+  })
   const executivesInView = useInView(executivesRef, {
     margin: "-50% 0%",
   })
@@ -50,11 +53,13 @@ const OurTeam = () => {
               <img
                 alt="Dio's Photo"
                 src={head.img}
-                className="bg-grey-1 object-cover object-top h-60 w-44 md:h-64 lg:w-56 lg:h-80"
+                className="bg-dark-2 object-cover object-top h-60 w-44 md:h-64 lg:w-56 lg:h-80 rounded-md"
               />
 
-              <div className="relative flex flex-col justify-center before:absolute before:-right-4 before:h-[1.5px] before:w-4 before:bg-grey-1 md:text-lg md:before:h-0.5">
-                <h1>{vice.name}</h1>
+              <div className="relative flex flex-col justify-center before:absolute before:-right-4 before:h-[1.5px] before:w-4 before:bg-dark-2 md:text-lg md:before:h-0.5">
+                <Link target="_blank" rel="noopener noreferrer" to="">
+                  <h1>{vice.name}</h1>
+                </Link>
                 <p className="italic font-extralight">{vice.position}</p>
               </div>
             </div>
@@ -63,11 +68,13 @@ const OurTeam = () => {
               <img
                 alt="Bachul's Photo"
                 src={vice.img}
-                className="bg-grey-1 object-cover object-top h-60 w-44 md:h-64 lg:w-56 lg:h-80"
+                className="bg-dark-2 object-cover object-top h-60 w-44 md:h-64 lg:w-56 lg:h-80 rounded-md"
               />
 
-              <div className="relative flex flex-col justify-center before:absolute before:-left-4 before:h-[1.5px] before:w-4 before:bg-grey-1 md:text-lg md:before:h-0.5">
-                <h1>{head.name}</h1>
+              <div className="relative flex flex-col justify-center before:absolute before:-left-4 before:h-[1.5px] before:w-4 before:bg-dark-2 md:text-lg md:before:h-0.5">
+                <Link target="_blank" rel="noopener noreferrer" to="">
+                  <h1>{head.name}</h1>
+                </Link>
                 <p className="italic font-extralight">{head.position}</p>
               </div>
             </div>
