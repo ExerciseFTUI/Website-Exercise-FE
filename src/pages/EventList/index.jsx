@@ -7,11 +7,11 @@ import headerImg from "../../assets/features/header.jpg"
 function EventPage() {
   return (
     <div id="event-page">
-      <div className="relative w-screen bg-dark bg-opacity-90 flex-center">
+      <div className="relative bg-dark bg-opacity-90 flex-center">
         <img
           alt="Header Image"
           src={headerImg}
-          className="object-cover w-full h-full absolute top-0 left-0 -z-10"
+          className="object-cover w-screen h-full absolute top-0 left-0 -z-10"
         />
 
         <div className="site-wrapper w-container text-center py-36 md:py-48">
@@ -31,6 +31,7 @@ function EventPage() {
           </p>
         </div>
       </div>
+
       <div>
         {eventList.map((e, i) => (
           <div

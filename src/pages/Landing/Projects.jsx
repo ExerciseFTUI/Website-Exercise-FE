@@ -1,14 +1,11 @@
-import React from "react"
 import { Link } from "react-router-dom"
-
 import { Swiper, SwiperSlide } from "swiper/react"
+import { Autoplay, EffectCoverflow, Navigation } from "swiper"
 
 import "swiper/css"
 import "swiper/css/autoplay"
 import "swiper/css/navigation"
 import "swiper/css/effect-coverflow"
-
-import { Autoplay, EffectCoverflow, Navigation } from "swiper"
 
 function CarouselProjects() {
   const projects = [
@@ -29,10 +26,7 @@ function CarouselProjects() {
   ]
 
   return (
-    <div
-      id="collaborated-projects-section"
-      className="bg-light py-20 lg:py-20"
-    >
+    <div id="collaborated-projects-section" className="bg-light py-20 lg:py-20">
       <div className="site-wrapper w-container relative">
         <h1 className="section-head text-dark-2 text-4xl lg:hidden">
           Our Collaborated Projects

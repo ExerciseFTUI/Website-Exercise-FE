@@ -9,7 +9,7 @@ function Features() {
     <div id="landing-features-section" className="py-32">
       <div className="site-wrapper  w-container">
         <TypeAnimation
-          className=" text-light text-center section-head w-fit h-9 p-2 text-4xl lg:mb-20 lg:h-12 lg:text-5xl"
+          className="bg-light text-dark text-center section-head w-fit h-9 p-2 text-4xl rounded-md lg:mb-20 lg:h-12 lg:text-5xl"
           sequence={[
             "Save your time",
             1500,

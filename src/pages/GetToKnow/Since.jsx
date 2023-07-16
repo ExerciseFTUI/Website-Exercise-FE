@@ -37,7 +37,7 @@ const Since = () => {
         </div>
       </div>
 
-      <div id="get-to-know-vision" className="py-24 h-screen ">
+      <div id="get-to-know-vision" className="py-24 h-screen flex">
         <div className="site-wrapper w-container flex-center flex-col gap-12 md:flex-row lg:gap-16 xl:gap-24">
           <div className="flex items-center lg:gap-6">
             <img src={vision} className="w-48 md:w-80" />
