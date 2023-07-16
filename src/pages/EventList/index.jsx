@@ -37,7 +37,7 @@ function EventPage() {
           <div
             key={i}
             id={`${e.title.toLowerCase().replace(/ +/g, "-")}-section`}
-            className="group py-12 flex-center bg-light even:bg-dark text-light odd:text-dark-2"
+            className="group  py-12 flex-center bg-light even:bg-dark text-light odd:text-dark-2"
           >
             <div className="site-wrapper  w-container flex-center flex-wrap gap-8">
               <img

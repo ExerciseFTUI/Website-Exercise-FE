@@ -30,7 +30,7 @@ function Features() {
           {features.map((f, i) => (
             <div
               key={i}
-              className="bg-light  text-dark-2 w-fit rounded-xl overflow-hidden md:flex md:flex-row lg:flex-col"
+              className="bg-light text-dark-2 w-fit rounded-xl overflow-hidden md:flex md:flex-row lg:flex-col"
             >
               <img
                 alt={f.title + " Image"}

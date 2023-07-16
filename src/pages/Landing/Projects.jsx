@@ -57,11 +57,11 @@ function CarouselProjects() {
                   <img
                     alt={"project" + (i + 1)}
                     src={p.img}
-                    className="object-cover object-center w-full h-full lg:max-w-sm"
+                    className="object-cover rounded-t-lg lg:rounded-lg object-center w-full h-full lg:max-w-sm"
                   />
                 </div>
 
-                <div className="bg-dark p-8 flex flex-col gap-4 lg:bg-light lg:gap-8 lg:w-[60%] lg:max-w-xl">
+                <div className="bg-dark p-8 rounded-b-lg flex flex-col gap-4 lg:bg-light lg:gap-8 lg:w-[60%] lg:max-w-xl">
                   <p className="hidden lg:block text-2xl">
                     Our Collaborated Projects
                   </p>
@@ -71,13 +71,13 @@ function CarouselProjects() {
                   </h1>
 
                   <p className="text-justify lg:text-lg">{p.desc}</p>
-                  <p className="text-grey-1 lg:text-dark-2 lg:text-lg">
+                  <p className="text-grey-1  lg:text-dark-2 lg:text-lg">
                     {p.corp}, {p.year}
                   </p>
 
                   <Link
                     to={`/project/${p.title.toLowerCase().replace(" ", "-")}`}
-                    className="btn-light lg:btn-dark lg:bg-dark-2 rounded-md"
+                    className="btn-light  lg:btn-dark lg:bg-dark-2 rounded-md"
                   >
                     Get To Know
                   </Link>
