@@ -1,8 +1,10 @@
 import tokopedia from './tokopedia.png'
 import flip from './flip.png'
+import bg from './bg.png'
 
 export default [
     {
+        bg: bg,
         logo: tokopedia,
         name: "E-Commerce Product Web Scraping",
         x:"x",
@@ -12,6 +14,7 @@ export default [
         devdesc:"Desainer Handal"
     },
     {
+        bg: bg,
         logo: flip,
         name: "Fintech Automation System",
         x:"x",
@@ -21,6 +24,7 @@ export default [
         devdesc:"Desainer Handal"
     },
     {
+        bg: bg,
         logo: null,
         name: "Temperature Detection with facial detection and IoT",
         x:"",
@@ -30,6 +34,7 @@ export default [
         devdesc:"Desainer Handal"
     },
     {
+        bg: bg,
         logo: null,
         name: "Document Conversion and P12 Signing",
         x:"",
@@ -39,6 +44,7 @@ export default [
         devdesc:"Desainer Handal"
     },
     {
+        bg: bg,
         logo: null,
         name: "Pothole Detector",
         x:"",
