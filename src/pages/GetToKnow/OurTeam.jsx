@@ -53,11 +53,11 @@ const OurTeam = () => {
               <img
                 alt="Dio's Photo"
                 src={head.img}
-                className="bg-dark-2 rounded-xl hover:scale-110 object-cover object-top h-60 w-44 md:h-64 lg:w-56 lg:h-80"
+                className="bg-dark-2 rounded-xl object-cover object-top h-60 w-44 md:h-64 lg:w-56 lg:h-80"
               />
 
               <div className="relative flex flex-col justify-center before:absolute before:-right-4 before:h-[1.5px] before:w-4 before:bg-grey-1 md:text-lg md:before:h-0.5">
-              <Link target="_blank" rel="noopener noreferrer" to="">
+                <Link target="_blank" rel="noopener noreferrer" to="">
                   <h1>{vice.name}</h1>
                 </Link>
                 <p className="italic font-extralight">{vice.position}</p>
@@ -68,11 +68,11 @@ const OurTeam = () => {
               <img
                 alt="Bachul's Photo"
                 src={vice.img}
-                className="bg-dark-2 rounded-xl hover:scale-110 object-cover object-top h-60 w-44 md:h-64 lg:w-56 lg:h-80"
+                className="bg-dark-2 rounded-xl object-cover object-top h-60 w-44 md:h-64 lg:w-56 lg:h-80"
               />
 
               <div className="relative flex flex-col justify-center before:absolute before:-left-4 before:h-[1.5px] before:w-4 before:bg-grey-1 md:text-lg md:before:h-0.5">
-              <Link target="_blank" rel="noopener noreferrer" to="">
+                <Link target="_blank" rel="noopener noreferrer" to="">
                   <h1>{head.name}</h1>
                 </Link>
                 <p className="italic font-extralight">{head.position}</p>
