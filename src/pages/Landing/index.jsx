@@ -50,13 +50,13 @@ function LandingPage() {
 
           <div className="flex">
             <Link
-              to="/portfolios"
+              to="/past-projects"
               className="btn-light text-sm rounded-md mr-6 md:text-2xl lg:text-3xl lg:mr-20 xl:text-2xl"
             >
               Our portfolio
             </Link>
             <Link
-              to="/social-media"
+              to="/about-us"
               className="btn-light text-sm rounded-md md:text-2xl lg:text-3xl xl:text-2xl"
             >
               Connect with us
