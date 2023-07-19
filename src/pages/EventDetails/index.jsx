@@ -225,7 +225,7 @@ function EventDetails() {
             id="closing-section"
             className="text-dark-2 text-center w-full h-screen flex-center flex-col"
           >
-            <h1 className="font-extrabold text-5xl mb-12">Kalimat Penutup</h1>
+            <h1 className="font-extrabold text-4xl mb-12">We're excited to bring you these valuable training opportunities to help you enhance your skills and grow your career.</h1>
 
             <Link to="/#" className="btn-dark rounded-md">
               Register

@@ -7,7 +7,7 @@ const Since = () => {
     <div id="get-to-know-intro" className="">
       <div
         id="get-to-know-since"
-        className="relative lg:py-10 py-32 overflow-hidden bg-dark bg-opacity-90"
+        className="relative lg:py-10 py-32 overflow-hidden bg-dark bg-opacity-600"
       >
         <img
           alt="Since's background img"

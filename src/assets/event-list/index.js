@@ -1,5 +1,6 @@
 import dig from "./dig-silent.png"
 import tech from "./technoskill.png"
+import proteus from "./proteus-training.png"
 
 export default [
     {
@@ -18,9 +19,9 @@ export default [
     },
     {
         title: "Proteus Training",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac arcu ornare, tincidunt neque non, ultrices magna. Quisque in purus eu ex vestibulum posuere. Mauris nisl ipsum, vehicula quis hendrerit ac, lobortis ac odio. Suspendisse suscipit ex sed finibus tincidunt.",
+        desc: "Training Proteus adalah pelatihan dengan aplikasi Proteus yang dapat diikuti oleh semua jurusan di Departemen Teknik Elektro. Materi yang akan kalian dapatkan dikhususkan untuk mata kuliah Dasar Sistem Digital. Training Digsilent berkolaborasi dengan Laboratorium Digital FTUI pada bulan Mei-Juni 2023.",
         status: "Event has ended",
         date: "1 Juni 2023",
-        img: dig,
+        img: proteus,
     },
 ]

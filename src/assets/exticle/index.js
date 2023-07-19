@@ -1,46 +1,25 @@
-import jokowi from "./jokowi.png"
-import ratu from "./ratu.png"
-import pln from "./pln.jpeg"
+import dalle from "./dall-e.svg"
+import flip from "./flip-phone.svg"
+import ai from "./ai.svg"
 
 export default [
-  [
     {
-      title: "Jokowi Kunjungi Lampung",
+      title: "DALL-E : The AI Image Generator",
       upload: "4 Hours ago",
       author: "Aldrian",
-      thumbnail: jokowi,
+      thumbnail: dalle,
     },
     {
-      title: "Selebrasi Queen",
+      title: "Flip Phone : A Tale of Prestige and Innovation",
       upload: "6 Hours ago",
       author: "Manusia",
-      thumbnail: ratu,
+      thumbnail: flip,
     },
     {
-      title: "Jokowi Benerin Jalan",
+      title: "ML vs AI",
       upload: "1 Hour ago",
       author: "Kuncoro",
-      thumbnail: jokowi,
+      thumbnail: ai,
     },
-  ],
-  [
-    {
-      title: "Mati Lampu",
-      upload: "2 Days ago",
-      author: "Ari",
-      thumbnail: pln,
-    },
-    {
-      title: "Cosplay Kerajaan",
-      upload: "7 Days ago",
-      author: "Mahfud",
-      thumbnail: ratu,
-    },
-    {
-      title: "Part Time PLN buat Coldplay",
-      upload: "1 Days ago",
-      author: "Mahfud",
-      thumbnail: pln,
-    },
-  ],
-]
+  ]
+

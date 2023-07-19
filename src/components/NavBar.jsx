@@ -58,7 +58,7 @@ function NavBar() {
   return (
     <motion.nav
       id="navigation-bar"
-      className="fixed top-0 z-20 w-screen h-20 px-6 flex items-center justify-between xl:px-14"
+      className="fixed top-0 z-10 w-screen h-20 px-6 flex items-center justify-between xl:px-14"
       style={{
         backgroundColor: opacityOff,
       }}

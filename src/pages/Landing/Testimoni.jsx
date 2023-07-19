@@ -6,75 +6,42 @@ import "swiper/css"
 import "swiper/css/autoplay"
 import "swiper/css/effect-coverflow"
 
-import { EffectCoverflow, Autoplay } from "swiper"
+import { EffectCoverflow, Autoplay } from "swiper/modules"
 
 function testimoni() {
   const alums = [
     {
-      name: "Aldrian Raffi",
-      position: "Head of Design Specialist",
+      name: "Darvin",
+      position: "Teknik Komputer",
       testimoni:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac arcu ornare, tincidunt neque non, ultrices magna. Quisque in purus eu ex vestibulum positionuere. Mauris nisl ipsum, vehicula quis hendrerit ac, lobortis ac odio. Suspendisse suscipit ex sed finibus tincidunt. Phasellus magna urna, egestas eu sem eget, sollicitudin vulputate magna. Duis in lorem dapibus, auctor justo eget, cursus augue. Sed ut lacus in enim volutpat tristique.",
+        "Exercise has always been an excellent opportunity to develop both hard and soft skills. I'm able to improve my teamwork abilities and experience solving industry-level problems together with amazing people. If you are from the electrical department, don't miss the chance to join this fantastic organization while you can!",
       img: "asd",
-      ig: "instagram.com",
+      ig: "https://www.instagram.com/darvinyap/",
       line: "line.me",
       twt: "twitter.com",
-      linkedin: "linkedin.com",
+      linkedin: "https://www.linkedin.com/in/darvinyap/",
     },
     {
-      name: "Moses Samuel",
-      position: "Head of Technical Project",
+      name: "Ziyan Muhammad Aqsha",
+      position: "Teknik Biomedik",
       testimoni:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac arcu ornare, tincidunt neque non, ultrices magna. Quisque in purus eu ex vestibulum positionuere. Mauris nisl ipsum, vehicula quis hendrerit ac, lobortis ac odio. Suspendisse suscipit ex sed finibus tincidunt. Phasellus magna urna, egestas eu sem eget, sollicitudin vulputate magna. Duis in lorem dapibus, auctor justo eget, cursus augue. Sed ut lacus in enim volutpat tristique.",
+        "EXERCISE is a platform to enhance my knowledge and skills through workshops, seminars, and conferences. These programs also helped me to stay updated with the latest scientific developments and enabled me to learn from the experiences of experts in my field.",
       img: "asd",
-      ig: "instagram.com",
+      ig: "https://www.instagram.com/ziyanmuhammad/",
       line: "line.me",
       twt: "twitter.com",
-      linkedin: "linkedin.com",
+      linkedin: "https://www.linkedin.com/in/ziyanmuhammad/.com",
     },
     {
-      name: "Giovan Sihombing",
-      position: "Gagal nikah",
+      name: "Jason",
+      position: "Teknik Elektro",
       testimoni:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac arcu ornare, tincidunt neque non, ultrices magna. Quisque in purus eu ex vestibulum positionuere. Mauris nisl ipsum, vehicula quis hendrerit ac, lobortis ac odio. Suspendisse suscipit ex sed finibus tincidunt. Phasellus magna urna, egestas eu sem eget, sollicitudin vulputate magna. Duis in lorem dapibus, auctor justo eget, cursus augue. Sed ut lacus in enim volutpat tristique.",
+        "Exercise provided an opportunity for me to go beyond and develop both new technical & project management skills that were complementary to the knowledge I’ve gained through my Electrical Engineering studies. Assessing feasibility of engineering projects in terms of practicality and implementations is a skill you may not get anywhere else!",
       img: "asd",
-      ig: "instagram.com",
+      ig: "https://www.instagram.com/jasonantonio99/",
       line: "line.me",
       twt: "twitter.com",
-      linkedin: "linkedin.com",
-    },
-    {
-      name: "Nicholas Samosir",
-      position: "Apa ya",
-      testimoni:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac arcu ornare, tincidunt neque non, ultrices magna. Quisque in purus eu ex vestibulum positionuere. Mauris nisl ipsum, vehicula quis hendrerit ac, lobortis ac odio. Suspendisse suscipit ex sed finibus tincidunt. Phasellus magna urna, egestas eu sem eget, sollicitudin vulputate magna. Duis in lorem dapibus, auctor justo eget, cursus augue. Sed ut lacus in enim volutpat tristique.",
-      img: "asd",
-      ig: "instagram.com",
-      line: "line.me",
-      twt: "twitter.com",
-      linkedin: "linkedin.com",
-    },
-    {
-      name: "Wendy Dharmawan",
-      position: "Gatau deh",
-      testimoni:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac arcu ornare, tincidunt neque non, ultrices magna. Quisque in purus eu ex vestibulum positionuere. Mauris nisl ipsum, vehicula quis hendrerit ac, lobortis ac odio. Suspendisse suscipit ex sed finibus tincidunt. Phasellus magna urna, egestas eu sem eget, sollicitudin vulputate magna. Duis in lorem dapibus, auctor justo eget, cursus augue. Sed ut lacus in enim volutpat tristique.",
-      img: "asd",
-      ig: "instagram.com",
-      line: "line.me",
-      twt: "twitter.com",
-      linkedin: "linkedin.com",
-    },
-    {
-      name: "M Jibril Adr",
-      position: "Apa hayo",
-      testimoni:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac arcu ornare, tincidunt neque non, ultrices magna. Quisque in purus eu ex vestibulum positionuere. Mauris nisl ipsum, vehicula quis hendrerit ac, lobortis ac odio. Suspendisse suscipit ex sed finibus tincidunt. Phasellus magna urna, egestas eu sem eget, sollicitudin vulputate magna. Duis in lorem dapibus, auctor justo eget, cursus augue. Sed ut lacus in enim volutpat tristique.",
-      img: "asd",
-      ig: "instagram.com",
-      line: "line.me",
-      twt: "twitter.com",
-      linkedin: "linkedin.com",
+      linkedin: "https://www.linkedin.com/in/jasonantonio/",
     },
   ]
 
@@ -130,10 +97,6 @@ function testimoni() {
             </SwiperSlide>
           ))}
         </Swiper>
-
-        <Link to="/testimoni-alumni" className="btn-dark rounded-md mx-auto">
-          View All
-        </Link>
       </div>
     </div>
   )
