@@ -14,10 +14,13 @@ import EventDetails from "./pages/EventDetails/"
 import PastProject from "./pages/PastProject"
 import GetToKnow from "./pages/GetToKnow"
 import ExTicle from "./pages/ExTicle"
+import ComingSoon from "./components/comingSoon/ComingSoon"
+import ErrorPage from "./components/errorPage/ErrorPage"
 
 const router = createBrowserRouter([
   {
     element: <App />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/home",
@@ -36,12 +39,17 @@ const router = createBrowserRouter([
         element: <Features />,
       },
       {
+        path: "/feature",
+        children: [{ path: "background-remover", element: <ComingSoon /> }],
+      },
+      {
         path: "/past-projects",
         element: <PastProject />,
       },
       {
         path: "/exticle",
         element: <ExTicle />,
+        children: [{ path: ":title", element: <ComingSoon /> }],
       },
       {
         path: "/about-us",
