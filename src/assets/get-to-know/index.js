@@ -1,12 +1,3 @@
-import hexagon from "./inactive-sidebar/hexagon.png"
-import pen from "./inactive-sidebar/pen-tool.png"
-import briefcase from "./inactive-sidebar/briefcase.png"
-import trend from "./inactive-sidebar/trending-up.png"
-import calendar from "./inactive-sidebar/calendar.png"
-import dollar from "./inactive-sidebar/dollar-sign.png"
-import users from "./inactive-sidebar/users.png"
-import tool from "./inactive-sidebar/tool.png"
-import shop from "./inactive-sidebar/shopping-cart.png"
 
 export default [
     {

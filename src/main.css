@@ -21,6 +21,7 @@
     }
 
     body::-webkit-scrollbar {
+        background-color: #FAFAFA;
         width: 0.4rem;
     }
 
@@ -35,15 +36,19 @@
     h1 {
         @apply font-bold
     }
+
+    b {
+        @apply font-bold
+    }
 }
 
 @layer components {
     .btn-dark {
-        @apply bg-dark-1 font-bold text-light block w-fit py-1 px-2 hover:tracking-widest ease-in-out duration-200
+        @apply bg-dark-1 font-bold text-light block w-fit py-1 px-2 hover:scale-95 ease-in-out duration-200
     }
 
     .btn-light {
-        @apply bg-light font-bold text-dark-2 block w-fit py-1 px-2 hover:tracking-widest ease-in-out duration-200
+        @apply bg-light font-bold text-dark-2 block w-fit py-1 px-2 hover:scale-95 ease-in-out duration-200
     }
 
     .section-head {
@@ -67,4 +72,16 @@
     .h-screen {
         height: calc(100vh - 5rem);
     }
+}
+
+#staffs-carousel::-webkit-scrollbar {
+    height: 0.2rem;
+}
+
+#staffs-carousel::-webkit-scrollbar-track {
+    @apply bg-grey-2 bg-opacity-60
+}
+
+#staffs-carousel::-webkit-scrollbar-thumb {
+    @apply bg-dark-2
 }

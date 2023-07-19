@@ -1,14 +1,11 @@
-import React from "react"
 import { Link } from "react-router-dom"
-
 import { Swiper, SwiperSlide } from "swiper/react"
+import { Autoplay, EffectCoverflow, Navigation } from "swiper"
 
 import "swiper/css"
 import "swiper/css/autoplay"
 import "swiper/css/navigation"
 import "swiper/css/effect-coverflow"
-
-import { Autoplay, EffectCoverflow, Navigation } from "swiper"
 
 function CarouselProjects() {
   const projects = [
@@ -29,10 +26,7 @@ function CarouselProjects() {
   ]
 
   return (
-    <div
-      id="collaborated-projects-section"
-      className="bg-grey-1 py-20 lg:py-20"
-    >
+    <div id="collaborated-projects-section" className="bg-light py-20 lg:py-20">
       <div className="site-wrapper w-container relative">
         <h1 className="section-head text-dark-2 text-4xl lg:hidden">
           Our Collaborated Projects
@@ -63,11 +57,11 @@ function CarouselProjects() {
                   <img
                     alt={"project" + (i + 1)}
                     src={p.img}
-                    className="object-cover object-center w-full h-full lg:max-w-sm"
+                    className="object-cover rounded-t-lg lg:rounded-lg object-center w-full h-full lg:max-w-sm"
                   />
                 </div>
 
-                <div className="bg-dark p-8 flex flex-col gap-4 lg:bg-grey-1 lg:gap-8 lg:w-[60%] lg:max-w-xl">
+                <div className="bg-dark p-8 rounded-b-lg flex flex-col gap-4 lg:bg-light lg:gap-8 lg:w-[60%] lg:max-w-xl">
                   <p className="hidden lg:block text-2xl">
                     Our Collaborated Projects
                   </p>
@@ -86,7 +80,7 @@ function CarouselProjects() {
 
                   <Link
                     to={`/project/${p.title.toLowerCase().replace(" ", "-")}`}
-                    className="btn-light lg:btn-dark lg:bg-dark-2"
+                    className="btn-light  lg:btn-dark lg:bg-dark-2 rounded-md"
                   >
                     Get To Know
                   </Link>
