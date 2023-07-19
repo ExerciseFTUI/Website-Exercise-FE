@@ -8,14 +8,14 @@ export default [
     title: "URL Shortener",
     desc: "Streamline your online presence, craft a personalized link that reflects your brand and simplifies your web presence. try now!",
     img: url,
-    link: "",
+    link: "https://exercise.ui/account/login",
   },
   {
     title: "Background Remover",
     desc: "Don't let a distracting or unprofessional background ruin your photos. remove your photo’s background here for certain purpose.",
     status: "COMING SOON",
     img: bg,
-    link: "",
+    link: "/feature/background-remover",
   },
   // {
   //     title: "AI Presentation Pro",
