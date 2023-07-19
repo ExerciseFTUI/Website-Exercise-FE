@@ -13,19 +13,19 @@ import { Autoplay, EffectCoverflow, Navigation } from "swiper"
 function CarouselProjects() {
   const projects = [
     {
-      title: "E-Commerce Product Web Scraping  ",
+      title: "E-Commerce Product Web Scraping x Tokopedia",
       desc: "Build a desktop GUI Application with Python programming language to create a web scraping system based on Selenium. The goal of this project is to gather data for Data Analytics purposes to predict future behavior.",
       corp: "Tokopedia",
       year: 2021,
       img: "https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
     },
     {
-      title: "Project Title",
+      title: "Fintech Automation System",
       desc: "We started innovating since 1234 with a track record of qualified work and has become one of the growing technology organizations of the University of Indonesia. Dig further to find out the best of us!",
-      corp: "Corporation",
+      corp: "Flip",
       year: 2016,
       img: "https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-    },
+    }
   ]
 
   return (
@@ -77,7 +77,10 @@ function CarouselProjects() {
                   </h1>
 
                   <p className="text-justify lg:text-lg">{p.desc}</p>
-                  <p className="text-grey-1 lg:text-dark-2 lg:text-lg">
+                  <p className="max-lg:hidden text-dark-2 text-lg">
+                    {p.corp} <br/> {p.year}
+                  </p>
+                  <p className="lg:hidden text-grey-1">
                     {p.corp}, {p.year}
                   </p>
 

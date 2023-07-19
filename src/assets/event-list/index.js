@@ -12,15 +12,15 @@ export default [
     {
         title: "Technoskill 1.0",
         desc: "Technoskill 1.0 kali ini hadir untuk menunjang kebutuhan hard skill warga Departemen Teknik Elektro dengan membawa dua rangkaian acara, yaitu Workshop dan Webinar yang dapat diikuti oleh seluruh mahasiswa dan mahasiswi Departemen Teknik Elektro.",
-        status: "Upcoming event",
+        status: "Event has ended",
         date: "13 May",
         img: tech,
     },
     {
-        title: "Arduino",
+        title: "Proteus Training",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac arcu ornare, tincidunt neque non, ultrices magna. Quisque in purus eu ex vestibulum posuere. Mauris nisl ipsum, vehicula quis hendrerit ac, lobortis ac odio. Suspendisse suscipit ex sed finibus tincidunt.",
-        status: "Coming soon",
-        date: "DTBA",
+        status: "Event has ended",
+        date: "1 Juni 2023",
         img: dig,
     },
 ]

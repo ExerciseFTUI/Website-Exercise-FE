@@ -24,7 +24,7 @@ const OurProject = () => {
                 return (
                     <div className='projects h-screen bg-light flex relative flex-col' >
                     
-                        <div className='h-3/5 grid justify-items-center relative'
+                        <div className='h-3/5 grid bg-dark justify-items-center relative'
                             style={{
                                 backgroundImage: `url(${project.bg})`,
                                 backgroundRepeat:"no-repeat",

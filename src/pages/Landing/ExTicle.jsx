@@ -32,7 +32,7 @@ function ExTicle() {
 
                   <p className="text-sm">{ex.upload}</p>
 
-                  <p className="text-sm">By {ex.author}</p>
+                  <p className="text-sm">Byy {ex.author}</p>
                 </div>
               ))}
             </div>
