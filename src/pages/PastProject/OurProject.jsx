@@ -12,7 +12,7 @@ const OurProject = () => {
   return (
     <>
         <div className='intermezzo text-dark-2 bg-light min-h-screen flex flex-col items-center justify-center space-y-12'>
-            <h1 className='text-center text-4xl sm:text-6xl font-extrabold md:text-7xl md:font-light uppercase md:capitalize'>past project</h1>
+            <h1 className='past text-center text-4xl sm:text-6xl font-extrabold md:text-7xl md:font-light uppercase md:capitalize'>past project</h1>
             <div className='text-lg sm:text-xl lg:text-2xl font-light text-justify md:text-center w-2/3 md:mt-12 space-y-3 '>
                 <p className='leading-6'>Exercise has a proven track record of delivering successful projects in collaboration with various external parties, including reputable companies, lecturers, and other industry experts.</p>
                 <p className='leading-6' >Our commitment to fostering strong partnerships has enabled us to consistently achieve exceptional results and deliver outstanding value to our clients. </p>
@@ -22,16 +22,10 @@ const OurProject = () => {
         {
             projects.map((project, i) => {
                 return (
-                    <div className='projects h-screen bg-light flex relative flex-col' >
+                    <div className='projects h-screen bg-light flex relative flex-col z-10' >
                     
-                        <div className='h-3/5 grid bg-dark justify-items-center relative'
-                            style={{
-                                backgroundImage: `url(${project.bg})`,
-                                backgroundRepeat:"no-repeat",
-                                backgroundSize:"cover",
-                            }}
-                            key={i}
-                        >
+                        <div className='h-3/5 grid bg-dark bg-opacity-90 justify-items-center relative'>
+                            <img className='object-cover absolute top-0 left-0 w-full h-full -z-10' src={project.bg} />
                             {
                             project.logo != null && 
                             <img src={project.logo} className='absolute top-6 left-6 h-14 md:h-18 lg:h-24' />

@@ -65,7 +65,7 @@ import farrell from "./technical/software/farrell.png"
 import dimas from "./technical/software/dimas.png"
 import giovan from "./technical/software/giovan.png"
 import kamal from "./technical/software/kamal.png"
-import harris from "./technical/software/harris.png"
+import harris from "./technical/software/harris2.png"
 
 const executives = {
   head: {
@@ -416,7 +416,7 @@ const externals = [
       },
       {
         img: harris,
-        name: "M. Fahish",
+        name: "M. Fahish Haritsah",
         linkedin: "https://www.linkedin.com/",
       },
     ],
