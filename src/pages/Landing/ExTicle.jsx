@@ -8,8 +8,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/effect-creative';
-import { Autoplay, EffectCreative } from 'swiper/modules';
+import 'swiper/css/pagination';
+import { Autoplay, Pagination, Scrollbar } from 'swiper/modules';
 
 function ExTicle() {
 
@@ -20,60 +20,6 @@ function ExTicle() {
           ExTicle
         </h1>
         <p className="text-dark-2 text-3xl font-bold mb-5">Lates Articles</p>
-
-        <div className='w-96 drop-shadow-lg'>
-          <Swiper 
-          grabCursor={true}
-
-          effect={'creative'}
-          creativeEffect={{
-            prev: {
-              shadow: true,
-              translate: ['-20%', 0, -1],
-            },
-            next: {
-              translate: ['100%', 0, 0],
-            },
-          }}
-          loop={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          modules={[Autoplay, EffectCreative]}
-          className="mySwiper3"
-        >
-            {
-              exticle.map((ex, i) => (
-                <SwiperSlide>
-                  <div className='flex flex-col justify-center bg-grey space-y-3 h-80'>
-                    <img 
-                      src={ex.thumbnail}
-                      alt={"thumbnail " + (i + 1)} 
-                      className='object-cover'
-                    />
-                    <div className='mx-5'>
-                    <Link
-                    to={`/exticle/#${ex.title
-                      .toLowerCase()
-                      .replace(/ +/g, "-")}`}
-                  >
-                    <p className='text-dark text-lg font-bold hover:text-light duration-200'>{ex.title}</p>
-                  </Link>
-                      
-                      <p className='text-dark text-sm'>{ex.upload}</p>
-                      <p className='text-dark'>By {ex.author}</p>
-                    </div>
-                    
-                  </div>
-                </SwiperSlide>
-              ))
-            }
-        </Swiper>
-        </div>
-        
-
-        
         {/* <div className="flex-center flex-wrap gap-4">
           {exticle.map((ar, i) => (
             <div key={i} className="flex-center  flex-col gap-4 lg:flex-row">
@@ -103,6 +49,65 @@ function ExTicle() {
 
         </div> */}
       </div>
+      <div className='w-full px-10 rounded-xl'>
+      <Swiper 
+            slidesPerView={1}
+            spaceBetween={30}
+            breakpoints={{
+              480: {
+                slidesPerView: 2,
+                spaceBetween: 20
+              },
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 30
+              },
+            }}
+            pagination={{
+              dynamicBullets: true,
+              dynamicMainBullets: 3,
+              type: 'bullets'
+            }}
+            modules={[Pagination]}
+            rewind={true}
+            autoplay={{
+              delay: 100,
+              disableOnInteraction: false,
+              
+            }}
+            className="mySwiper rounded-xl"
+            
+          >
+            
+            {
+              exticle.map((ex, i) => (
+                <SwiperSlide>
+                  <div className='flex flex-col h-full justify-center bg-light space-y-3'>
+                    <img 
+                      src={ex.thumbnail}
+                      alt={"thumbnail " + (i + 1)} 
+                      className='object-cover rounded-xl'
+                    />
+                    <div className='mx-5'>
+                    <Link
+                    to={`/exticle/#${ex.title
+                      .toLowerCase()
+                      .replace(/ +/g, "-")}`}
+                  >
+                    <p className='text-dark text-lg font-bold hover:text-light duration-200'>{ex.title}</p>
+                  </Link>
+                      
+                      <p className='text-dark text-sm'>{ex.upload}</p>
+                      <p className='text-dark'>By {ex.author}</p>
+                    </div>
+                    
+                  </div>
+                </SwiperSlide>
+              ))
+            }
+        </Swiper>
+      </div>
+          
     </div>
   )
 }

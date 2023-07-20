@@ -18,7 +18,7 @@ function CarouselProjects() {
     },
     {
       title: "Fintech Automation System",
-      desc: "We started innovating since 1234 with a track record of qualified work and has become one of the growing technology organizations of the University of Indonesia. Dig further to find out the best of us!",
+      desc: "Create devices to automate the process of inputting data from internet banking into this fintech application system so that the process of inputting internet banking data becomes automatic.",
       corp: "Flip",
       year: 2016,
       img: "https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",

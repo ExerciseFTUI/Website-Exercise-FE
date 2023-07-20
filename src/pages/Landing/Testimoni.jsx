@@ -8,6 +8,9 @@ import "swiper/css/effect-coverflow"
 
 import { EffectCoverflow, Autoplay } from "swiper/modules"
 
+import instagram from "../../assets/landing/testimoni/instagram.svg"
+import linkedin from "../../assets/landing/testimoni/linkedin.svg"
+
 function testimoni() {
   const alums = [
     {
@@ -43,6 +46,39 @@ function testimoni() {
       twt: "twitter.com",
       linkedin: "https://www.linkedin.com/in/jasonantonio/",
     },
+    {
+      name: "Darvin",
+      position: "Teknik Komputer",
+      testimoni:
+        "Exercise has always been an excellent opportunity to develop both hard and soft skills. I'm able to improve my teamwork abilities and experience solving industry-level problems together with amazing people. If you are from the electrical department, don't miss the chance to join this fantastic organization while you can!",
+      img: "asd",
+      ig: "https://www.instagram.com/darvinyap/",
+      line: "line.me",
+      twt: "twitter.com",
+      linkedin: "https://www.linkedin.com/in/darvinyap/",
+    },
+    {
+      name: "Ziyan Muhammad Aqsha",
+      position: "Teknik Biomedik",
+      testimoni:
+        "EXERCISE is a platform to enhance my knowledge and skills through workshops, seminars, and conferences. These programs also helped me to stay updated with the latest scientific developments and enabled me to learn from the experiences of experts in my field.",
+      img: "asd",
+      ig: "https://www.instagram.com/ziyanmuhammad/",
+      line: "line.me",
+      twt: "twitter.com",
+      linkedin: "https://www.linkedin.com/in/ziyanmuhammad/.com",
+    },
+    {
+      name: "Jason",
+      position: "Teknik Elektro",
+      testimoni:
+        "Exercise provided an opportunity for me to go beyond and develop both new technical & project management skills that were complementary to the knowledge I’ve gained through my Electrical Engineering studies. Assessing feasibility of engineering projects in terms of practicality and implementations is a skill you may not get anywhere else!",
+      img: "asd",
+      ig: "https://www.instagram.com/jasonantonio99/",
+      line: "line.me",
+      twt: "twitter.com",
+      linkedin: "https://www.linkedin.com/in/jasonantonio/",
+    }
   ]
 
   return (
@@ -54,13 +90,15 @@ function testimoni() {
 
         <Swiper
           modules={[EffectCoverflow, Autoplay]}
-          effect="coverflow"
+          effect={"coverflow"}
           loop={true}
+          loopPreventsSliding={true}
           grabCursor={true}
-          roundLengths={false}
+          
           autoHeight={true}
-          centeredSlides={true}
-          slidesPerView={1}
+          centeredSlides={true} 
+          slidesPerView={ 1 }
+          slidesPerGroup={ 1 }
           spaceBetween={30}
           coverflowEffect={{
             rotate: 0,
@@ -94,6 +132,17 @@ function testimoni() {
               <p className="font-light text-justify text-sm lg:text-base">
                 {a.testimoni}
               </p>
+
+              <div className="flex justify-center mt-10">
+                <Link to={a.ig}>
+                  <img src={instagram} alt={(a.name) + 's Instagram Account'} />
+                </Link>
+                <Link to={a.linkedin}>
+                  <img src={linkedin} alt={(a.name) + 's Linkedin Account'} />
+                </Link>
+              </div>
+
+              
             </SwiperSlide>
           ))}
         </Swiper>

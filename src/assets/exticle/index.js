@@ -21,5 +21,6 @@ export default [
       author: "Kuncoro",
       thumbnail: ai,
     },
+    
   ]
 
