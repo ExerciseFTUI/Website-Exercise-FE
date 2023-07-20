@@ -10,7 +10,7 @@ function Header() {
   return (
     <div
       id="header-section"
-      className="overflow-clip xl:pb-32 xl:pt-48 lg:mb-32 lg:mt-10 mb-10"
+      className="overflow-clip xl:pb-32 xl:pt-48 lg:mb-32 mb-10"
     >
       <div className="w-container lg:pt-20 site-wrapper relative flex-center flex-wrap xl:items-start xl:justify-between">
         <div className="absolute w-full h-full -z-10">
@@ -40,7 +40,10 @@ function Header() {
             the University of Indonesia. Dig further to find out the best of us!
           </p>
 
-          <Link to="/about-us" className="btn-light rounded-md text-lg lg:text-xl">
+          <Link
+            to="/about-us"
+            className="btn-light rounded-md text-lg lg:text-xl"
+          >
             Get to Know
           </Link>
         </div>

@@ -130,10 +130,6 @@ function testimoni() {
             </SwiperSlide>
           ))}
         </Swiper>
-
-        <Link to="/testimoni-alumni" className="btn-dark rounded-md mx-auto">
-          View All
-        </Link>
       </div>
     </div>
   )

@@ -47,7 +47,7 @@ function StaffSection({
             <img
               alt={head.name + "'s Photo"}
               src={head.img}
-              className="bg-dark-2 hover:scale-110 object-cover object-top h-60 w-44 md:h-64 lg:w-56 lg:h-80 rounded-md"
+              className="bg-dark-2 object-cover object-top h-60 w-44 md:h-64 lg:w-56 lg:h-80 rounded-md"
             />
 
             <Link target="_blank" rel="noopener noreferrer" to={head.linkedin}>
@@ -61,7 +61,7 @@ function StaffSection({
               <img
                 alt={head.name + "'s Photo"}
                 src={head.img}
-                className="bg-dark-2 hover:scale-110 object-cover object-top h-60 w-44 md:h-64 lg:w-56 lg:h-80 rounded-md"
+                className="bg-dark-2 object-cover object-top h-60 w-44 md:h-64 lg:w-56 lg:h-80 rounded-md"
               />
 
               <div className="relative flex flex-col justify-center before:absolute before:-right-3 before:h-[1.5px] before:w-4 before:bg-dark-2 md:text-lg md:before:h-0.5">
@@ -80,7 +80,7 @@ function StaffSection({
               <img
                 alt={vice.name + "'s Photo"}
                 src={vice.img}
-                className="bg-dark-2 hover:scale-110 object-cover object-top h-60 w-44 md:h-64 lg:w-56 lg:h-80 rounded-md"
+                className="bg-dark-2 object-cover object-top h-60 w-44 md:h-64 lg:w-56 lg:h-80 rounded-md"
               />
 
               <div className="relative flex flex-col justify-center before:absolute before:-left-4 before:h-[1.5px] before:w-4 before:bg-dark-2 md:text-lg md:before:h-0.5">
@@ -118,7 +118,7 @@ function StaffSection({
               <img
                 alt={name + "'s Photo"}
                 src={img || unknown}
-                className="bg-dark-2 hover:scale-110 object-cover object-top min-w-[11rem] w-44 h-60 lg:min-w-[13rem] lg:w-52 lg:h-72 rounded-md"
+                className="bg-dark-2 object-cover object-top min-w-[11rem] w-44 h-60 lg:min-w-[13rem] lg:w-52 lg:h-72 rounded-md"
               />
 
               <div className="text-center mt-4 lg:text-lg">
