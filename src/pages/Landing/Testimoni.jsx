@@ -15,7 +15,7 @@ function testimoni() {
   const alums = [
     {
       name: "Darvin",
-      position: "Teknik Komputer",
+      position: "Ex-Software Engineer at Tokopedia, Shopee, and Traveloka",
       testimoni:
         "Exercise has always been an excellent opportunity to develop both hard and soft skills. I'm able to improve my teamwork abilities and experience solving industry-level problems together with amazing people. If you are from the electrical department, don't miss the chance to join this fantastic organization while you can!",
       img: "asd",
@@ -26,7 +26,7 @@ function testimoni() {
     },
     {
       name: "Ziyan Muhammad Aqsha",
-      position: "Teknik Biomedik",
+      position: "GT Oncology & Commercial at Pfizer",
       testimoni:
         "EXERCISE is a platform to enhance my knowledge and skills through workshops, seminars, and conferences. These programs also helped me to stay updated with the latest scientific developments and enabled me to learn from the experiences of experts in my field.",
       img: "asd",
@@ -36,8 +36,8 @@ function testimoni() {
       linkedin: "https://www.linkedin.com/in/ziyanmuhammad/.com",
     },
     {
-      name: "Jason",
-      position: "Teknik Elektro",
+      name: "Jason Antonio",
+      position: "Ex-Product Analyst Intern at Finku",
       testimoni:
         "Exercise provided an opportunity for me to go beyond and develop both new technical & project management skills that were complementary to the knowledge I’ve gained through my Electrical Engineering studies. Assessing feasibility of engineering projects in terms of practicality and implementations is a skill you may not get anywhere else!",
       img: "asd",
@@ -48,7 +48,7 @@ function testimoni() {
     },
     {
       name: "Darvin",
-      position: "Teknik Komputer",
+      position: "Ex-Software Engineer at Tokopedia, Shopee, and Traveloka",
       testimoni:
         "Exercise has always been an excellent opportunity to develop both hard and soft skills. I'm able to improve my teamwork abilities and experience solving industry-level problems together with amazing people. If you are from the electrical department, don't miss the chance to join this fantastic organization while you can!",
       img: "asd",
@@ -59,7 +59,7 @@ function testimoni() {
     },
     {
       name: "Ziyan Muhammad Aqsha",
-      position: "Teknik Biomedik",
+      position: "GT Oncology & Commercial at Pfizer",
       testimoni:
         "EXERCISE is a platform to enhance my knowledge and skills through workshops, seminars, and conferences. These programs also helped me to stay updated with the latest scientific developments and enabled me to learn from the experiences of experts in my field.",
       img: "asd",
@@ -69,8 +69,8 @@ function testimoni() {
       linkedin: "https://www.linkedin.com/in/ziyanmuhammad/.com",
     },
     {
-      name: "Jason",
-      position: "Teknik Elektro",
+      name: "Jason Antonio",
+      position: "Ex-Product Analyst Intern at Finku",
       testimoni:
         "Exercise provided an opportunity for me to go beyond and develop both new technical & project management skills that were complementary to the knowledge I’ve gained through my Electrical Engineering studies. Assessing feasibility of engineering projects in terms of practicality and implementations is a skill you may not get anywhere else!",
       img: "asd",
@@ -124,7 +124,7 @@ function testimoni() {
             >
               <div className="text-center mb-8">
                 <h1 className="font-bold text-lg lg:text-xl">{a.name}</h1>
-                <p className="font-extralight text-sm lg:text-lg">
+                <p className="font-extralight text-sm lg:text-md w-3/4 mx-auto">
                   {a.position}
                 </p>
               </div>

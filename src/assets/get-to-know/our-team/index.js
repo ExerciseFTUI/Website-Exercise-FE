@@ -399,6 +399,11 @@ const externals = [
         linkedin: "https://www.linkedin.com/in/farrelan/",
       },
       {
+        img: harris,
+        name: "M. Fahish Haritsah",
+        linkedin: "https://www.linkedin.com/",
+      },
+      {
         img: giovan,
         name: "Giovan C. Sihombing",
         linkedin:
@@ -413,12 +418,7 @@ const externals = [
         img: dimas,
         name: "Dimas Dermawan",
         linkedin: "https://www.linkedin.com/",
-      },
-      {
-        img: harris,
-        name: "M. Fahish Haritsah",
-        linkedin: "https://www.linkedin.com/",
-      },
+      }
     ],
   },
 ]

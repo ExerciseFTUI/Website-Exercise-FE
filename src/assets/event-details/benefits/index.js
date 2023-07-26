@@ -28,4 +28,5 @@ export default [
         bg: "bg-light",
         text: "text-dark-2"
     },
+
 ]

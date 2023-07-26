@@ -90,12 +90,12 @@ function ExTicle() {
                     />
                     <div className='mx-5'>
                     <Link
-                    to={`/exticle/#${ex.title
-                      .toLowerCase()
-                      .replace(/ +/g, "-")}`}
-                  >
-                    <p className='text-dark text-lg font-bold hover:text-light duration-200'>{ex.title}</p>
-                  </Link>
+                      to={`/exticle/#${ex.title
+                        .toLowerCase()
+                        .replace(/ +/g, "-")}`}
+                    >
+                      <p className='text-dark text-lg font-bold hover:text-light duration-200'>{ex.title}</p>
+                    </Link>
                       
                       <p className='text-dark text-sm'>{ex.upload}</p>
                       <p className='text-dark'>By {ex.author}</p>
