@@ -1,9 +1,6 @@
 import React, { useRef, useState } from "react"
 
-function Collapsable({
-  title = "Lorem Ipsum Dolor Si Amet",
-  desc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac arcu ornare, tincidunt neque non, ultrices magna. Quisque in purus eu ex vestibulum posuere. Mauris nisl ipsum, vehicula quis hendrerit ac, lobortis ac odio. Suspendisse suscipit ex sed finibus tincidunt. Phasellus magna urna, egestas eu sem eget, sollicitudin vulputate magna. Duis in lorem dapibus, auctor justo eget, cursus augue. Sed ut lacus in enim volutpat tristique.",
-}) {
+function Collapsable({question, answer}) {
   const [isExpand, setIsExpand] = useState(false)
 
   const descRef = useRef()
@@ -15,7 +12,7 @@ function Collapsable({
         className="cursor-pointer border-dark-2 border-solid border-b-2 flex items-center justify-between p-2"
         onClick={expand}
       >
-        <p className="font-semibold">{title}</p>
+        <p className="font-semibold">{question}</p>
         <p className="font-extrabold">{isExpand ? "-" : "+"}</p>
       </div>
 
@@ -32,7 +29,7 @@ function Collapsable({
             : { height: "0px", padding: "0px", borderWidth: "0px" }
         }
       >
-        {desc}
+        {answer}
       </div>
     </div>
   )

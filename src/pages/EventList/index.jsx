@@ -56,7 +56,7 @@ function EventPage() {
                 <p className="text-justify">{e.desc}</p>
 
                 <Link
-                  to={`event/${e.title.toLowerCase().replace(/ +/g, "-")}`}
+                  to={`${e.title.toLowerCase().replace(/ +/g, "-")}`}
                   className="btn-light group-odd:btn-dark rounded-md"
                 >
                   See More
