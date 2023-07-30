@@ -16,23 +16,17 @@ import GetToKnow from "./pages/GetToKnow"
 import ExTicle from "./pages/ExTicle"
 import ComingSoon from "./components/comingSoon/ComingSoon"
 import ErrorPage from "./components/errorPage/ErrorPage"
+// import EventRouter from "./components/events/EventRouter"
 
 const router = createBrowserRouter([
   {
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
+      // EventRouter,
       {
         path: "/home",
         element: <LandingPage />,
-      },
-      {
-        path: "/events",
-        element: <EventPage />,
-      },
-      {
-        path: "/events/event/:name",
-        element: <EventDetails />,
       },
       {
         path: "/features",
