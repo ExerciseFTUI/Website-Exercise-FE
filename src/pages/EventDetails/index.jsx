@@ -14,7 +14,6 @@ import applications from "../../assets/event-details/applications"
 import individu from "../../assets/event-details/price/individu.svg"
 import kelompok from "../../assets/event-details/price/kelompok.svg"
 import EventPage from "../EventList"
-import EventRouter from "../../components/events/EventRouter"
 
 function EventDetails({title, prices, date, desc, benefits, curriculum, apps, faq}) {
   const lists = ["About", "Benefits", "Kurikulum", "Aplikasi", "FAQ", "Harga"]
