@@ -390,9 +390,19 @@ const externals = [
     staffs: [
       {
         img: eriqo,
-        name: "Eriqo Arief",
+        name: "Eriqo Arief W.",
         linkedin: "https://www.linkedin.com/in/eriqoarief/",
         pos: "Expert",
+      },
+      {
+        img: dimas,
+        name: "Dimas Dermawan",
+        linkedin: "https://www.linkedin.com/",
+      },
+      {
+        img: harris,
+        name: "M. Fahish Haritsah",
+        linkedin: "https://www.linkedin.com/",
       },
       {
         img: farrell,
@@ -409,16 +419,6 @@ const externals = [
         img: kamal,
         name: "Kamal Makarim",
         linkedin: "https://www.linkedin.com/in/kamal-makarim",
-      },
-      {
-        img: dimas,
-        name: "Dimas Dermawan",
-        linkedin: "https://www.linkedin.com/",
-      },
-      {
-        img: harris,
-        name: "M. Fahish",
-        linkedin: "https://www.linkedin.com/",
       },
     ],
   },
