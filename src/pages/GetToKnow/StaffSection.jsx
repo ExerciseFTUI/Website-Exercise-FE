@@ -33,7 +33,6 @@ function StaffSection({
 
   useEffect(() => {
     setIndex(index)
-    console.log(index)
   }, [divInView])
   return (
     <section
