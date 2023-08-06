@@ -41,10 +41,6 @@ const router = createBrowserRouter([
         path: "/past-projects",
         element: <PastProject />,
       },
-      // {
-      //   path: "/events",
-      //   element: <EventPage />
-      // },
       {
         path: "/exticle",
         element: <ExTicle />,
