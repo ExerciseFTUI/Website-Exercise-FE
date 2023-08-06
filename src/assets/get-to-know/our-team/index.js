@@ -40,6 +40,7 @@ import wendy from "./mnb/wendy.png"
 
 import nuzul from "./bisdev/nuzul.png"
 import satrio from "./bisdev/satrio.png"
+import darren from "./bisdev/darren.png"
 
 import daniel from "./tnd/daniel.png"
 import eze from "./tnd/eze.png"
@@ -200,7 +201,7 @@ const externals = [
         linkedin: "https://www.linkedin.com/",
       },
       {
-        img: "",
+        img: darren,
         name: "Darren Nathanael B.",
         linkedin: "www.linkedin.com/in/darren-nathanael-boentara-a70a79264",
       },
@@ -389,9 +390,19 @@ const externals = [
     staffs: [
       {
         img: eriqo,
-        name: "Eriqo Arief",
+        name: "Eriqo Arief W.",
         linkedin: "https://www.linkedin.com/in/eriqoarief/",
         pos: "Expert",
+      },
+      {
+        img: dimas,
+        name: "Dimas Dermawan",
+        linkedin: "https://www.linkedin.com/",
+      },
+      {
+        img: harris,
+        name: "M. Fahish Haritsah",
+        linkedin: "https://www.linkedin.com/",
       },
       {
         img: farrell,
@@ -414,11 +425,6 @@ const externals = [
         name: "Kamal Makarim",
         linkedin: "https://www.linkedin.com/in/kamal-makarim",
       },
-      {
-        img: dimas,
-        name: "Dimas Dermawan",
-        linkedin: "https://www.linkedin.com/",
-      }
     ],
   },
 ]

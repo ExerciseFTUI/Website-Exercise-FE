@@ -40,7 +40,7 @@ function Features() {
 
               <div className="w-full py-4 px-6 lg:w-96 lg:h-56 lg:text-center">
                 <Link
-                  to={`/feature/${f.title.toLowerCase().replace(/ +/g, "-")}`}
+                  to={f.link}
                   className="font-extrabold text-base underline md:text-2xl"
                 >
                   {f.title}

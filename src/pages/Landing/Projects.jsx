@@ -2,10 +2,10 @@ import { Link } from "react-router-dom"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Autoplay, EffectCoverflow, Navigation } from "swiper/modules"
 
-import "swiper/css"
-import "swiper/css/autoplay"
-import "swiper/css/navigation"
-import "swiper/css/effect-coverflow"
+// import "swiper/css"
+// import "swiper/css/autoplay"
+// import "swiper/css/navigation"
+// import "swiper/css/effect-coverflow"
 
 function CarouselProjects() {
   const projects = [

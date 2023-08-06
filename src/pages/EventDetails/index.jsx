@@ -11,12 +11,7 @@ import price from "../../assets/event-details/price"
 import benefits from "../../assets/event-details/benefits"
 import applications from "../../assets/event-details/applications"
 
-import individu from "../../assets/event-details/price/individu.svg"
-import kelompok from "../../assets/event-details/price/kelompok.svg"
-import EventPage from "../EventList"
-import EventRouter from "../../components/events/EventRouter"
-
-function EventDetails({title, prices, date, desc, benefits, curriculum, apps, faq}) {
+function EventDetails() {
   const lists = ["About", "Benefits", "Kurikulum", "Aplikasi", "FAQ", "Harga"]
 
   const { scrollY } = useScroll()

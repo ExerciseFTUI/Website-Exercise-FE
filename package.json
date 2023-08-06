@@ -1,8 +1,9 @@
 {
   "name": "exercise-website",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
+  "homepage": "https://exerciseftui.com/",
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
@@ -18,7 +19,8 @@
     "react-tsparticles": "^2.10.1",
     "react-type-animation": "^3.0.1",
     "swiper": "^10.0.4",
-    "tsparticles": "^2.10.1"
+    "tsparticles": "^2.10.1",
+    "tsparticles-slim": "^2.10.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
