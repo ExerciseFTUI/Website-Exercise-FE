@@ -3,10 +3,10 @@ import tech from "./technoskill.png"
 
 export default [
     {
-        title: "Power Factory DigSILENT Training",
-        desc: "Training Digsilent adalah pelatihan dengan aplikasi DigSilent yang dikhususkan untuk mahasiswa jurusan Teknik Elektro yang ingin mengambil peminatan Tenaga Listrik. Training Digsilent berkolaborasi dengan Laboratorium STL FTUI pada bulan Maret 2023.",
-        status: "Event has ended",
-        date: "8 April",
+        title: "Matlab Training",
+        desc: "Dive into the world of MATLAB with our hands-on training program. No prior experience needed. Join us for an immersive event where you'll explore MATLAB, create practical projects, receive expert mentorship, and gain insights into topics like basic syntax, plotting, Simulink, and numerical computation.",
+        status: "Coming soon",
+        date: "6 - 8 October",
         img: dig,
     },
     {
@@ -17,10 +17,10 @@ export default [
         img: tech,
     },
     {
-        title: "Arduino",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac arcu ornare, tincidunt neque non, ultrices magna. Quisque in purus eu ex vestibulum posuere. Mauris nisl ipsum, vehicula quis hendrerit ac, lobortis ac odio. Suspendisse suscipit ex sed finibus tincidunt.",
-        status: "Coming soon",
-        date: "DTBA",
+        title: "Power Factory DigSILENT Training",
+        desc: "Training Digsilent adalah pelatihan dengan aplikasi DigSilent yang dikhususkan untuk mahasiswa jurusan Teknik Elektro yang ingin mengambil peminatan Tenaga Listrik. Training Digsilent berkolaborasi dengan Laboratorium STL FTUI pada bulan Maret 2023.",
+        status: "Event has ended",
+        date: "8 April",
         img: dig,
     },
 ]
