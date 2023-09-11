@@ -15,12 +15,8 @@ const OurTeam = () => {
   const ourTeamRef = useRef(null)
   const executivesRef = useRef(null)
 
-  const ourTeamInView = useInView(ourTeamRef, {
-    margin: "90px 0px -90px 0px",
-  })
-  const executivesInView = useInView(executivesRef, {
-    margin: "-50% 0%",
-  })
+  const ourTeamInView = useInView(ourTeamRef, { margin: "80%" })
+  const executivesInView = useInView(executivesRef)
 
   useEffect(() => {
     executivesInView ? setCurrentViewed(0) : setCurrentViewed(-1)
@@ -53,7 +49,7 @@ const OurTeam = () => {
               <img
                 alt="Dio's Photo"
                 src={head.img}
-                className="hover:scale-110 bg-dark-2 rounded-xl object-cover object-top h-60 w-44 md:h-64 lg:w-56 lg:h-80"
+                className="bg-dark-2 rounded-xl object-cover object-top h-60 w-44 md:h-64 lg:w-56 lg:h-80"
               />
 
               <div className="relative flex flex-col justify-center before:absolute before:-right-4 before:h-[1.5px] before:w-4 before:bg-grey-1 md:text-lg md:before:h-0.5">
@@ -68,7 +64,7 @@ const OurTeam = () => {
               <img
                 alt="Bachul's Photo"
                 src={vice.img}
-                className="hover:scale-110 bg-dark-2 rounded-xl object-cover object-top h-60 w-44 md:h-64 lg:w-56 lg:h-80"
+                className="bg-dark-2 rounded-xl object-cover object-top h-60 w-44 md:h-64 lg:w-56 lg:h-80"
               />
 
               <div className="relative flex flex-col justify-center before:absolute before:-left-4 before:h-[1.5px] before:w-4 before:bg-grey-1 md:text-lg md:before:h-0.5">
