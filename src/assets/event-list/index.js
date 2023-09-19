@@ -1,5 +1,6 @@
 import dig from "./dig-silent.png"
 import tech from "./technoskill.png"
+import intern from "./internshipexer.jpg"
 
 export default [
     {
@@ -10,17 +11,17 @@ export default [
         img: dig,
     },
     {
+        title: "Internship Exercise",
+        desc: "Exercise Internship is a dynamic program at Exercise FTUI designed to empower new students by providing hands-on experience and relevant skill development aligned with their academic and future career goals. It offers exciting projects, mentorship, and comprehensive learning resources to help students kickstart their careers with confidence.",
+        status: "Upcoming Event",
+        date: "September",
+        img: intern,
+    },
+    {
         title: "Technoskill 1.0",
         desc: "Technoskill 1.0 kali ini hadir untuk menunjang kebutuhan hard skill warga Departemen Teknik Elektro dengan membawa dua rangkaian acara, yaitu Workshop dan Webinar yang dapat diikuti oleh seluruh mahasiswa dan mahasiswi Departemen Teknik Elektro.",
         status: "Upcoming event",
         date: "13 May",
         img: tech,
-    },
-    {
-        title: "Power Factory DigSILENT Training",
-        desc: "Training Digsilent adalah pelatihan dengan aplikasi DigSilent yang dikhususkan untuk mahasiswa jurusan Teknik Elektro yang ingin mengambil peminatan Tenaga Listrik. Training Digsilent berkolaborasi dengan Laboratorium STL FTUI pada bulan Maret 2023.",
-        status: "Event has ended",
-        date: "8 April",
-        img: dig,
     },
 ]
