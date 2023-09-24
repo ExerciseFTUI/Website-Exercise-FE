@@ -2,29 +2,12 @@ import { Link } from "react-router-dom"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Autoplay, EffectCoverflow, Navigation } from "swiper/modules"
 
-// import "swiper/css"
-// import "swiper/css/autoplay"
-// import "swiper/css/navigation"
-// import "swiper/css/effect-coverflow"
+import "swiper/css"
+import "swiper/css/autoplay"
+import "swiper/css/navigation"
+import "swiper/css/effect-coverflow"
 
 function CarouselProjects() {
-  const projects = [
-    {
-      title: "E-Commerce Product Web Scraping  ",
-      desc: "Build a desktop GUI Application with Python programming language to create a web scraping system based on Selenium. The goal of this project is to gather data for Data Analytics purposes to predict future behavior.",
-      corp: "Tokopedia",
-      year: 2021,
-      img: "https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-    },
-    {
-      title: "Project Title",
-      desc: "We started innovating since 1234 with a track record of qualified work and has become one of the growing technology organizations of the University of Indonesia. Dig further to find out the best of us!",
-      corp: "Corporation",
-      year: 2016,
-      img: "https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-    },
-  ]
-
   return (
     <div id="collaborated-projects-section" className="bg-light py-20 lg:py-20">
       <div className="site-wrapper w-container relative">
@@ -102,3 +85,82 @@ function CarouselProjects() {
 }
 
 export default CarouselProjects
+
+import ecommerce from "../../assets/landing/projects/E-Commerce Product Web Scraping.png"
+import fintech from "../../assets/landing/projects/Fintech Automation System.jpeg"
+import temperature from "../../assets/landing/projects/Temperature Detection  with facial detection and IoT_.png"
+import documentSigning from "../../assets/landing/projects/Document Conversion and P12 Signing.png"
+import pothole from "../../assets/landing/projects/pothole.png"
+
+const projects = [
+  {
+    title: "E-Commerce Product Web Scraping  ",
+    desc: "Build a desktop GUI Application with Python programming language to create a web scraping system based on Selenium. The goal of this project is to gather data for Data Analytics purposes to predict future behavior.",
+    corp: "Tokopedia",
+    year: 2021,
+    img: ecommerce,
+  },
+  {
+    title: "Fintech Automation System",
+    desc: "Create devices to automate the process of inputting data from internet banking into this fintech application system so that the process of inputting internet banking data becomes automatic.",
+    corp: "Flip",
+    year: 2021,
+    img: fintech,
+  },
+  {
+    title: "Temperature Detection with Facial Detection and IoT",
+    desc: "Developed an IoT projects to help the Electrical Department on creating a device to measure each person temperature when the device detected a valid face from the camera. The data will also be sent into an endpoint to be collected and analyzed.",
+    corp: "Exercise",
+    year: 2021,
+    img: temperature,
+  },
+  {
+    title: "Document Conversion and P12 Signing",
+    desc: "Develop a document conversion program to convert docx file format to pdf. The P12 signing will make a timestamp as a mark on the pdf signing. This program created with Python, Java, Django, and Spring REST API methods.",
+    corp: "Exercise",
+    year: 2021,
+    img: documentSigning,
+  },
+  {
+    title: "Pothole Detector",
+    desc: "Develop an Embedded System developed to detect several potholes in a certain area by integrating it into an autonomous vehicle.",
+    corp: "Exercise",
+    year: 2021,
+    img: pothole,
+  },
+  {
+    title: "E-Commerce Product Web Scraping  ",
+    desc: "Build a desktop GUI Application with Python programming language to create a web scraping system based on Selenium. The goal of this project is to gather data for Data Analytics purposes to predict future behavior.",
+    corp: "Tokopedia",
+    year: 2021,
+    img: ecommerce,
+  },
+  {
+    title: "Fintech Automation System",
+    desc: "Create devices to automate the process of inputting data from internet banking into this fintech application system so that the process of inputting internet banking data becomes automatic.",
+    corp: "Flip",
+    year: 2021,
+    img: fintech,
+  },
+  {
+    title: "Temperature Detection with Facial Detection and IoT",
+    desc: "Developed an IoT projects to help the Electrical Department on creating a device to measure each person temperature when the device detected a valid face from the camera. The data will also be sent into an endpoint to be collected and analyzed.",
+    corp: "Exercise",
+    year: 2021,
+    img: temperature,
+  },
+  {
+    title: "Document Conversion and P12 Signing",
+    desc: "Develop a document conversion program to convert docx file format to pdf. The P12 signing will make a timestamp as a mark on the pdf signing. This program created with Python, Java, Django, and Spring REST API methods.",
+    corp: "Exercise",
+    year: 2021,
+    img: documentSigning,
+  },
+  {
+    title: "Pothole Detector",
+    desc: "Develop an Embedded System developed to detect several potholes in a certain area by integrating it into an autonomous vehicle.",
+    corp: "Exercise",
+    year: 2021,
+    img: pothole,
+  },
+]

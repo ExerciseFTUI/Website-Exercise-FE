@@ -35,7 +35,7 @@ function Header() {
 
         <div className="w-container site-wrapper text-center flex-center flex-col gap-8 xl:items-start xl:gap-4">
           <p className="font-medium text-lg max-w-lg lg:text-xl xl:text-start">
-            We started innovating since 1234 with a track record of qualified
+            We started innovating since 2016 with a track record of qualified
             work and has become one of the growing technology organizations of
             the University of Indonesia. Dig further to find out the best of us!
           </p>
