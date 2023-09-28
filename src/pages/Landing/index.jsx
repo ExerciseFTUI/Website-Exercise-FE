@@ -56,8 +56,10 @@ function LandingPage() {
               Our portfolio
             </Link>
             <Link
-              to="/about-us"
+              to="https://www.instagram.com/exercise.ftui"
               className="btn-light text-sm rounded-md md:text-2xl lg:text-3xl xl:text-2xl"
+              target="_blank"
+              rel="noreferrer noopener"
             >
               Connect with us
             </Link>

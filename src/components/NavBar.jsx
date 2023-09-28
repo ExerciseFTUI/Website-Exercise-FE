@@ -99,7 +99,9 @@ function NavBar() {
         </ul>
 
         <Link
-          to="/client"
+          to="https://wa.me/087735508811"
+          target="_blank"
+          rel="noreferrer noopener"
           className="bg-light rounded-md text-dark-2 font-extrabold hidden xl:block py-1 px-2 overflow-hidden w-24 h-8"
         >
           <motion.div

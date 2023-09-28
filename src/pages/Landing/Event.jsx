@@ -5,7 +5,7 @@ import eventList from "../../assets/event-list"
 import upcoming from "../../assets/landing/upcoming-event/upcoming-events.png"
 
 function Event() {
-  const ev = eventList[1]
+  const ev = eventList[0]
 
   return (
     <div

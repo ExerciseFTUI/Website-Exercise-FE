@@ -1,14 +1,22 @@
 import dig from "./dig-silent.png"
 import tech from "./technoskill.png"
+import intern from "./internshipexer.jpg"
 import proteus from "./proteus-training.png"
 
 export default [
     {
-        title: "Power Factory DigSILENT Training",
-        desc: "Training Digsilent adalah pelatihan dengan aplikasi DigSilent yang dikhususkan untuk mahasiswa jurusan Teknik Elektro yang ingin mengambil peminatan Tenaga Listrik. Training Digsilent berkolaborasi dengan Laboratorium STL FTUI pada bulan Maret 2023.",
-        status: "Event has ended",
-        date: "8 April",
+        title: "Matlab Training",
+        desc: "Dive into the world of MATLAB with our hands-on training program. No prior experience needed. Join us for an immersive event where you'll explore MATLAB, create practical projects, receive expert mentorship, and gain insights into topics like basic syntax, plotting, Simulink, and numerical computation.",
+        status: "Coming soon",
+        date: "6 - 8 October",
         img: dig,
+    },
+    {
+        title: "Internship Exercise",
+        desc: "Exercise Internship is a dynamic program at Exercise FTUI designed to empower new students by providing hands-on experience and relevant skill development aligned with their academic and future career goals. It offers exciting projects, mentorship, and comprehensive learning resources to help students kickstart their careers with confidence.",
+        status: "Upcoming Event",
+        date: "September",
+        img: intern,
     },
     {
         title: "Proteus Training",
