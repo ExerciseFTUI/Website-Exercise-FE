@@ -191,7 +191,30 @@ function EventDetails({title, prices, date, desc, benefits, curriculum, apps, fa
                 Price
               </h1>
               <div className="flex-center flex-wrap gap-12 lg:gap-16">
-                {
+              {
+                  prices.map((prc, i) => (
+                    <div
+                      className="bg-light rounded-lg text-dark-2 rounded-b-sm flex-center justify-between flex-col w-64 h-64 px-4 lg:w-72 lg:h-72"
+                    >
+                      <img
+                        src={prc.img}
+                        className="w-24 -mt-8 lg:w-32 lg:-mt-16 "
+                      />
+
+                      <div className="text-center">
+                        <h1 className="text-3xl mb-8 ">{prc.title}</h1>
+                        <p className="tracking-widest text-xl lg:text-2xl">
+                          Rp {prc.price}.000
+                        </p>
+                      </div>
+
+                      <Link className="btn-dark rounded-md bg-dark-2 px-2 -mb-2.5 lg:text-xl">
+                        Register
+                      </Link>
+                    </div>
+                  ))
+                }
+                {/* {
                 prices.indv != null 
                 && 
                 
@@ -240,7 +263,7 @@ function EventDetails({title, prices, date, desc, benefits, curriculum, apps, fa
                       </Link>
                     </div>
                 </div>
-                }
+                } */}
               </div>
 
             </div>
