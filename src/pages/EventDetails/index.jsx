@@ -290,7 +290,7 @@ function EventDetails({title, prices, date, desc, benefits, curriculum, apps, fa
       >
         <div>
           <p className="md:text-lg">Ikuti training hanya dengan</p>
-          <p className="tracking-widest font-medium md:text-lg">Rp {prices.indv}.000</p>
+          <p className="tracking-widest font-medium md:text-lg">Rp {prices[0].price}.000</p>
         </div>
 
         <Link to={`${register}`} className="btn-light">
