@@ -8,7 +8,7 @@ export default [
     title: "URL Shortener",
     desc: "Streamline your online presence, craft a personalized link that reflects your brand and simplifies your web presence. try now!",
     img: url,
-    link: "https://exercise.ui/account/login",
+    link: "https://link.exerciseftui.com/",
   },
   {
     title: "Background Remover",

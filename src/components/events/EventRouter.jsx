@@ -248,7 +248,7 @@ const Technoskill = {
                 answer: "For any further questions or concerns, you can reach out to us at XXXXXXXXX"
             }
         ]}
-        register= "#"
+        register= "/events/ended"
     />
 }
 const Proteus = {
@@ -348,6 +348,7 @@ const Proteus = {
                 answer: "For any further questions or concerns, you can reach out to us at XXXXXXXXX"
             }
         ]}
+        register= "/events/ended"
     />
 }
 

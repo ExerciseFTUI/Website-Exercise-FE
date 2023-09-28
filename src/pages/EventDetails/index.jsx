@@ -36,7 +36,7 @@ function EventDetails({title, prices, date, desc, benefits, curriculum, apps, fa
             </h1>
 
             <p className="bg-light tracking-widest rounded-md font-medium text-dark-2 text-xl w-fit pl-2 pr-1.5 py-0.5 lg:text-2xl">
-              Rp{prices.indv}.000
+              Rp{prices[0].price}.000
             </p>
 
             <p className="font-extralight lg:text-xl">

@@ -34,7 +34,7 @@ function Event() {
           <p className="md:text-justify md:text-lg">{ev.desc}</p>
 
           <Link
-            to="/events/event/technoskill-1.0"
+            to="/events/matlab-training"
             className="btn-light md:text-lg rounded-md"
           >
             See more
