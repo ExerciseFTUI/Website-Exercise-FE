@@ -137,6 +137,8 @@ const DigSilent = {
                 answer: "For any further questions or concerns, you can reach out to us at XXXXXXXXX"
             }
         ]}
+        register= "#"
+        
     />
 }
 
@@ -246,6 +248,7 @@ const Technoskill = {
                 answer: "For any further questions or concerns, you can reach out to us at XXXXXXXXX"
             }
         ]}
+        register= "#"
     />
 }
 const Proteus = {
@@ -452,6 +455,115 @@ const Matlab = {
                 answer: "For any further questions or concerns, you can reach out to us at XXXXXXXXX"
             }
         ]}
+        register= "https://forms.gle/Nx1it1NmkQXLa1bU9"
+    />
+}
+
+const Intern = {
+    path: 'matlab-training',
+    element: 
+    <EventDetails 
+        title={"Matlab Training"}
+        prices={[
+            {
+                title: "Day 1",
+                img: individu,
+                price: 45
+            },
+            {
+                title: "Day 2",
+                img: individu,
+                price: 60
+            },
+            {
+                title: "Day 3",
+                img: individu,
+                price: 80
+            }
+        ]}
+        date={"6-8 Oktober 2023"}
+        desc={"Dive into the world of MATLAB with our hands-on training program. No prior experience needed. Join us for an immersive event where you'll explore MATLAB, create practical projects, receive expert mentorship, and gain insights into topics like basic syntax, plotting, Simulink, and numerical computation."}
+        benefits={[
+            {
+                title: "Basic Competencies of Matlab",
+                img: learning,
+                bg: "bg-dark-2",
+                text: "text-light"
+            },
+            {
+                title: "Pre-Certificate",
+                img: presertif,
+                bg: "bg-grey-2",
+                text: "text-light"
+            },
+            {
+                title: "Post-Training Certificate (Only for 3 days training participant)",
+                img: sertif,
+                bg: "bg-grey-1",
+                text: "text-light"
+            }
+        ]}
+        curriculum={[
+            {
+                title: "Day 1",
+                list: [
+                "Introduction to MATLAB inc.basic syntax",
+                ]
+            },
+            {
+                title: "Day 2",
+                list: [
+                "Plotting & Simulink",
+                ]
+            },
+            {
+                title: "Day 3",
+                list: [
+                "Numerical Computation with MATLAB",
+                ]
+            }
+        ]}
+        apps={[
+            {
+                title: "Matlab",
+                img: matlab,
+            },
+        ]}
+        faq={[
+            {
+                question: "Who can attend the Training?",
+                answer: "Everyone is welcome to attend the training."
+            },
+            {
+                question: "How do I register for the workshop?",
+                answer: "To register for the workshop, simply click on the provided registration link."
+            },
+            {
+                question: "Who can attend the Training?",
+                answer: "Yes, there is a registration fee, but it varies for each event. Details can be found in the respective event information."
+            },
+            {
+                question: "Do I need to bring my laptop or any specific materials?",
+                answer: "Yes, participants are required to bring their own laptops, if necessary for the training.."
+            },
+            {
+                question: "Will there be hands-on sessions?",
+                answer: "Yes, for some practical training, there will be hands-on sessions."
+            },
+            {
+                question: "Will I receive any certificates or course materials after completing the workshop?",
+                answer: "Yes, participants will receive certificates and course materials upon completing the workshop."
+            },
+            {
+                question: "Is there a limit to the number of participants in the workshop?",
+                answer: "Yes, we limit the number of participants to maintain a focused and high-quality learning environment."
+            },
+            {
+                question: " How do I contact the organizers for further questions or concerns?",
+                answer: "For any further questions or concerns, you can reach out to us at XXXXXXXXX"
+            }
+        ]}
+        register= "#"
     />
 }
 

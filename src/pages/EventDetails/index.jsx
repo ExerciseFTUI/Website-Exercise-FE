@@ -15,7 +15,7 @@ import individu from "../../assets/event-details/price/individu.svg"
 import kelompok from "../../assets/event-details/price/kelompok.svg"
 import EventPage from "../EventList"
 
-function EventDetails({title, prices, date, desc, benefits, curriculum, apps, faq}) {
+function EventDetails({title, prices, date, desc, benefits, curriculum, apps, faq, register}) {
   const lists = ["About", "Benefits", "Kurikulum", "Aplikasi", "FAQ", "Harga"]
 
   const { scrollY } = useScroll()
@@ -49,7 +49,7 @@ function EventDetails({title, prices, date, desc, benefits, curriculum, apps, fa
             {desc}
           </p>
 
-          <Link to="#header-section" className="btn-light rounded-md py-0.5 lg:text-xl">
+          <Link to={`${register}`} className="btn-light rounded-md py-0.5 lg:text-xl">
             REGISTER
           </Link>
         </div>
@@ -86,7 +86,7 @@ function EventDetails({title, prices, date, desc, benefits, curriculum, apps, fa
             <p className="text-xl mb-4">Kuota Terbatas!</p>
             <h1 className="text-xl tracking-widest mb-4">Rp{prices.indv}.000</h1>
 
-            <Link className="btn-dark w-full">Register</Link>
+            <Link to={`${register}`} className="btn-dark w-full">Register</Link>
           </div>
         </aside>
 
@@ -208,7 +208,7 @@ function EventDetails({title, prices, date, desc, benefits, curriculum, apps, fa
                         </p>
                       </div>
 
-                      <Link className="btn-dark rounded-md bg-dark-2 px-2 -mb-2.5 lg:text-xl">
+                      <Link to={`${register}`} className="btn-dark rounded-md bg-dark-2 px-2 -mb-2.5 lg:text-xl">
                         Register
                       </Link>
                     </div>
@@ -275,7 +275,7 @@ function EventDetails({title, prices, date, desc, benefits, curriculum, apps, fa
           >
             <h1 className="font-light text-3xl lg:text-4xl mb-12 w-3/4">We're excited to bring you these valuable training opportunities to help you enhance your skills and grow your career.</h1>
 
-            <Link to="/#" className="btn-dark rounded-md w-44 text-xl">
+            <Link to={`${register}`} className="btn-dark rounded-md w-44 text-xl">
               Register
             </Link>
           </div>
@@ -293,7 +293,7 @@ function EventDetails({title, prices, date, desc, benefits, curriculum, apps, fa
           <p className="tracking-widest font-medium md:text-lg">Rp {prices.indv}.000</p>
         </div>
 
-        <Link to="#" className="btn-light">
+        <Link to={`${register}`} className="btn-light">
           Register
         </Link>
       </motion.div>
